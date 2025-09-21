@@ -1,0 +1,26 @@
+whitelist:
+  pages:
+    - https://www.philenews.com/tag/vouleftikes-ekloges/
+    - https://www.philenews.com/politiki/
+    - https://www.philenews.com/politiki/paraskinio/
+    - https://www.philenews.com/tag/politiki-sinentefxi/
+    - https://www.politis.com.cy/politis-news/politiki
+    - https://www.politis.com.cy/apopseis/stiles
+    - https://www.politis.com.cy/apopseis/analyseis
+    - https://www.reporter.com.cy/categories/topikes-eideseis
+    - https://www.offsite.com.cy/o-efetis
+    - https://www.kathimerini.com.cy/gr/politiki
+  item_selector: "a[href]"       # μπορεί να βελτιωθεί για κάθε site ξεχωριστά
+  title_selector: "h2, h3, a"     # ή κατάλληλος selector όπου υπάρχει
+  allow_path_regex: "/(politiki|vouleftike|politik|politikí|apopseis|politics|eklog|anal(ysi|is))"
+  required_keywords_any: []      # αφήνουμε κενό· ημερομηνία + πολιτικό classifier θα φιλτράρουν
+  negative_keywords_any: ["video", "sports", "lifestyle", "celebrit", "gallery"]
+
+filters:
+  same_day_only: true
+  min_words: 120
+
+normalization:
+  strip_html: true
+  fix_encoding: true
+  fetch_canonical: true
