@@ -1,0 +1,42 @@
+name: elections-agent
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+    - cron: "0 16 * * *"
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # DEBUG: δείξε ακριβώς ποιο requirements.txt θα διαβαστεί
+      - name: DEBUG show files & requirements
+        run: |
+          pwd
+          ls -la
+          echo "----- requirements.txt (first 200 lines) -----"
+          sed -n '1,200p' requirements.txt || true
+          echo "----- grep playwright -----"
+          (grep -n "playwright" requirements.txt && echo "FOUND playwright in requirements.txt") || echo "no playwright in requirements.txt"
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Run agent
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          WORDPRESS_BASE_URL: ${{ secrets.WORDPRESS_BASE_URL }}
+          WORDPRESS_USER: ${{ secrets.WORDPRESS_USER }}
+          WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
+        run: python agent.py
