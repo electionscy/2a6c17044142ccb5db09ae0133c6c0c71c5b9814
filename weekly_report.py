@@ -11,7 +11,7 @@ import datetime
 import unicodedata
 from collections import defaultdict
 from fpdf import FPDF
-from google import genai
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
