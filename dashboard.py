@@ -489,10 +489,11 @@ st.markdown(f"""
   <div>
     <div class="top-title">Migration Intelligence — Cyprus</div>
     <div class="top-sub">Υφυπουργείο Μετανάστευσης &amp; Διεθνούς Προστασίας</div>
+    <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:6px;letter-spacing:0.3px">Σχεδιάστηκε &amp; υλοποιήθηκε από <span style="color:rgba(255,255,255,0.55);font-weight:500">Cypronetwork Consultancy Group</span></div>
   </div>
   <div class="top-right">
-    <div class="status-pill"><span class="status-dot"></span>Σύστημα σε λειτουργία</div>
-    <div class="scan-info">Τελευταίο scan: {status.get('last_scan','—')}</div>
+    <div class="status-pill"><span class="status-dot"></span>Συστημα σε λειτουργια</div>
+    <div class="scan-info">Τελευταιο scan: {status.get('last_scan','—')}</div>
   </div>
 </div>
 """, unsafe_allow_html=True)
