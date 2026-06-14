@@ -681,6 +681,25 @@ with tab3:
                 )
                 st.plotly_chart(fig2, use_container_width=True)
 
+        # Δυναμική ανάλυση Trend
+        if not daily.empty:
+            last7 = daily.tail(7)
+            prev7 = daily.iloc[-14:-7] if len(daily) >= 14 else daily
+            avg_now = last7['avg'].mean()
+            avg_prev = prev7['avg'].mean() if not prev7.empty else avg_now
+            total_alerts = last7['alerts'].sum()
+            trend_dir = "📈 αυξητική" if avg_now > avg_prev else "📉 πτωτική"
+            pct_change = abs((avg_now - avg_prev) / avg_prev * 100) if avg_prev > 0 else 0
+            top_country = df_f.groupby('Country')[sc].mean().idxmax() if 'Country' in df_f.columns and not df_f.empty else "—"
+            st.markdown(f"""
+            <div style="background:#f0f9ff;border-left:3px solid #2563eb;padding:12px 16px;border-radius:6px;margin:8px 0 12px 0;font-size:13px;color:#1e3a5f;line-height:1.6">
+            <b>Ανάλυση Περιόδου:</b> Τις τελευταίες 7 ημέρες το μέσο risk score ήταν <b>{avg_now:.1f}/10</b> —
+            τάση <b>{trend_dir}</b> κατά {pct_change:.1f}% σε σχέση με την προηγούμενη εβδομάδα.
+            Καταγράφηκαν <b>{int(total_alerts)} υψηλής προτεραιότητας signals</b> (score ≥ 8).
+            Η χώρα με τη μεγαλύτερη μέση επικινδυνότητα είναι <b>{top_country}</b>.
+            </div>
+            """, unsafe_allow_html=True)
+
         st.markdown('<div class="section-label" style="margin-top:8px">Top Πηγές — Score 6+</div>', unsafe_allow_html=True)
         if 'Source' in df_f.columns:
             ts = df_f[df_f[sc] >= 6].groupby('Source').size().reset_index(name='n').sort_values('n', ascending=False).head(12)
@@ -744,9 +763,45 @@ with tab4:
         )
         st.plotly_chart(fig_map, use_container_width=True)
 
+    # Δυναμική ανάλυση Geospatial
+    if not df_today.empty and 'Countries' in df_today.columns:
+        import json as _json
+        all_countries = []
+        for v in df_today['Countries'].dropna():
+            try:
+                all_countries.extend(_json.loads(v))
+            except:
+                pass
+        from collections import Counter
+        top_countries = Counter(all_countries).most_common(3)
+        top_str = ", ".join([f"<b>{c}</b> ({n})" for c, n in top_countries]) if top_countries else "—"
+        high_risk = [k for k, v in nodes.items() if v['risk'] >= 8]
+        high_str = ", ".join(high_risk) if high_risk else "κανένα"
+        st.markdown(f"""
+        <div style="background:#fff7ed;border-left:3px solid #d97706;padding:12px 16px;border-radius:6px;margin:8px 0 12px 0;font-size:13px;color:#7c2d12;line-height:1.6">
+        <b>Γεωγραφική Ανάλυση:</b> Σήμερα οι χώρες με τη μεγαλύτερη παρουσία στα signals είναι {top_str}.
+        Κόμβοι υψηλού κινδύνου (risk ≥ 8): <b>{high_str}</b>.
+        Το μέγεθος κάθε κύκλου αντιστοιχεί στο επίπεδο κινδύνου βάσει των σημερινών signals.
+        </div>
+        """, unsafe_allow_html=True)
+
     with col_i:
         st.markdown('<div class="section-label">Sea State — Real-time</div>', unsafe_allow_html=True)
         sea = get_sea_state()
+        # Δυναμική ερμηνεία καιρικών
+        wave_h = sea.get("Ύψος κύματος", "")
+        wind = sea.get("Άνεμος", "")
+        if "Very Rough" in wave_h or "Rough" in wave_h:
+            sea_interp = "🔴 Δυσμενείς συνθήκες — υψηλός κίνδυνος μεταναστευτικών διελεύσεων. Κύματα σε επίπεδο Rough ή Very Rough καθιστούν επικίνδυνες τις θαλάσσιες διαδρομές."
+            sea_color = "#fef2f2"; sea_border = "#dc2626"; sea_text = "#7f1d1d"
+        elif "Moderate" in wave_h:
+            sea_interp = "🟡 Μέτριες συνθήκες — αυξημένη επαγρύπνηση. Κύματα Moderate επιτρέπουν διελεύσεις με κίνδυνο, ιδίως για μικρά σκάφη."
+            sea_color = "#fffbeb"; sea_border = "#d97706"; sea_text = "#78350f"
+        else:
+            sea_interp = "🟢 Ευνοϊκές συνθήκες — αυξημένος κίνδυνος μεταναστευτικών κινήσεων. Ήρεμη θάλασσα ευνοεί τις διελεύσεις."
+            sea_color = "#f0fdf4"; sea_border = "#16a34a"; sea_text = "#14532d"
+        st.markdown(f'<div style="background:{sea_color};border-left:3px solid {sea_border};padding:10px 12px;border-radius:6px;margin:8px 0;font-size:12px;color:{sea_text};line-height:1.5">{sea_interp}</div>', unsafe_allow_html=True)
+
         for label, val in sea.items():
             color = "#6b7280"
             if label == "Ύψος κύματος":
