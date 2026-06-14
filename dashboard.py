@@ -194,7 +194,15 @@ def load_data():
     if not os.path.exists(csv_path):
         return pd.DataFrame()
     df = pd.read_csv(csv_path)
-    df['Date'] = pd.to_datetime(df['Date']).dt.date
+    df['Date'] = pd.to_datetime(df['date'] if 'date' in df.columns else df['Date']).dt.date
+    # Normalize column names from CSV to match DB query aliases
+    col_map = {
+        'source': 'Source', 'score': 'Risk Score', 'summary': 'Summary',
+        'link': 'Link', 'country': 'Country', 'category': 'Category',
+        'countries': 'Countries', 'organizations': 'Organizations',
+        'people': 'People', 'locations': 'Locations', 'confidence': 'Confidence'
+    }
+    df = df.rename(columns=col_map)
     if 'Link' not in df.columns:
         df['Link'] = ''
     df['Link'] = df['Link'].fillna('')
