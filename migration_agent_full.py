@@ -18,6 +18,7 @@ import hashlib
 # Data processing
 import pandas as pd
 import feedparser
+from entity_extractor import extract_entities
 
 # Embeddings
 from sentence_transformers import SentenceTransformer
@@ -41,6 +42,7 @@ LOG_FILE = PROJECT_DIR / "migration_agent.log"
 # Initialize Gemini
 API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
+gemini_model = genai.GenerativeModel('models/gemini-2.5-flash')
 
 # Load embedding model (cached after first run)
 print("Loading embedding model...")
@@ -139,6 +141,12 @@ def init_db():
             summary TEXT UNIQUE,
             score INTEGER,
             embedding BLOB,
+            countries TEXT,
+            people TEXT,
+            organizations TEXT,
+            locations TEXT,
+            category TEXT,
+            confidence REAL,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     """)
@@ -146,19 +154,29 @@ def init_db():
     conn.commit()
     conn.close()
 
-def save_signal(date, source, title, summary, score, embedding=None):
+def save_signal(date, source, title, summary, score, embedding=None, entities=None):
     """Save signal to database"""
+    import json
     conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
     
     try:
         embedding_blob = embedding.tobytes() if embedding is not None else None
         
+        countries = json.dumps(entities.get('countries', []), ensure_ascii=False) if entities else None
+        people = json.dumps(entities.get('people', []), ensure_ascii=False) if entities else None
+        organizations = json.dumps(entities.get('organizations', []), ensure_ascii=False) if entities else None
+        locations = json.dumps(entities.get('locations', []), ensure_ascii=False) if entities else None
+        category = entities.get('category', 'Other') if entities else None
+        confidence = entities.get('confidence', 0.0) if entities else None
+        
         cursor.execute("""
             INSERT OR IGNORE INTO signals 
-            (date, source, title, summary, score, embedding)
-            VALUES (?, ?, ?, ?, ?, ?)
-        """, (date, source, title, summary, score, embedding_blob))
+            (date, source, title, summary, score, embedding,
+             countries, people, organizations, locations, category, confidence)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (date, source, title, summary, score, embedding_blob,
+              countries, people, organizations, locations, category, confidence))
         
         conn.commit()
         return True
@@ -210,8 +228,12 @@ def scan_rss():
                 # Get embedding
                 embedding = get_embedding(summary)
                 
+                # Extract entities
+                entities = extract_entities(title, summary)
+                print(f"  [CAT] {entities.get('category', 'Other')} | {entities.get('countries', [])}")
+                
                 # Save
-                if save_signal(today_str, urlparse(feed_url).netloc, title, summary, score, embedding):
+                if save_signal(today_str, urlparse(feed_url).netloc, title, summary, score, embedding, entities):
                     count += 1
                     print(f"  ✅ Saved: {title[:60]}...")
         
@@ -236,8 +258,8 @@ def score_signal(title, summary):
         Reply with ONLY a number.
         """
         
-        response = genai.generate_text(prompt=prompt)
-        score_text = response.result.strip()
+        response = gemini_model.generate_content(prompt)
+        score_text = response.text.strip()
         return int(''.join(filter(str.isdigit, score_text[:2]))) or 5
     except:
         return 5
