@@ -6,6 +6,15 @@ import logging
 import sqlite3
 import requests
 from datetime import datetime, date, timedelta
+try:
+    from zoneinfo import ZoneInfo
+    CY_TZ = ZoneInfo("Asia/Nicosia")
+except ImportError:
+    import pytz
+    CY_TZ = pytz.timezone("Asia/Nicosia")
+
+def now_cy():
+    return datetime.now(CY_TZ)
 import plotly.graph_objects as go
 
 # ── 2.5: Logging System ──────────────────────────────────────────────────────
@@ -308,7 +317,7 @@ def get_sea_state():
             "Περίοδος":      f"{wp:.0f}s" if wp else "—",
             "Κατεύθυνση":    direction(wd),
             "Άνεμος (κύμα)": f"{wwh:.1f}m" if wwh else "—",
-            "Ενημέρωση":     datetime.now().strftime("%H:%M"),
+            "Ενημέρωση":     now_cy().strftime("%H:%M"),
         }
     except Exception as e:
         logging.warning(f"Sea state API failed: {e}")
@@ -401,7 +410,7 @@ def load_status():
     csv_path = "migration_data.csv"
     if os.path.exists(csv_path):
         ts = datetime.fromtimestamp(os.path.getmtime(csv_path))
-        return {"last_scan": ts.strftime("%d/%m/%Y %H:%M:%S")}
+        ts_cy = ts.astimezone(ZoneInfo("Asia/Nicosia")); return {"last_scan": ts_cy.strftime("%d/%m/%Y %H:%M:%S")}
     if os.path.exists("status.json"):
         with open("status.json") as f:
             return json.load(f)
@@ -483,7 +492,7 @@ def delta(a, b):
     return f"{sym}{diff} vs χθες"
 
 # ── Top bar ───────────────────────────────────────────────────
-now_str = datetime.now().strftime("%d/%m/%Y %H:%M")
+now_str = now_cy().strftime("%d/%m/%Y %H:%M")
 st.markdown(f"""
 <div class="top-bar">
   <div>
@@ -936,8 +945,8 @@ with tab5:
         try:
             import requests as _req
             from datetime import datetime
-            year = datetime.now().year
-            month = datetime.now().month
+            year = now_cy().year
+            month = now_cy().month
             # Δοκιμή τελευταίων 3 μηνών
             for m in [month, month-1, month-2]:
                 if m <= 0:
