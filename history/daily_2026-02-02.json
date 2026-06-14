@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-02",
+  "countries": {
+    "Egypt": {
+      "score": 0,
+      "level": "LOW"
+    },
+    "Syria": {
+      "score": 0,
+      "level": "LOW"
+    },
+    "Lebanon": {
+      "score": 0,
+      "level": "LOW"
+    },
+    "Turkey": {
+      "score": 0,
+      "level": "LOW"
+    }
+  }
+}

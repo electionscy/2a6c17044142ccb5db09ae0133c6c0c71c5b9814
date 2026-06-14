@@ -1,0 +1,94 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# .gitignore for OSINT Migration Intelligence Agent
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ─── Sensitive Files (Security) ────────────────────────────────────────────────
+.env                           # Environment variables (API keys, credentials)
+.env.local                     # Local overrides
+.env*.local                    # Pattern for local env files
+*.session                      # Telegram session files (authentication tokens)
+*.session-journal             # Telegram session journals
+secrets.toml                  # Streamlit secrets
+.streamlit/secrets.toml       # Streamlit secrets directory
+
+# ─── Credentials & Private Data ────────────────────────────────────────────────
+credentials.json              # Google/OAuth credentials
+client_secret.json           # OAuth client secrets
+api_key*.txt                 # API key files
+token*.txt                   # Token files
+
+# ─── Database & Data Files (Large, Environment-Specific) ───────────────────────
+migration_data.db            # SQLite database (grows over time, regenerated)
+migration_data.db-journal    # SQLite journal
+*.db                         # Any SQLite databases
+*.sqlite                     # SQLite files
+*.sqlite3                    # SQLite3 files
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/                 # Python bytecode
+*.py[cod]                    # Python compiled files
+*$py.class                   # Python compiled files
+.Python                      # Virtual environment marker
+*.so                         # C extensions
+*.egg                        # Egg distributions
+*.egg-info/                  # Egg info directories
+dist/                        # Distribution directories
+build/                       # Build directories
+.eggs/                       # Eggs directory
+*.whl                        # Wheel files
+
+# ─── Virtual Environment ───────────────────────────────────────────────────────
+venv/                        # Virtual environment
+env/                         # Alternative venv
+ENV/                         # Alternative venv
+.venv/                       # Hidden venv
+pip-log.txt                  # Pip logs
+pip-delete-this-directory.txt # Pip cleanup marker
+
+# ─── IDE & Editor Files ────────────────────────────────────────────────────────
+.vscode/                     # VS Code settings
+.idea/                       # JetBrains IDE
+*.swp                        # Vim swap files
+*.swo                        # Vim swap files
+*~                           # Vim backup files
+.DS_Store                    # macOS folder metadata
+Thumbs.db                    # Windows thumbnail cache
+.code-workspace              # VS Code workspace files
+
+# ─── Logs & Temporary Files ───────────────────────────────────────────────────
+cron_log.txt                 # Automation script logs
+*.log                        # Log files
+*.log.*                      # Rotated log files
+temp/                        # Temporary directory
+tmp/                         # Temporary directory
+cache/                       # Cache directory
+*.tmp                        # Temporary files
+
+# ─── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store                    # macOS
+.DS_Store?                   # macOS
+._*                          # macOS
+.Spotlight-V100              # macOS
+.Trashes                     # macOS
+ehthumbs.db                  # Windows
+.classpath                   # Eclipse
+
+# ─── Deprecated/Old Files (from Phase 1.4) ────────────────────────────────────
+export_csv.py                # Old CSV export script (deprecated in v1.2)
+latest_report.json           # Old report metadata
+debug_run.txt                # Debug artifacts
+check_models.py              # Debug utility
+config_telegram_update.json  # Old config backup
+status.json.bak              # Backup status files
+
+# ─── Generated Reports (Optional — can be tracked or ignored) ──────────────────
+# Uncomment if you want to exclude daily/weekly PDFs from git:
+# reports/OSINT_Report_*.pdf
+# reports/Weekly_OSINT_Report_*.pdf
+
+# ─── Other ────────────────────────────────────────────────────────────────────
+.pytest_cache/               # Pytest cache
+.coverage                    # Coverage reports
+htmlcov/                     # Coverage HTML reports
+.tox/                        # Tox environments
+*.egg-info/                  # Setuptools metadata

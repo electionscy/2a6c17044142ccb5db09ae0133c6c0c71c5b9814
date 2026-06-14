@@ -1,0 +1,108 @@
+{
+  "date": "2026-04-26",
+  "countries": {
+    "Egypt": {
+      "score": 3,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Lebanon": {
+      "score": 0,
+      "level": "LOW",
+      "signals": 0
+    },
+    "Syria": {
+      "score": 5,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Turkey": {
+      "score": 6,
+      "level": "LOW",
+      "signals": 1
+    }
+  },
+  "signals": {
+    "Egypt": [
+      {
+        "source": "Egypt migration media",
+        "source_type": "rss",
+        "title": "El-Sisi: Egypt hosts around 10 million migrants with limited external financial support - Egypt Today",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObkFtNmo0cThlaE1helExbXJ3WmVtYnVFaVJIdGZoeE9vTl9FUVFSWDFoVVZkREthX0ZBSElrSzgySkN6Qm8xTTZQcXlOUDAwWXJHOUVTak5WZC12alc2bUZfamtGS2pka2hNOG9UZGw1UllqX1VJRTBfdkpta3VIMlctajZ4a1RQUENRem4xa1VnTlM3SWNCTVA5ajl4SEhNOGR4NVpB?oc=5",
+        "keywords": [
+          "migrants"
+        ],
+        "signal_score": 3,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Lebanon": [],
+    "Syria": [
+      {
+        "source": "Telegram: @Enabbaladi_en",
+        "source_type": "telegram",
+        "title": "The third and largest convoy of displaced Afrin families left Qamishli on April 14 under an organized return plan linked to the January 2026 agreement between Damascus and the SDF,",
+        "url": "https://t.me/Enabbaladi_en/6378",
+        "keywords": [
+          "displaced",
+          "displacement",
+          "returns"
+        ],
+        "signal_score": 5,
+        "reasons": [
+          "3 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Turkey": [
+      {
+        "source": "Turkish Coast Guard - Current Operations",
+        "source_type": "rss",
+        "title": "23 Irregular Migrants Were Rescued Off the Coast of İzmir - Turkish Coast Guard",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcUlRUTk0VVVVYzA1cWNnb3N5VExwR1F2ZGtqRW04cW9nWFc3bkI2Y1BXek5Ba2FfMzNvSWlSSUFPUVE2cFY2ME5oSmFSUjNqaDhtcU1GODBhYTNjejRvLXZZUWR3SkZRMmFrUlFwT2h0VzZwbnRGYWFkSno2cDQxTWUwYkt5Ui1rRjJtWVVRMlhGWktf?oc=5",
+        "keywords": [
+          "irregular migrants",
+          "rescued"
+        ],
+        "signal_score": 6,
+        "reasons": [
+          "2 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ]
+  }
+}

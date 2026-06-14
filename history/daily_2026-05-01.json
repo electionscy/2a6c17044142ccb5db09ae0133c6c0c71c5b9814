@@ -1,0 +1,179 @@
+{
+  "date": "2026-05-01",
+  "countries": {
+    "Egypt": {
+      "score": 3,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Lebanon": {
+      "score": 5,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Syria": {
+      "score": 12,
+      "level": "MEDIUM",
+      "signals": 3
+    },
+    "Turkey": {
+      "score": 6,
+      "level": "LOW",
+      "signals": 1
+    }
+  },
+  "signals": {
+    "Egypt": [
+      {
+        "source": "Egypt migration media",
+        "source_type": "rss",
+        "title": "Egyptians among 38 migrants drowned off Libya coast - Egypt Independent",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQTFISi1oSVNfSzRFNUdadEJ2WW5SOGVucU1IdWNMQ3p5bVY0LVJDZHI4czR5Q1IxdHltMjZLVzIxZ2FGYUg0UFFReWJDS3hmY2YxcUMySmVLeWZKaFpHYk4ya2VwQU1qTGEwVmRKUWtGdnUyRnZtS0RLZDJWZmIzMnZNS1BZQmh2dGFEQWFn?oc=5",
+        "keywords": [
+          "migrants"
+        ],
+        "signal_score": 3,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Lebanon": [
+      {
+        "source": "L'Orient Today / Lebanon migration",
+        "source_type": "rss",
+        "title": "Lebanese Army arrests two men in Tripoli for migrant smuggling by sea - L'Orient Today",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRTY1Q0xYNTM5c25jZ2dCeEtHNmc4RkYyT1MwVXFIM1VSa2NxZDJyQlpsdVU4MWVlajRhTTF6RWo0OFBoVjVXbWo0X1BFRG5QcmJ4c0JqeVRnRW1SSkc4SW5EdWVXQWpqc0lXYTlMTmdRYmRtWlVqYmhodzc2WklwMldqLVdtcW14MlZGUjkyRUlqNXAzQzdyNVRUS1lZUnM1ZkhqVHRGb21RLVh3dlExVHJ4eGwzcEhzVWQzRXBzZw?oc=5",
+        "keywords": [
+          "smuggling"
+        ],
+        "signal_score": 5,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal",
+          "smuggling/trafficking signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": true,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Syria": [
+      {
+        "source": "Telegram: @Enabbaladi_en",
+        "source_type": "telegram",
+        "title": "The third and largest convoy of displaced Afrin families left Qamishli on April 14 under an organized return plan linked to the January 2026 agreement between Damascus and the SDF,",
+        "url": "https://t.me/Enabbaladi_en/6378",
+        "keywords": [
+          "displaced",
+          "displacement",
+          "returns"
+        ],
+        "signal_score": 5,
+        "reasons": [
+          "3 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      },
+      {
+        "source": "ReliefWeb Syria displacement",
+        "source_type": "rss",
+        "title": "Enhanced Regional Survey on Syrian Refugees’ Perceptions and Intentions on Return to Syria: Wave 2 (April 2026) | Egypt, Iraq, Jordan, Lebanon - ReliefWeb",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNN2RfQmVRYVVZOUFUZk96VDJrUmJqYjUxSktidmp3RkdueXo4VWsteXlLNVV0Unp0MzhrZ1Q3SVVLQ1JuYUZqYjNvdy1tT0dvU2M0U1F4a21DWTl1MDlSM0FsQkVwM2NnWDYtWTBHSkNCOERmWEswcGIwcHNsTVB5NTFXbUY3Q3h3OFk4MXp6dFEtTFBscXR1czFONTRuZmQ2RkVERExOVXNiYjdNZ1dSZHBTQmVtcldGZHZsai1YOEZTaEVSeTRBcWdpVm9keXFKeEVRVmk1VVZnTVJtM1JyNndraEQ2UmVFSW1SeTl1R3c1TUJiTlJ0MEFtSUVEZWVBb3dVbA?oc=5",
+        "keywords": [
+          "refugees"
+        ],
+        "signal_score": 4,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      },
+      {
+        "source": "Enab Baladi",
+        "source_type": "rss",
+        "title": "إنعاش الإنتاج وهجرة الأرباح.. ماذا يحمل إعلان استثمار معمل دريكيش؟",
+        "url": "https://www.enabbaladi.net/806590/%d8%a5%d9%86%d8%b9%d8%a7%d8%b4-%d8%a7%d9%84%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-%d9%88%d9%87%d8%ac%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b1%d8%a8%d8%a7%d8%ad-%d9%85%d8%a7%d8%b0%d8%a7-%d9%8a%d8%ad%d9%85%d9%84/",
+        "keywords": [
+          "هجرة"
+        ],
+        "signal_score": 3,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Turkey": [
+      {
+        "source": "Turkish Coast Guard - Current Operations",
+        "source_type": "rss",
+        "title": "31 Irregular Migrants Were Apprehended Off the Coast of İzmir - Turkish Coast Guard",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTmpMN21XbExzNmExa3ZraTRMYXdzcWxCRzMzUUllVHZMZ0JJMkx6UEJSWFhyLS1UUm5wUE44cXlQR3ZYWUkxazJZZzNzX01UOW5nWUstNXdZVWFXM2ZfZG51TE5MdkdCMlNvd2J1S1UxWU1uRThaUkZPWDJpS2dJMGZ6R2ZiN2JneW1ackcyWjYxXzNJZzVIYUVB?oc=5",
+        "keywords": [
+          "apprehended",
+          "irregular migrants"
+        ],
+        "signal_score": 6,
+        "reasons": [
+          "2 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ]
+  }
+}

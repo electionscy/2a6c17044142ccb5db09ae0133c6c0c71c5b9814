@@ -1,0 +1,21 @@
+{
+  "date": "2026-01-24",
+  "countries": {
+    "Turkey": {
+      "signals": 0,
+      "risk": 0
+    },
+    "Lebanon": {
+      "signals": 0,
+      "risk": 0
+    },
+    "Egypt": {
+      "signals": 0,
+      "risk": 0
+    },
+    "Syria": {
+      "signals": 2,
+      "risk": 2
+    }
+  }
+}

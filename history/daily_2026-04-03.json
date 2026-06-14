@@ -1,0 +1,129 @@
+{
+  "date": "2026-04-03",
+  "countries": {
+    "Egypt": {
+      "score": 3,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Lebanon": {
+      "score": 0,
+      "level": "LOW",
+      "signals": 0
+    },
+    "Syria": {
+      "score": 9,
+      "level": "MEDIUM",
+      "signals": 2
+    },
+    "Turkey": {
+      "score": 5,
+      "level": "LOW",
+      "signals": 1
+    }
+  },
+  "signals": {
+    "Egypt": [
+      {
+        "source": "Egypt migration media",
+        "source_type": "rss",
+        "title": "Egypt flags strain of hosting 10 million migrants, urges more global support - الهيئة العامة للاستعلامات",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNkNsUGI3Z0luY1ByRl96UlRvaUZVZGVHWDdFOUwxVnlSdVlDaWs4SUl4bjBnZ2QzQURYbnhMckV6N2lzci1FYkRzaUlfSVZMTUwzUTFFWWVDcDdDRHluNE5JMjF6eldRdWVLUGsxTmdCd29HV2lfWFZqelVOM2tJMzdjS1NSWmNqZzRPM2U0dmh3SHJBZ1FNWU5hcFRSMWE2UGRUUHA0Q1IyclQ4c0tsbVFlUkp0SzA?oc=5",
+        "keywords": [
+          "migrants"
+        ],
+        "signal_score": 3,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Lebanon": [],
+    "Syria": [
+      {
+        "source": "Telegram: @Enabbaladi_en",
+        "source_type": "telegram",
+        "title": "Al-Sharaa’s visits to Berlin and London reflect Syria’s broader push to rebuild ties with Europe, with reconstruction, refugee returns, and political re-engagement at the center of",
+        "url": "https://t.me/Enabbaladi_en/6315",
+        "keywords": [
+          "refugee",
+          "returns"
+        ],
+        "signal_score": 5,
+        "reasons": [
+          "2 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      },
+      {
+        "source": "ReliefWeb Syria displacement",
+        "source_type": "rss",
+        "title": "UNHCR - Protection Monitoring: Situation of Syrian Refugees in Lebanon (4th Quarter 2025) - ReliefWeb",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOXRSWVRCWTE1RkhUanQwX1l0QlozNkgzWG9vS3A2dXRla3Y5bGR5WnhxRWRFRU00ZDYxSC1qd08tUUxhQ19mYjVZT2UwS2VMZkdhaHY2LVAtQXBlQzBwNnl0cDI4ZnNWakdRWTZkRFRpcWJ1VEloY21ibTFuZnVrYll3RkVjcm9jTGVVWlBnemd5Qi1YMThCM2NxdzB3QTBsZmZ5N1UwUTBJYXZrVGNWelBRRk10QQ?oc=5",
+        "keywords": [
+          "refugees"
+        ],
+        "signal_score": 4,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Turkey": [
+      {
+        "source": "Turkey migration media",
+        "source_type": "rss",
+        "title": "At least 18 dead after migrant boat sinks off Turkey's Aegean coast - Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMWlvV2xxV3lKU3JVZktvbFBJNkd2RWk4ZTZOeC1qTzg3c0trVGY1Q3JvMmJMZG85ajBxZm1TMnRZWm9FN0I2djc0TnpPbE9yZlJ5VXpDdWNON08wUk5TYVZBbk9mLTg3NVVOM1VFeDZaZW1kaG9tMXNEeTM3RWxuMTVBVnEzcFQ1LUhyR1ZwZ2R2UFpha3ZDZVh3YUpObDhDX1h0Sm90NlE?oc=5",
+        "keywords": [
+          "aegean"
+        ],
+        "signal_score": 5,
+        "reasons": [
+          "1 keyword match(es)",
+          "migration/refugee signal",
+          "boat/sea movement"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": true,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ]
+  }
+}

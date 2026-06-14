@@ -1,0 +1,133 @@
+{
+  "date": "2026-04-23",
+  "countries": {
+    "Egypt": {
+      "score": 3,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Lebanon": {
+      "score": 0,
+      "level": "LOW",
+      "signals": 0
+    },
+    "Syria": {
+      "score": 5,
+      "level": "LOW",
+      "signals": 1
+    },
+    "Turkey": {
+      "score": 11,
+      "level": "MEDIUM",
+      "signals": 2
+    }
+  },
+  "signals": {
+    "Egypt": [
+      {
+        "source": "Egypt migration media",
+        "source_type": "rss",
+        "title": "Three caught at Athens airport smuggling smokes in from Egypt - eKathimerini.com",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWkZFb1V6cjEwLW9tTUVhQkljT2t2c2dUMmlvWVJFQWFHMkFZbFVnZXVhYlluRnpvd2t3MVVTMGhmbHllc1VhYmFWdWNHVkxOVlhkeFVJRl8wV0NIeEpVMGN5cl9CcHFsRXQ3RTZudWM3ejB4eWwza1ZIdTFydGhIOFE2TDNsV1NoV2FPQlJka29PTEZlT3VGVUs5UjBTTHV0clE?oc=5",
+        "keywords": [
+          "smuggling"
+        ],
+        "signal_score": 3,
+        "reasons": [
+          "1 keyword match(es)",
+          "smuggling/trafficking signal"
+        ],
+        "flags": {
+          "migration": false,
+          "boat": false,
+          "departure": false,
+          "smuggling": true,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Lebanon": [],
+    "Syria": [
+      {
+        "source": "Telegram: @Enabbaladi_en",
+        "source_type": "telegram",
+        "title": "The third and largest convoy of displaced Afrin families left Qamishli on April 14 under an organized return plan linked to the January 2026 agreement between Damascus and the SDF,",
+        "url": "https://t.me/Enabbaladi_en/6378",
+        "keywords": [
+          "displaced",
+          "displacement",
+          "returns"
+        ],
+        "signal_score": 5,
+        "reasons": [
+          "3 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": false,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ],
+    "Turkey": [
+      {
+        "source": "Turkish Coast Guard - Current Operations",
+        "source_type": "rss",
+        "title": "26 Irregular Migrants (Along with 4 Children) Were Rescued and 1 Migrant Smuggling Suspect Was Apprehended Off the Coast of Muğla - Turkish Coast Guard",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPeVBhS3ZqY012LXFKZDFHQkNXc3JDdURpUE83XzFXNUJEY1daNmtIRlQ4d25VMkpjQ2xOSjV3R0JFXzQ5aDBqYVlSd010RGRIell6Y2haRWczOHFpYWZDV1cwQWRDZ2ZWQjdqSWRQWlBHX19DWDUtUzZLMW5ndGI3b0dVUVlYYUlvNkIzb2RLWVUwNTE4R2Yxd29ZanMzcGpmRTZNMURGYW1PSnpHRDlUbjdtak0ydGZMSzg4NVNpdndZNmtNWnpia25OZnVSdkdlNWJETEU2RDBqcndCYjg4ejVR?oc=5",
+        "keywords": [
+          "apprehended",
+          "irregular migrants",
+          "rescued"
+        ],
+        "signal_score": 8,
+        "reasons": [
+          "3 keyword match(es)",
+          "multiple keyword match bonus",
+          "migration/refugee signal",
+          "smuggling/trafficking signal"
+        ],
+        "flags": {
+          "migration": true,
+          "boat": false,
+          "departure": false,
+          "smuggling": true,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      },
+      {
+        "source": "Turkey migration media",
+        "source_type": "rss",
+        "title": "Greece: Smuggling suspect arrested at land border with Turkey - InfoMigrants",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVXFUNGNWLUp5dmNGWi12aExCS0d3aTgtV3FkM3V3NXNpTmdYakpucXB6VDE4UjJnUmpRMUhSbDVXbVE5NHRoQWVWYmM3NHJSel9VWUJzZjZ3Z1VycF9jeEpJVlpIbWJjVHZEM2JCdGM2QjVMc3NNVl91VkhkRkxfZ0c5bXVyV1RTSDNJQnFpYjRqOGlnUG8zeml1U09wOFBQMWoxRFFB?oc=5",
+        "keywords": [
+          "smuggling"
+        ],
+        "signal_score": 3,
+        "reasons": [
+          "1 keyword match(es)",
+          "smuggling/trafficking signal"
+        ],
+        "flags": {
+          "migration": false,
+          "boat": false,
+          "departure": false,
+          "smuggling": true,
+          "cyprus": false,
+          "protest": false,
+          "economic": false
+        }
+      }
+    ]
+  }
+}

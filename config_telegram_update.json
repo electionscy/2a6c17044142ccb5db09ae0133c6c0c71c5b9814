@@ -1,0 +1,35 @@
+{
+  "telegram_channels": {
+    "Cyprus_Direct": [
+      "LebArmy",
+      "ISF_Lebanon",
+      "mhajernews",
+      "infomigrants_ar"
+    ],
+    "Lebanon_Local": [
+      "megaphone_hq",
+      "LebUpdate",
+      "lebanonnews2",
+      "north_lebanon_news",
+      "QalamonNews",
+      "akkar_news"
+    ],
+    "Syria_Coast": [
+      "npasyria",
+      "npa_syria",
+      "tartous_now",
+      "latakia_breaking",
+      "SANANewsEnglish",
+      "TelevisionSyria"
+    ],
+    "Turkiye": [
+      "Turkeypedia"
+    ],
+    "OSINT_Regional": [
+      "stepnews",
+      "war_monitor",
+      "SyriaNewsAr",
+      "ARIJ_Network"
+    ]
+  }
+}
