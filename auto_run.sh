@@ -48,6 +48,11 @@ log "Generating Migration Pressure Index..."
 python predictive_model.py >> "$LOG_FILE" 2>&1
 log "✅ Pressure Index complete"
 
+# Validation logging — καταγραφη προβλεψης για prospective επικυρωση
+log "Logging prediction for validation..."
+python validate_model.py >> "$LOG_FILE" 2>&1
+log "✅ Validation log updated"
+
 log "=== OSINT ENGINE END ==="
 
 # Backup to B2
