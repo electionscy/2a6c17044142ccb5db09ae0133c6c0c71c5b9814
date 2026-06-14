@@ -166,12 +166,18 @@ def load_data():
         try:
             conn = sqlite3.connect(db_path)
             df = pd.read_sql_query("""
-                SELECT source   AS Source,
-                       score    AS "Risk Score",
-                       summary  AS Summary,
-                       date     AS Date,
-                       link     AS Link,
-                       country  AS Country
+                SELECT source        AS Source,
+                       score         AS "Risk Score",
+                       summary       AS Summary,
+                       date          AS Date,
+                       link          AS Link,
+                       country       AS Country,
+                       category      AS Category,
+                       countries     AS Countries,
+                       organizations AS Organizations,
+                       people        AS People,
+                       locations     AS Locations,
+                       confidence    AS Confidence
                 FROM signals
                 ORDER BY date DESC, score DESC
             """, conn)
@@ -350,6 +356,13 @@ with st.sidebar:
         selected_countries = st.multiselect("Χώρες", all_countries, default=all_countries)
         min_score = st.slider("Ελάχιστο score", 1, 10, 1)
 
+        # Φίλτρο κατηγορίας (νέο Β.2)
+        if 'Category' in df.columns:
+            all_categories = ['Όλες'] + sorted(df['Category'].dropna().unique().tolist())
+            selected_category = st.selectbox("Κατηγορία", all_categories)
+        else:
+            selected_category = 'Όλες'
+
         st.markdown("---")
         st.markdown("**Σύστημα**")
         st.caption(f"Τελευταίο scan: {status.get('last_scan','—')}")
@@ -372,6 +385,8 @@ if not df.empty:
         df_f = df_f[df_f['Country'].isin(selected_countries)]
     if 'Risk Score' in df_f.columns:
         df_f = df_f[df_f['Risk Score'] >= min_score]
+    if selected_category != 'Όλες' and 'Category' in df_f.columns:
+        df_f = df_f[df_f['Category'] == selected_category]
     sc = 'Risk Score'
 else:
     df_f = pd.DataFrame()
