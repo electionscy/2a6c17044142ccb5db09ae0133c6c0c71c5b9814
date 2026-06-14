@@ -947,3 +947,202 @@
 2026-06-14 07:55:37,700 | INFO | name pruned
 2026-06-14 07:55:38,720 | INFO | Connecting to 149.154.167.91:443/TcpFull...
 2026-06-14 07:55:38,731 | INFO | Connection to 149.154.167.91:443/TcpFull complete!
+2026-06-14 08:30:27,507 | INFO | RSS scan started
+2026-06-14 08:30:28,547 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:28,878 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:28,879 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:29,053 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:29,054 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:29,251 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:29,252 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:29,437 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:29,438 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:29,611 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:34,169 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:34,373 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:34,374 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:34,543 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:34,545 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:34,712 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:34,713 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:34,893 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:34,894 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:35,076 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:35,350 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:35,538 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:35,539 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:35,713 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:35,714 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:35,884 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:35,885 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:36,088 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:36,089 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:36,272 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:37,549 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:37,716 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:37,717 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:37,885 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:37,886 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:38,067 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:38,068 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:38,242 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:38,243 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:38,413 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:39,158 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:39,341 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:39,342 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:39,526 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:39,527 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:39,690 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:39,691 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:39,834 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:39,835 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:40,026 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:40,854 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:41,033 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:41,033 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:41,182 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:41,183 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:41,356 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:41,357 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:41,534 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:41,535 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:41,730 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:41,875 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:42,007 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:42,008 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:42,199 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:42,199 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:42,373 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:42,374 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:42,606 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:42,606 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:42,779 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:42,952 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:43,120 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:43,121 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:43,313 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:43,314 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:43,492 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:43,493 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:43,661 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:43,662 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:43,831 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:43,877 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:44,051 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:44,052 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:44,232 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:44,233 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:44,398 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:44,399 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:44,547 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:44,548 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:44,718 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:44,797 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:44,992 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:44,993 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:45,154 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:45,155 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:45,342 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:45,343 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:45,507 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:45,508 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:45,676 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:45,929 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:46,096 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:46,097 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:46,267 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:46,268 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:46,443 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:46,444 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:46,602 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:46,602 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:46,777 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:47,317 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:47,469 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:47,470 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:47,646 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:47,647 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:47,824 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:47,825 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:47,991 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:47,992 | INFO | AFC is enabled with max remote calls: 10.
+2026-06-14 08:30:48,165 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 403 Forbidden"
+2026-06-14 08:30:48,166 | INFO | RSS scan complete: 0 new signals saved
+2026-06-14 08:30:48,420 | INFO | maxp pruned
+2026-06-14 08:30:48,420 | INFO | cmap pruned
+2026-06-14 08:30:48,421 | INFO | kern dropped
+2026-06-14 08:30:48,421 | INFO | post pruned
+2026-06-14 08:30:48,421 | INFO | FFTM dropped
+2026-06-14 08:30:48,421 | INFO | MATH dropped
+2026-06-14 08:30:48,421 | INFO | GDEF dropped
+2026-06-14 08:30:48,421 | INFO | GPOS dropped
+2026-06-14 08:30:48,421 | INFO | GSUB dropped
+2026-06-14 08:30:48,421 | INFO | glyf pruned
+2026-06-14 08:30:48,422 | INFO | Added gid0 to subset
+2026-06-14 08:30:48,422 | INFO | Added first four glyphs to subset
+2026-06-14 08:30:48,422 | INFO | Closing glyph list over 'glyf': 130 glyphs before
+2026-06-14 08:30:48,422 | INFO | Glyph names: ['.notdef', '.null', 'A', 'Alpha', 'Alphatonos', 'B', 'Beta', 'C', 'Chi', 'D', 'E', 'Epsilon', 'Epsilontonos', 'Eta', 'F', 'G', 'Gamma', 'H', 'I', 'Iota', 'J', 'K', 'Kappa', 'L', 'Lambda', 'M', 'Mu', 'N', 'Nu', 'O', 'Omicron', 'Omicrontonos', 'P', 'Pi', 'R', 'Rho', 'S', 'Sigma', 'T', 'Tau', 'U', 'Upsilon', 'W', 'Xi', 'Y', 'Z', 'Zeta', 'a', 'alpha', 'alphatonos', 'b', 'bar', 'beta', 'bracketleft', 'bracketright', 'c', 'chi', 'colon', 'comma', 'd', 'delta', 'e', 'eight', 'epsilon', 'epsilontonos', 'eta', 'etatonos', 'f', 'five', 'four', 'g', 'gamma', 'h', 'hyphen', 'i', 'iota', 'iotadieresis', 'iotadieresistonos', 'iotatonos', 'j', 'k', 'kappa', 'l', 'lambda', 'm', 'n', 'nine', 'nonmarkingreturn', 'nu', 'o', 'omega', 'omegatonos', 'omicron', 'omicrontonos', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'phi', 'pi', 'psi', 'quotedbl', 'r', 'rho', 's', 'seven', 'sigma', 'sigma1', 'six', 'slash', 'space', 't', 'tau', 'theta', 'three', 'two', 'u', 'uni0394', 'uni03BC', 'upsilon', 'upsilontonos', 'v', 'w', 'xi', 'y', 'z', 'zero', 'zeta']
+2026-06-14 08:30:48,423 | INFO | Glyph IDs:   [0, 1, 2, 3, 5, 8, 11, 12, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 53, 54, 55, 56, 58, 60, 61, 62, 64, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 92, 93, 95, 797, 799, 802, 805, 806, 807, 808, 809, 810, 811, 812, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 827, 832, 833, 834, 835, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 864, 865, 866]
+2026-06-14 08:30:48,423 | INFO | Closed glyph list over 'glyf': 136 glyphs after
+2026-06-14 08:30:48,423 | INFO | Glyph names: ['.notdef', '.null', 'A', 'Alpha', 'Alphatonos', 'B', 'Beta', 'C', 'Chi', 'D', 'E', 'Epsilon', 'Epsilontonos', 'Eta', 'F', 'G', 'Gamma', 'H', 'I', 'Iota', 'J', 'K', 'Kappa', 'L', 'Lambda', 'M', 'Mu', 'N', 'Nu', 'O', 'Omicron', 'Omicrontonos', 'P', 'Pi', 'R', 'Rho', 'S', 'Sigma', 'T', 'Tau', 'U', 'Upsilon', 'W', 'X', 'Xi', 'Y', 'Z', 'Zeta', 'a', 'alpha', 'alphatonos', 'b', 'bar', 'beta', 'bracketleft', 'bracketright', 'c', 'chi', 'colon', 'comma', 'd', 'delta', 'dieresis', 'dieresistonos', 'e', 'eight', 'epsilon', 'epsilontonos', 'eta', 'etatonos', 'f', 'five', 'four', 'g', 'gamma', 'h', 'hyphen', 'i', 'iota', 'iotadieresis', 'iotadieresistonos', 'iotatonos', 'j', 'k', 'kappa', 'l', 'lambda', 'm', 'mu', 'n', 'nine', 'nonmarkingreturn', 'nu', 'o', 'omega', 'omegatonos', 'omicron', 'omicrontonos', 'one', 'p', 'parenleft', 'parenright', 'percent', 'period', 'phi', 'pi', 'psi', 'quotedbl', 'r', 'rho', 's', 'seven', 'sigma', 'sigma1', 'six', 'slash', 'space', 't', 'tau', 'theta', 'three', 'tonos', 'two', 'u', 'uni0394', 'uni03BC', 'uni041F', 'upsilon', 'upsilontonos', 'v', 'w', 'xi', 'y', 'z', 'zero', 'zeta']
+2026-06-14 08:30:48,423 | INFO | Glyph IDs:   [0, 1, 2, 3, 5, 8, 11, 12, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 53, 54, 55, 56, 58, 59, 60, 61, 62, 64, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 92, 93, 95, 106, 119, 795, 796, 797, 799, 802, 805, 806, 807, 808, 809, 810, 811, 812, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 827, 832, 833, 834, 835, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 864, 865, 866, 947]
+2026-06-14 08:30:48,423 | INFO | Retaining 136 glyphs
+2026-06-14 08:30:48,423 | INFO | head subsetting not needed
+2026-06-14 08:30:48,423 | INFO | hhea subsetting not needed
+2026-06-14 08:30:48,423 | INFO | maxp subsetting not needed
+2026-06-14 08:30:48,423 | INFO | OS/2 subsetting not needed
+2026-06-14 08:30:48,423 | INFO | hmtx subsetted
+2026-06-14 08:30:48,424 | INFO | cmap subsetted
+2026-06-14 08:30:48,424 | INFO | fpgm subsetting not needed
+2026-06-14 08:30:48,424 | INFO | prep subsetting not needed
+2026-06-14 08:30:48,425 | INFO | cvt  subsetting not needed
+2026-06-14 08:30:48,425 | INFO | loca subsetting not needed
+2026-06-14 08:30:48,425 | INFO | post subsetted
+2026-06-14 08:30:48,425 | INFO | gasp subsetting not needed
+2026-06-14 08:30:48,425 | INFO | name subsetting not needed
+2026-06-14 08:30:48,426 | INFO | glyf subsetted
+2026-06-14 08:30:48,426 | INFO | head pruned
+2026-06-14 08:30:48,426 | INFO | OS/2 Unicode ranges pruned: [0, 7]
+2026-06-14 08:30:48,426 | INFO | OS/2 CodePage ranges pruned: [3]
+2026-06-14 08:30:48,427 | INFO | glyf pruned
+2026-06-14 08:30:48,427 | INFO | name pruned
+2026-06-14 08:30:48,437 | INFO | maxp pruned
+2026-06-14 08:30:48,437 | INFO | cmap pruned
+2026-06-14 08:30:48,437 | INFO | kern dropped
+2026-06-14 08:30:48,437 | INFO | post pruned
+2026-06-14 08:30:48,437 | INFO | FFTM dropped
+2026-06-14 08:30:48,437 | INFO | GDEF dropped
+2026-06-14 08:30:48,437 | INFO | GPOS dropped
+2026-06-14 08:30:48,437 | INFO | GSUB dropped
+2026-06-14 08:30:48,438 | INFO | glyf pruned
+2026-06-14 08:30:48,438 | INFO | Added gid0 to subset
+2026-06-14 08:30:48,438 | INFO | Added first four glyphs to subset
+2026-06-14 08:30:48,438 | INFO | Closing glyph list over 'glyf': 77 glyphs before
+2026-06-14 08:30:48,438 | INFO | Glyph names: ['.notdef', '.null', 'A', 'Alpha', 'B', 'Beta', 'C', 'D', 'E', 'Epsilon', 'Eta', 'F', 'G', 'Gamma', 'I', 'Iota', 'Kappa', 'L', 'Lambda', 'M', 'Mu', 'N', 'Nu', 'O', 'Omega', 'Omicron', 'P', 'Phi', 'Pi', 'Psi', 'R', 'Rho', 'S', 'Sigma', 'T', 'Tau', 'Theta', 'U', 'Upsilon', 'Y', 'alpha', 'c', 'chi', 'colon', 'delta', 'e', 'eight', 'epsilon', 'eta', 'five', 'four', 'hyphen', 'iota', 'kappa', 'nonmarkingreturn', 'nu', 'o', 'omicron', 'one', 'parenleft', 'parenright', 'period', 'pi', 'r', 'rho', 'seven', 'sigma', 'sigma1', 'six', 'space', 'tau', 'three', 'two', 'uni0394', 'uni03BC', 'upsilon', 'zero']
+2026-06-14 08:30:48,438 | INFO | Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 36, 37, 38, 39, 40, 41, 42, 44, 47, 48, 49, 50, 51, 53, 54, 55, 56, 60, 70, 72, 82, 85, 806, 807, 808, 809, 810, 812, 813, 814, 815, 816, 817, 818, 820, 821, 822, 823, 824, 825, 826, 828, 829, 837, 840, 841, 843, 845, 846, 848, 849, 851, 852, 853, 854, 855, 856, 857, 859]
+2026-06-14 08:30:48,439 | INFO | Closed glyph list over 'glyf': 82 glyphs after
+2026-06-14 08:30:48,439 | INFO | Glyph names: ['.notdef', '.null', 'A', 'Alpha', 'B', 'Beta', 'C', 'D', 'E', 'Epsilon', 'Eta', 'F', 'G', 'Gamma', 'H', 'I', 'Iota', 'K', 'Kappa', 'L', 'Lambda', 'M', 'Mu', 'N', 'Nu', 'O', 'Omega', 'Omicron', 'P', 'Phi', 'Pi', 'Psi', 'R', 'Rho', 'S', 'Sigma', 'T', 'Tau', 'Theta', 'U', 'Upsilon', 'Y', 'alpha', 'c', 'chi', 'colon', 'delta', 'e', 'eight', 'epsilon', 'eta', 'five', 'four', 'hyphen', 'iota', 'kappa', 'mu', 'nonmarkingreturn', 'nu', 'o', 'omicron', 'one', 'parenleft', 'parenright', 'period', 'pi', 'r', 'rho', 'seven', 'sigma', 'sigma1', 'six', 'space', 'tau', 'three', 'two', 'uni0394', 'uni03BC', 'uni0413', 'uni041F', 'upsilon', 'zero']
+2026-06-14 08:30:48,439 | INFO | Glyph IDs:   [0, 1, 2, 3, 11, 12, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50, 51, 53, 54, 55, 56, 60, 70, 72, 82, 85, 119, 806, 807, 808, 809, 810, 812, 813, 814, 815, 816, 817, 818, 820, 821, 822, 823, 824, 825, 826, 828, 829, 837, 840, 841, 843, 845, 846, 848, 849, 851, 852, 853, 854, 855, 856, 857, 859, 935, 947]
+2026-06-14 08:30:48,439 | INFO | Retaining 82 glyphs
+2026-06-14 08:30:48,439 | INFO | head subsetting not needed
+2026-06-14 08:30:48,439 | INFO | hhea subsetting not needed
+2026-06-14 08:30:48,439 | INFO | maxp subsetting not needed
+2026-06-14 08:30:48,439 | INFO | OS/2 subsetting not needed
+2026-06-14 08:30:48,439 | INFO | hmtx subsetted
+2026-06-14 08:30:48,440 | INFO | cmap subsetted
+2026-06-14 08:30:48,440 | INFO | fpgm subsetting not needed
+2026-06-14 08:30:48,440 | INFO | prep subsetting not needed
+2026-06-14 08:30:48,440 | INFO | cvt  subsetting not needed
+2026-06-14 08:30:48,440 | INFO | loca subsetting not needed
+2026-06-14 08:30:48,440 | INFO | post subsetted
+2026-06-14 08:30:48,440 | INFO | gasp subsetting not needed
+2026-06-14 08:30:48,440 | INFO | name subsetting not needed
+2026-06-14 08:30:48,441 | INFO | glyf subsetted
+2026-06-14 08:30:48,441 | INFO | head pruned
+2026-06-14 08:30:48,441 | INFO | OS/2 Unicode ranges pruned: [0, 7]
+2026-06-14 08:30:48,442 | INFO | OS/2 CodePage ranges pruned: [0]
+2026-06-14 08:30:48,442 | INFO | glyf pruned
+2026-06-14 08:30:48,442 | INFO | name pruned
+2026-06-14 08:30:49,447 | INFO | Connecting to 149.154.167.91:443/TcpFull...
+2026-06-14 08:30:49,463 | INFO | Connection to 149.154.167.91:443/TcpFull complete!

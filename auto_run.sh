@@ -45,6 +45,10 @@ fi
 
 log "=== OSINT ENGINE END ==="
 
+# Backup to B2
+log "Backing up database to B2..."
+python backup_to_b2.py >> "$LOG_FILE" 2>&1
+
 # Push to GitHub
 log "Pushing to GitHub..."
 cd "$PROJECT_DIR"
@@ -57,3 +61,4 @@ HEALTHCHECK_URL="https://hc-ping.com/6bc3a8de-a710-4d69-9d7f-f0ceac254de7"
 curl -m 10 "$HEALTHCHECK_URL" || true
 
 log "✅ ALL TASKS COMPLETED"
+

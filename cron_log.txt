@@ -1013,3 +1013,116 @@ Dhmiourgithike: /home/agent/migration_agent/reports/Weekly_OSINT_Report_2026-W23
 [2026-06-14 07:55:40] ✅ Weekly report complete
 [2026-06-14 07:55:40] === OSINT ENGINE END ===
 [2026-06-14 07:55:40] Pushing to GitHub...
+[2026-06-14 07:55:42] ✅ ALL TASKS COMPLETED
+[2026-06-14 08:28:58] Starting B2 backup...
+[2026-06-14 08:28:59] Uploading to B2: backups/migration_data_2026-06-14_08-28-59.db
+[2026-06-14 08:28:59] ✅ Backup successful: backups/migration_data_2026-06-14_08-28-59.db
+[2026-06-14 08:30:26] === OSINT ENGINE START ===
+[2026-06-14 08:30:26] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:337: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 6, "OSINT MIGRATION INTELLIGENCE", ln=True)
+/home/agent/migration_agent/migration_agent_full.py:340: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 5, "Ημερησια Αναφορα Μεταναστευτικων Ροων", ln=True)
+/home/agent/migration_agent/migration_agent_full.py:344: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 5, f"Ημερομηνια: {self.today_display}", ln=True)
+/home/agent/migration_agent/migration_agent_full.py:411: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(0, 5, clean_for_pdf(
+/home/agent/migration_agent/migration_agent_full.py:419: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(0, 5, clean_for_pdf(
+/home/agent/migration_agent/migration_agent_full.py:464: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(176, 6, meta, ln=True)
+--- OSINT ENGINE START: 2026-06-14 08:30:27 ---
+Ελέγχεται: North Press Agency...
+Ελέγχεται: Enab Baladi...
+Ελέγχεται: Syria Direct...
+Ελέγχεται: Daraj...
+Ελέγχεται: Al Akhbar...
+Ελέγχεται: Megaphone Lebanon...
+Ελέγχεται: Lebanon24...
+Ελέγχεται: Evrensel...
+Ελέγχεται: Bianet English...
+Ελέγχεται: Turkish Minute...
+Ελέγχεται: Gazete Duvar...
+Ελέγχεται: Daily Sabah...
+Ελέγχεται: Hurriyet Daily News...
+Ελέγχεται: Mada Masr English...
+Ελέγχεται: Egyptian Streets...
+Ελέγχεται: The New Humanitarian...
+Ελέγχεται: BBC Arabic...
+Ελέγχεται: Al Jazeera...
+Ελέγχεται: Middle East Eye...
+Ελέγχεται: Al Monitor...
+Ελέγχεται: InfoMigrants English...
+Ελέγχεται: ARIJ Network...
+Εξαγωγή CSV: Επιτυχής
+Δημιουργηθηκε το PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-14.pdf
+[2026-06-14 08:30:48] ✅ RSS scan complete
+[2026-06-14 08:30:48] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-14 08:30:49 ---
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/telegram_collector.py", line 403, in <module>
+    asyncio.run(collect_telegram(gc))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/telegram_collector.py", line 256, in collect_telegram
+    async with TelegramClient(SESSION_PATH, API_ID, API_HASH) as client:
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/client/auth.py", line 669, in __aenter__
+    return await self.start()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/client/auth.py", line 135, in _start
+    await self.connect()
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/client/telegrambaseclient.py", line 611, in connect
+    await self._sender.send(functions.InvokeWithLayerRequest(LAYER, req))
+telethon.errors.rpcerrorlist.AuthKeyDuplicatedError: The authorization key (session file) was used under two different IP addresses simultaneously, and can no longer be used. Use the same session exclusively, or use different sessions (caused by InvokeWithLayerRequest(InitConnectionRequest(GetConfigRequest)))
+[2026-06-14 08:30:49] ⚠️  Telegram scan had issues
+[2026-06-14 08:30:49] Exporting CSV...
+Exported 2325 records
+[2026-06-14 08:30:50] Running weekly report...
+/home/agent/migration_agent/weekly_report.py:106: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 6, "OSINT MIGRATION INTELLIGENCE", ln=True)
+/home/agent/migration_agent/weekly_report.py:109: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 5, clean_for_pdf("Εβδομαδιαια Αναφορα Μεταναστευτικων Ροων"), ln=True)
+/home/agent/migration_agent/weekly_report.py:114: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 5, clean_for_pdf(period), ln=True)
+/home/agent/migration_agent/weekly_report.py:277: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 7, clean_for_pdf(label), fill=True, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:293: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 6, val, fill=fill, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:304: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 7, clean_for_pdf(label), fill=True, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:317: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 6, val, fill=fill, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:319: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=1 use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(40, 6, risk, fill=fill, border=0, align="C", ln=1)
+/home/agent/migration_agent/weekly_report.py:237: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(0, 7, clean_for_pdf(msg), ln=True)
+/home/agent/migration_agent/weekly_report.py:213: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(176, 6, meta, ln=True)
+Φορτωση δεδομενων: 2026-06-01 - 2026-06-07
+Δημιουργια Executive Summary...
+Δημιουργια PDF...
+
+Dhmiourgithike: /home/agent/migration_agent/reports/Weekly_OSINT_Report_2026-W23.pdf
+  Synolo signals: 333
+  Cyprus Alerts:  0
+  Border Info:    39
+  Macro Signals:  294
+[2026-06-14 08:30:51] ✅ Weekly report complete
+[2026-06-14 08:30:51] === OSINT ENGINE END ===
+[2026-06-14 08:30:51] Backing up database to B2...
+[2026-06-14 08:30:51] Starting B2 backup...
+[2026-06-14 08:30:51] Starting B2 backup...
+[2026-06-14 08:30:52] Uploading to B2: backups/migration_data_2026-06-14_08-30-52.db
+[2026-06-14 08:30:52] Uploading to B2: backups/migration_data_2026-06-14_08-30-52.db
+[2026-06-14 08:30:53] ✅ Backup successful: backups/migration_data_2026-06-14_08-30-52.db
+[2026-06-14 08:30:53] ✅ Backup successful: backups/migration_data_2026-06-14_08-30-52.db
+[2026-06-14 08:30:53] Pushing to GitHub...
