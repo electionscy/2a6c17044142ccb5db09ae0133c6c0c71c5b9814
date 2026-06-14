@@ -43,6 +43,11 @@ if [ "$(date +%w)" = "0" ]; then
     log "✅ Weekly report complete"
 fi
 
+# Predictive Model — Migration Pressure Index
+log "Generating Migration Pressure Index..."
+python predictive_model.py >> "$LOG_FILE" 2>&1
+log "✅ Pressure Index complete"
+
 log "=== OSINT ENGINE END ==="
 
 # Backup to B2
@@ -54,7 +59,8 @@ log "Pushing to GitHub..."
 cd "$PROJECT_DIR"
 git add -A
 git commit -m "Auto-sync $(date +'%Y-%m-%d %H:%M:%S')" || true
-git push origin master || log "⚠️  Git push had issues"
+git push origin master || log "⚠️  Origin push had issues"
+git push dashboard master:main --force || log "⚠️  Dashboard push had issues"
 
 # Health Check - Success
 HEALTHCHECK_URL="https://hc-ping.com/6bc3a8de-a710-4d69-9d7f-f0ceac254de7"

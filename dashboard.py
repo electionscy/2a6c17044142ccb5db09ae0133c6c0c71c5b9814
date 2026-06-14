@@ -537,13 +537,14 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ── Tabs ─────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "🔴  Cyprus Alerts",
-    "📡  Intelligence Feed",
-    "📈  Trend Analysis",
-    "🗺️  Geospatial",
-    "🌍  Κυπριακά Δεδομένα",
-    "📄  Αρχείο PDF"
+tab1, tab2, tab3, tab4, tab5, tab7, tab6 = st.tabs([
+    "Cyprus Alerts",
+    "Intelligence Feed",
+    "Trend Analysis",
+    "Geospatial",
+    "Κυπριακα Δεδομενα",
+    "Προβλεψη Πιεσης",
+    "Αρχειο PDF"
 ])
 
 def render_link(link):
@@ -1455,6 +1456,167 @@ with tab5:
     <a href="https://migration.gov.cy" target="_blank" style="color:#2563eb">Υφυπουργείο Μετανάστευσης</a>
     </div>
     """, unsafe_allow_html=True)
+
+# ── TAB 7: Predictive — Migration Pressure Index ─────────────
+with tab7:
+    import json as _json
+
+    @st.cache_data(ttl=1800)
+    def load_pressure_index():
+        path = "pressure_index.json"
+        if os.path.exists(path):
+            try:
+                with open(path) as f:
+                    return _json.load(f)
+            except Exception:
+                return None
+        return None
+
+    pi = load_pressure_index()
+
+    if not pi:
+        st.markdown('''<div class="empty-state">Το Pressure Index δεν είναι ακόμα διαθέσιμο. Τρέχει αυτόματα κάθε πρωί στις 10:00.</div>''', unsafe_allow_html=True)
+    else:
+        # ── Gauge + στατιστικά ──
+        col_g, col_s = st.columns([1, 1])
+
+        with col_g:
+            st.markdown('<div class="section-label">Δεικτης Μεταναστευτικης Πιεσης</div>', unsafe_allow_html=True)
+            idx = pi["today_index"]
+            risk = pi["today_risk"]
+            color = pi["today_risk_color"]
+
+            fig_gauge = go.Figure(go.Indicator(
+                mode="gauge+number",
+                value=idx,
+                number={"font": {"size": 42, "color": color, "family": "Inter"}},
+                gauge={
+                    "axis": {"range": [0, 100], "tickwidth": 1, "tickcolor": "#cbd5e1",
+                             "tickfont": {"size": 10}},
+                    "bar": {"color": color, "thickness": 0.7},
+                    "bgcolor": "#f8fafc",
+                    "borderwidth": 0,
+                    "steps": [
+                        {"range": [0, 20],  "color": "#e0f2fe"},
+                        {"range": [20, 40], "color": "#dcfce7"},
+                        {"range": [40, 65], "color": "#fef9c3"},
+                        {"range": [65, 100],"color": "#fee2e2"},
+                    ],
+                    "threshold": {
+                        "line": {"color": color, "width": 3},
+                        "thickness": 0.8, "value": idx
+                    }
+                }
+            ))
+            fig_gauge.update_layout(
+                height=240, margin=dict(l=20, r=20, t=30, b=10),
+                paper_bgcolor="#ffffff",
+                font={"family": "Inter"}
+            )
+            st.plotly_chart(fig_gauge, use_container_width=True)
+
+            risk_labels = {"MINIMAL": "Ελαχιστη", "LOW": "Χαμηλη",
+                           "MODERATE": "Μετρια", "HIGH": "Υψηλη"}
+            st.markdown(f'''
+            <div style="text-align:center;margin-top:-10px">
+              <span style="display:inline-block;padding:6px 18px;border-radius:20px;
+                          background:{color}15;color:{color};border:1px solid {color}40;
+                          font-size:13px;font-weight:600">{risk_labels.get(risk, risk)} Πιεση</span>
+            </div>
+            ''', unsafe_allow_html=True)
+
+        with col_s:
+            st.markdown('<div class="section-label">Συνιστωσες Μοντελου</div>', unsafe_allow_html=True)
+            comp = pi["components"]
+
+            components_display = [
+                ("Βαση αφιξεων (anchor)", f"{comp['arrivals_anchor']:.0f}/100", "#2563eb",
+                 f"Ρυθμος ~{comp['latest_monthly_rate']:.0f}/μηνα vs {comp['baseline_monthly']} baseline"),
+                ("Πυλη ροων Κυπρου (gate)", f"×{comp['flow_gate']}", "#16a34a",
+                 f"{comp['flow_mentions_14d']} αναφορες αμεσων ροων (14ημ)"),
+                ("Early warning (transit)", f"+{comp['transit_bump']:.0f}", "#d97706",
+                 f"{comp['transit_mentions_14d']} αναφορες upstream κινητικοτητας"),
+                ("Conflict modifier", f"+{comp['conflict_modifier']:.0f}", "#dc2626",
+                 "Ενταση συγκρουσεων περιοχης"),
+            ]
+            for label, val, c, desc in components_display:
+                st.markdown(f'''
+                <div style="background:#f8fafc;border:0.5px solid #e2e8f0;border-radius:8px;
+                            padding:10px 14px;margin-bottom:8px;border-left:3px solid {c}">
+                  <div style="display:flex;justify-content:space-between;align-items:center">
+                    <span style="font-size:12px;color:#374151;font-weight:600">{label}</span>
+                    <span style="font-size:15px;color:{c};font-weight:700;font-family:JetBrains Mono,monospace">{val}</span>
+                  </div>
+                  <div style="font-size:10px;color:#94a3b8;margin-top:3px">{desc}</div>
+                </div>
+                ''', unsafe_allow_html=True)
+
+        # ── 7-day forecast γραφημα ──
+        st.markdown('<div class="section-label" style="margin-top:12px">Προβλεψη 7 Ημερων</div>', unsafe_allow_html=True)
+
+        fc = pi["forecast"]
+        days = [f"{d['day']} {d['date'][5:]}" for d in fc]
+        indices = [d["index"] for d in fc]
+        colors_fc = [d["risk_color"] for d in fc]
+        confidences = [d["confidence"] for d in fc]
+
+        fig_fc = go.Figure()
+        # Confidence band (σκιαση αβεβαιοτητας)
+        upper = [min(100, idx + (1-conf)*25) for idx, conf in zip(indices, confidences)]
+        lower = [max(0, idx - (1-conf)*25) for idx, conf in zip(indices, confidences)]
+        fig_fc.add_trace(go.Scatter(
+            x=days + days[::-1], y=upper + lower[::-1],
+            fill="toself", fillcolor="rgba(37,99,235,0.08)",
+            line=dict(color="rgba(0,0,0,0)"), showlegend=False, hoverinfo="skip"
+        ))
+        # Κυρια γραμμη
+        fig_fc.add_trace(go.Scatter(
+            x=days, y=indices, mode="lines+markers",
+            line=dict(color="#2563eb", width=2.5),
+            marker=dict(size=10, color=colors_fc, line=dict(width=1.5, color="#fff")),
+            showlegend=False,
+            hovertemplate="%{y:.1f}/100<extra></extra>"
+        ))
+        # Threshold lines
+        for yval, lbl, lc in [(20,"Χαμηλη",'#16a34a'), (40,"Μετρια",'#d97706'), (65,"Υψηλη",'#dc2626')]:
+            fig_fc.add_hline(y=yval, line=dict(color=lc, width=0.5, dash="dot"),
+                            annotation_text=lbl, annotation_position="right",
+                            annotation_font_size=9, annotation_font_color=lc)
+        fig_fc.update_layout(
+            paper_bgcolor="#ffffff", plot_bgcolor="#ffffff",
+            font=dict(family="Inter", size=11, color="#6b7280"),
+            height=280, margin=dict(l=0, r=40, t=10, b=0),
+            yaxis=dict(range=[0,100], gridcolor="#f3f4f6", tickfont=dict(size=10),
+                      title="Δεικτης Πιεσης"),
+            xaxis=dict(gridcolor="#f3f4f6", tickfont=dict(size=10)),
+        )
+        st.plotly_chart(fig_fc, use_container_width=True)
+
+        # ── Ερμηνεια ──
+        st.markdown(f'''
+        <div style="background:#eff6ff;border-left:3px solid #2563eb;padding:14px 16px;
+                    border-radius:6px;margin:8px 0;font-size:13px;color:#1e3a5f;line-height:1.7">
+        <b>Αναλυση:</b> {pi["interpretation"]}
+        </div>
+        ''', unsafe_allow_html=True)
+
+        # ── Μεθοδολογια ──
+        with st.expander("Μεθοδολογια Μοντελου"):
+            st.markdown('''
+            Ο **Δεικτης Μεταναστευτικης Πιεσης** (0-100) βασιζεται σε baseline-anchored μεθοδολογια
+            εμπνευσμενη απο τα μοντελα EUAA/Frontex:
+
+            - **Anchor (βαση):** Η πραγματικη ταση αφιξεων προς Κυπρο ειναι ο κυριαρχος παραγοντας.
+              Ρυθμος ~565/μηνα (2024) = δεικτης 50. Η τρεχουσα πτωση -70% κραταει τον δεικτη χαμηλα.
+            - **Flow gate:** Χωρις ειδησεις για αμεσες ροες προς Κυπρο, ο δεικτης καπαρεται (×0.5).
+            - **Early warning (transit):** Πιανει upstream κινητικοτητα σε χωρες/λιμανια διελευσης
+              (Τουρκια, Λιβανος, Συρια) — lagged predictor που προηγειται των αφιξεων.
+            - **Modifiers:** Conflict intensity, εποχικοτητα, θαλασσιες συνθηκες (μικρη επιδραση).
+
+            Τα δεδομενα ανανεωνονται καθημερινα στις 10:00 (ωρα Κυπρου).
+            ''')
+
+        st.caption(f"Generated: {pi['generated_at']} (ωρα Κυπρου)")
 
 # ── TAB 6: Archive ───────────────────────────────────────────
 with tab6:
