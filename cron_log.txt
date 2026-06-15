@@ -1386,3 +1386,159 @@ Dhmiourgithike: /home/agent/migration_agent/reports/Weekly_OSINT_Report_2026-W23
 [2026-06-14 09:28:57] ✅ Backup successful: backups/migration_data_2026-06-14_09-28-57.db
 [2026-06-14 09:28:57] Pushing to GitHub...
 [2026-06-14 09:28:59] ✅ ALL TASKS COMPLETED
+[2026-06-15 08:08:19] === OSINT ENGINE START ===
+[2026-06-15 08:08:19] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15544.87it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2330 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-15 08:08:29] ✅ RSS scan complete
+[2026-06-15 08:08:29] Starting Telegram scan...
+/home/agent/migration_agent/telegram_collector.py:399: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/telegram_collector.py", line 401, in <module>
+    gc = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+         ^^^^^^^^^^^^
+AttributeError: module 'google.generativeai' has no attribute 'Client'
+[2026-06-15 08:08:30] ⚠️  Telegram scan had issues
+[2026-06-15 08:08:30] Exporting CSV...
+Exported 2330 records
+[2026-06-15 08:08:30] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Κυρ 2026-06-15 | █           17.8 | MINIMAL
+   Δευ 2026-06-16 | █           17.8 | MINIMAL
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+[2026-06-15 08:08:31] ✅ Pressure Index complete
+[2026-06-15 08:08:31] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-15: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 1
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-15 08:08:31] ✅ Validation log updated
+[2026-06-15 08:08:31] === OSINT ENGINE END ===
+[2026-06-15 08:08:31] Backing up database to B2...
+[2026-06-15 08:08:31] Starting B2 backup...
+[2026-06-15 08:08:31] Starting B2 backup...
+[2026-06-15 08:08:32] Uploading to B2: backups/migration_data_2026-06-15_08-08-32.db
+[2026-06-15 08:08:32] Uploading to B2: backups/migration_data_2026-06-15_08-08-32.db
+[2026-06-15 08:08:33] ✅ Backup successful: backups/migration_data_2026-06-15_08-08-32.db
+[2026-06-15 08:08:33] ✅ Backup successful: backups/migration_data_2026-06-15_08-08-32.db
+[2026-06-15 08:08:33] Pushing to GitHub...
