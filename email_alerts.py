@@ -57,7 +57,9 @@ def send_email(subject, html_body):
     msg["To"]      = RECIPIENT
     msg.attach(MIMEText(html_body, "html", "utf-8"))
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
+                server.ehlo()
+                server.starttls()
             server.login(SMTP_USER, SMTP_PASS)
             server.sendmail(SMTP_USER, RECIPIENT, msg.as_string())
         logging.info(f"Email sent: {subject}")

@@ -154,7 +154,9 @@ def send_alert_email(signal):
         msg.attach(MIMEText(text, 'plain'))
         msg.attach(MIMEText(html, 'html'))
 
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465, timeout=10) as server:
+        with smtplib.SMTP('smtp.gmail.com', 587, timeout=10) as server:
+            server.ehlo()
+            server.starttls()
             server.login(SMTP_USER, SMTP_PASS)
             server.sendmail(SMTP_USER, RECIPIENTS, msg.as_string())
 

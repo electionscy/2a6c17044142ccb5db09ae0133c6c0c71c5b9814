@@ -1542,3 +1542,4 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-15 08:08:33] ✅ Backup successful: backups/migration_data_2026-06-15_08-08-32.db
 [2026-06-15 08:08:33] ✅ Backup successful: backups/migration_data_2026-06-15_08-08-32.db
 [2026-06-15 08:08:33] Pushing to GitHub...
+[2026-06-15 08:08:36] ✅ ALL TASKS COMPLETED

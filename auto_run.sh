@@ -53,6 +53,11 @@ log "Logging prediction for validation..."
 python validate_model.py >> "$LOG_FILE" 2>&1
 log "✅ Validation log updated"
 
+# Email Alerts — Cyprus Alerts (score >= 8) + Pressure Index (>= 50)
+log "Checking email alerts..."
+python email_alerts.py >> "$LOG_FILE" 2>&1
+log "✅ Email alerts complete"
+
 log "=== OSINT ENGINE END ==="
 
 # Backup to B2
