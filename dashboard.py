@@ -1378,7 +1378,7 @@ with tab5:
             """IOM DTM v3 API — IDP data για χώρες Μ.Ανατολής."""
             try:
                 import requests as _req
-                dtm_key = "80f648b5adf04fb99f39789802f0e44a"
+                dtm_key = st.secrets.get("DTM_API_KEY", "80f648b5adf04fb99f39789802f0e44a")
                 dtm_headers = {
                     "Ocp-Apim-Subscription-Key": dtm_key,
                     "User-Agent": "migration-agent-dashboard"
