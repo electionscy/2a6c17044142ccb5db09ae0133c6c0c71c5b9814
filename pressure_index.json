@@ -1,26 +1,17 @@
 {
-  "generated_at": "2026-06-15 12:04",
+  "generated_at": "2026-06-16 11:47",
   "today_index": 17.8,
   "today_risk": "MINIMAL",
   "today_risk_color": "#0891b2",
   "forecast": [
-    {
-      "date": "2026-06-15",
-      "day": "Κυρ",
-      "index": 17.8,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
-      "confidence": 1.0,
-      "wave_height": 0.46
-    },
     {
       "date": "2026-06-16",
       "day": "Δευ",
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.91,
-      "wave_height": 0.26
+      "confidence": 1.0,
+      "wave_height": 0.24
     },
     {
       "date": "2026-06-17",
@@ -28,8 +19,8 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.82,
-      "wave_height": 0.32
+      "confidence": 0.91,
+      "wave_height": 0.36
     },
     {
       "date": "2026-06-18",
@@ -37,8 +28,8 @@
       "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.73,
-      "wave_height": 0.58
+      "confidence": 0.82,
+      "wave_height": 0.66
     },
     {
       "date": "2026-06-19",
@@ -46,8 +37,8 @@
       "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.64,
-      "wave_height": 0.76
+      "confidence": 0.73,
+      "wave_height": 0.6
     },
     {
       "date": "2026-06-20",
@@ -55,8 +46,8 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.55,
-      "wave_height": 0.48
+      "confidence": 0.64,
+      "wave_height": 0.36
     },
     {
       "date": "2026-06-21",
@@ -64,8 +55,17 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
+      "confidence": 0.55,
+      "wave_height": 0.22
+    },
+    {
+      "date": "2026-06-22",
+      "day": "Κυρ",
+      "index": 17.8,
+      "risk": "MINIMAL",
+      "risk_color": "#0891b2",
       "confidence": 0.46,
-      "wave_height": 0.24
+      "wave_height": 0.3
     }
   ],
   "components": {

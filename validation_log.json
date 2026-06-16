@@ -46,5 +46,53 @@
     },
     "actual_arrivals": null,
     "notes": ""
+  },
+  {
+    "logged_at": "2026-06-16 11:47",
+    "date": "2026-06-16",
+    "predicted_index": 17.8,
+    "predicted_risk": "MINIMAL",
+    "forecast_7d": [
+      {
+        "date": "2026-06-16",
+        "index": 17.8
+      },
+      {
+        "date": "2026-06-17",
+        "index": 17.8
+      },
+      {
+        "date": "2026-06-18",
+        "index": 16.3
+      },
+      {
+        "date": "2026-06-19",
+        "index": 16.3
+      },
+      {
+        "date": "2026-06-20",
+        "index": 17.8
+      },
+      {
+        "date": "2026-06-21",
+        "index": 17.8
+      },
+      {
+        "date": "2026-06-22",
+        "index": 17.8
+      }
+    ],
+    "components": {
+      "arrivals_anchor": 18.5,
+      "flow_gate": 0.5,
+      "flow_mentions_14d": 0,
+      "transit_bump": 0.0,
+      "transit_mentions_14d": 0,
+      "conflict_modifier": 8.0,
+      "latest_monthly_rate": 200,
+      "baseline_monthly": 565
+    },
+    "actual_arrivals": null,
+    "notes": ""
   }
 ]

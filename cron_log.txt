@@ -1971,3 +1971,269 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-15 09:04:12] ✅ Backup successful: backups/migration_data_2026-06-15_09-04-11.db
 [2026-06-15 09:04:12] Pushing to GitHub...
 [2026-06-15 09:04:15] ✅ ALL TASKS COMPLETED
+[2026-06-16 08:46:27] === OSINT ENGINE START ===
+[2026-06-16 08:46:27] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 17450.69it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [CAT] Border Crisis | ['UK', 'Russia']
+  ✅ Saved: UK seizes Russian ‘shadow fleet’ tanker – what that means...
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 1 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2331 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-16 08:46:51] ✅ RSS scan complete
+[2026-06-16 08:46:51] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-16 08:46:52 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 1
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         2          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-16 08:47:12] Exporting CSV...
+Exported 2331 records
+[2026-06-16 08:47:12] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Δευ 2026-06-16 | █           17.8 | MINIMAL
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+[2026-06-16 08:47:13] ✅ Pressure Index complete
+[2026-06-16 08:47:13] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-16: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 2
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-16 08:47:13] ✅ Validation log updated
+[2026-06-16 08:47:13] Generating daily PDF report...
+/home/agent/migration_agent/daily_report.py:51: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", ln=False)
+/home/agent/migration_agent/daily_report.py:145: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(0, 8, f"Hmerisia Anafora Metanasteutikis Epilirosis", ln=True, align="C")
+/home/agent/migration_agent/daily_report.py:148: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(0, 5, f"Periodo: {date_str} | Paragogi: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M')}", ln=True, align="C")
+/home/agent/migration_agent/daily_report.py:68: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 7, clean(title), ln=True, fill=True)
+/home/agent/migration_agent/daily_report.py:81: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  self.cell(w-2, 4, clean(label), ln=False, align="C")
+/home/agent/migration_agent/daily_report.py:85: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  self.cell(w-2, 8, str(value), ln=False, align="C")
+/home/agent/migration_agent/daily_report.py:163: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(95, 7, f"Deiktis simeras: {pi_index}", ln=False)
+/home/agent/migration_agent/daily_report.py:164: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(95, 7, f"Kategorias: {pi_risk}", ln=True)
+/home/agent/migration_agent/daily_report.py:187: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(12, 5, "Score", fill=True, ln=False, align="C")
+/home/agent/migration_agent/daily_report.py:188: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(40, 5, "Pigi", fill=True, ln=False)
+/home/agent/migration_agent/daily_report.py:189: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(18, 5, "Xora", fill=True, ln=False)
+/home/agent/migration_agent/daily_report.py:190: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(120, 5, "Perilepsi", fill=True, ln=True)
+/home/agent/migration_agent/daily_report.py:199: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(12, 5, str(score), fill=fill, ln=False, align="C")
+/home/agent/migration_agent/daily_report.py:202: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(40, 5, clean(src)[:25], fill=fill, ln=False)
+/home/agent/migration_agent/daily_report.py:203: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(18, 5, clean(country or "")[:12], fill=fill, ln=False)
+/home/agent/migration_agent/daily_report.py:204: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(120, 5, clean(summ)[:80], fill=fill, ln=True)
+/home/agent/migration_agent/daily_report.py:213: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(60, 5, clean(cat), ln=False)
+/home/agent/migration_agent/daily_report.py:214: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=False use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(20, 5, f"{cnt} signals", ln=False)
+/home/agent/migration_agent/daily_report.py:215: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(110, 5, f"({pct:.0f}%)", ln=True)
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-16.pdf (1 signals)
+[2026-06-16 08:47:14] ✅ Daily report complete
+[2026-06-16 08:47:14] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 16/06/2026 11:47
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Κανένα νέο high alert σήμερα (2026-06-16).
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 17.8 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-06-16 08:47:14] ✅ Email alerts complete
+[2026-06-16 08:47:14] === OSINT ENGINE END ===
+[2026-06-16 08:47:14] Backing up database to B2...
+[2026-06-16 08:47:14] Starting B2 backup...
+[2026-06-16 08:47:14] Starting B2 backup...
+[2026-06-16 08:47:15] Uploading to B2: backups/migration_data_2026-06-16_08-47-15.db
+[2026-06-16 08:47:15] Uploading to B2: backups/migration_data_2026-06-16_08-47-15.db
+[2026-06-16 08:47:16] ✅ Backup successful: backups/migration_data_2026-06-16_08-47-15.db
+[2026-06-16 08:47:16] ✅ Backup successful: backups/migration_data_2026-06-16_08-47-15.db
+[2026-06-16 08:47:16] Pushing to GitHub...
