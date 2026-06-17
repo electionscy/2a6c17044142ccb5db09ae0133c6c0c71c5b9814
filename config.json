@@ -26,65 +26,115 @@
   ],
   "rss_feeds": {
     "Syria": [
-      {"name": "North Press Agency", "url": "https://npasyria.com/en/feed/"},
-      {"name": "Enab Baladi", "url": "https://english.enabbaladi.net/feed/"},
-      {"name": "Syria Direct", "url": "https://syriadirect.org/feed/"}
+      {
+        "name": "North Press Agency",
+        "url": "https://npasyria.com/en/feed/"
+      },
+      {
+        "name": "Enab Baladi",
+        "url": "https://english.enabbaladi.net/feed/"
+      },
+      {
+        "name": "Syria Direct",
+        "url": "https://syriadirect.org/feed/"
+      }
     ],
     "Lebanon": [
-      {"name": "Daraj", "url": "https://daraj.media/feed/"},
-      {"name": "Al Akhbar", "url": "https://al-akhbar.com/rss"},
-      {"name": "Megaphone Lebanon", "url": "https://megaphone.com.lb/feed/"},
-      {"name": "Lebanon24", "url": "https://www.lebanon24.com/rss"}
+      {
+        "name": "Daraj",
+        "url": "https://daraj.media/feed/"
+      },
+      {
+        "name": "Al Akhbar",
+        "url": "https://al-akhbar.com/rss"
+      },
+      {
+        "name": "Megaphone Lebanon",
+        "url": "https://megaphone.com.lb/feed/"
+      },
+      {
+        "name": "Lebanon24",
+        "url": "https://www.lebanon24.com/rss"
+      }
     ],
     "Turkiye": [
-      {"name": "Evrensel", "url": "https://www.evrensel.net/rss/haber.xml"},
-      {"name": "Bianet English", "url": "https://bianet.org/rss/english"},
-      {"name": "Turkish Minute", "url": "https://www.turkishminute.com/feed/"},
-      {"name": "Gazete Duvar", "url": "https://www.gazeteduvar.com.tr/rss"},
-      {"name": "Daily Sabah", "url": "https://www.dailysabah.com/rss"},
-      {"name": "Hurriyet Daily News", "url": "https://www.hurriyetdailynews.com/rss"}
+      {
+        "name": "Evrensel",
+        "url": "https://www.evrensel.net/rss/haber.xml"
+      },
+      {
+        "name": "Bianet English",
+        "url": "https://bianet.org/rss/english"
+      },
+      {
+        "name": "Turkish Minute",
+        "url": "https://www.turkishminute.com/feed/"
+      },
+      {
+        "name": "Gazete Duvar",
+        "url": "https://www.gazeteduvar.com.tr/rss"
+      },
+      {
+        "name": "Daily Sabah",
+        "url": "https://www.dailysabah.com/rss"
+      },
+      {
+        "name": "Hurriyet Daily News",
+        "url": "https://www.hurriyetdailynews.com/rss"
+      }
     ],
     "Egypt": [
-      {"name": "Mada Masr English", "url": "https://www.madamasr.com/en/feed/"},
-      {"name": "Egyptian Streets", "url": "https://egyptianstreets.com/feed/"}
+      {
+        "name": "Mada Masr English",
+        "url": "https://www.madamasr.com/en/feed/"
+      },
+      {
+        "name": "Egyptian Streets",
+        "url": "https://egyptianstreets.com/feed/"
+      }
     ],
     "Cross_Regional": [
-      {"name": "The New Humanitarian", "url": "https://www.thenewhumanitarian.org/rss"},
-      {"name": "BBC Arabic", "url": "https://feeds.bbci.co.uk/arabic/rss.xml"},
-      {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml"},
-      {"name": "Middle East Eye", "url": "https://www.middleeasteye.net/rss"},
-      {"name": "Al Monitor", "url": "https://www.al-monitor.com/rss"},
-      {"name": "InfoMigrants English", "url": "https://www.infomigrants.net/en/rss"},
-      {"name": "ARIJ Network", "url": "https://arij.net/feed/"}
+      {
+        "name": "The New Humanitarian",
+        "url": "https://www.thenewhumanitarian.org/rss"
+      },
+      {
+        "name": "BBC Arabic",
+        "url": "https://feeds.bbci.co.uk/arabic/rss.xml"
+      },
+      {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/xml/rss/all.xml"
+      },
+      {
+        "name": "Middle East Eye",
+        "url": "https://www.middleeasteye.net/rss"
+      },
+      {
+        "name": "Al Monitor",
+        "url": "https://www.al-monitor.com/rss"
+      },
+      {
+        "name": "InfoMigrants English",
+        "url": "https://www.infomigrants.net/en/rss"
+      },
+      {
+        "name": "ARIJ Network",
+        "url": "https://arij.net/feed/"
+      }
     ]
   },
   "telegram_channels": {
-    "Cyprus_Direct": [
-      "LebArmy",
-      "ISF_Lebanon",
-      "mhajernews",
-      "infomigrants_ar"
-    ],
     "Lebanon_Local": [
       "megaphone_hq",
       "LebUpdate",
-      "lebanonnews2",
-      "north_lebanon_news",
-      "QalamonNews",
-      "akkar_news"
-    ],
-    "Lebanon_Official": [
-      "LebaneseArmy",
-      "ISF_Lebanon"
+      "lebanonnews2"
     ],
     "Syria_Coast": [
       "npasyria",
       "npa_syria",
-      "tartous_now",
-      "latakia_breaking",
       "SANANewsEnglish",
-      "TelevisionSyria",
-      "Syrian_coast"
+      "TelevisionSyria"
     ],
     "Turkiye": [
       "Turkeypedia"
@@ -92,16 +142,9 @@
     "OSINT_Regional": [
       "stepnews",
       "war_monitor",
-      "SyriaNewsAr",
-      "ARIJ_Network",
       "sitreports",
-      "LebanonWatch",
-      "syriahr_en"
-    ],
-    "Migration_Specific": [
-      "mhajernews",
-      "infomigrants_ar",
-      "refugeesdeeply"
+      "ClashReport",
+      "Middle_East_Spectator"
     ]
   }
 }
