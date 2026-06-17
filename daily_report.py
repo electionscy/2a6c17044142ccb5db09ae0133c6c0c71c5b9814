@@ -6,6 +6,7 @@ daily_report.py
 import os, sqlite3, datetime, unicodedata, json
 from fpdf import FPDF
 from dotenv import load_dotenv
+from fpdf.enums import XPos, YPos
 
 load_dotenv()
 
@@ -48,7 +49,7 @@ class DailyPDF(FPDF):
         self.set_font("Regular", "B", 11)
         self.set_text_color(*WHITE)
         self.set_xy(8, 4)
-        self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x="XPos.RIGHT", new_y="YPos.TOP")
+        self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x=XPos.RIGHT, new_y=YPos.TOP)
         self.set_font("Regular", "", 8)
         self.set_xy(0, 4)
         self.cell(200, 10, f"Hmerisia Anafora: {self.report_date}", align="R")
@@ -65,7 +66,7 @@ class DailyPDF(FPDF):
         self.set_font("Regular", "B", 10)
         self.set_text_color(*color)
         self.set_fill_color(*LGRAY)
-        self.cell(0, 7, clean(title), new_x="XPos.LMARGIN", new_y="YPos.NEXT", fill=True)
+        self.cell(0, 7, clean(title), new_x=XPos.LMARGIN, new_y=YPos.NEXT, fill=True)
         self.set_text_color(*BLACK)
         self.ln(1)
 
@@ -78,11 +79,11 @@ class DailyPDF(FPDF):
             self.set_font("Regular", "", 7)
             self.set_text_color(*GRAY)
             self.set_xy(self.get_x(), self.get_y()+1)
-            self.cell(w-2, 4, clean(label), new_x="XPos.RIGHT", new_y="YPos.TOP", align="C")
+            self.cell(w-2, 4, clean(label), new_x=XPos.RIGHT, new_y=YPos.TOP, align="C")
             self.set_xy(self.get_x()-w+2, self.get_y()+4)
             self.set_font("Regular", "B", 14)
             self.set_text_color(*color)
-            self.cell(w-2, 8, str(value), new_x="XPos.RIGHT", new_y="YPos.TOP", align="C")
+            self.cell(w-2, 8, str(value), new_x=XPos.RIGHT, new_y=YPos.TOP, align="C")
             self.set_xy(self.get_x(), self.get_y()-4)
         self.ln(20)
         self.set_text_color(*BLACK)
@@ -142,10 +143,10 @@ def generate_daily_report(target_date=None):
     # ── Τίτλος ──
     pdf.set_font("Regular", "B", 13)
     pdf.set_text_color(*NAVY)
-    pdf.cell(0, 8, f"Hmerisia Anafora Metanasteutikis Epilirosis", new_x="XPos.LMARGIN", new_y="YPos.NEXT", align="C")
+    pdf.cell(0, 8, f"Hmerisia Anafora Metanasteutikis Epilirosis", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
     pdf.set_font("Regular", "", 9)
     pdf.set_text_color(*GRAY)
-    pdf.cell(0, 5, f"Periodo: {date_str} | Paragogi: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M')}", new_x="XPos.LMARGIN", new_y="YPos.NEXT", align="C")
+    pdf.cell(0, 5, f"Periodo: {date_str} | Paragogi: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M')}", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
     pdf.ln(4)
 
     # ── KPIs ──
@@ -160,8 +161,8 @@ def generate_daily_report(target_date=None):
     # ── Pressure Index ──
     pdf.section_title("DEIKTIS METANASTEUTIKIS PIESIS")
     pdf.set_font("Regular", "", 9)
-    pdf.cell(95, 7, f"Deiktis simeras: {pi_index}", new_x="XPos.RIGHT", new_y="YPos.TOP")
-    pdf.cell(95, 7, f"Kategorias: {pi_risk}", new_x="XPos.LMARGIN", new_y="YPos.NEXT")
+    pdf.cell(95, 7, f"Deiktis simeras: {pi_index}", new_x=XPos.RIGHT, new_y=YPos.TOP)
+    pdf.cell(95, 7, f"Kategorias: {pi_risk}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(3)
 
     # ── Cyprus Alerts ──
@@ -171,10 +172,10 @@ def generate_daily_report(target_date=None):
             pdf.set_fill_color(*RED)
             pdf.set_text_color(*WHITE)
             pdf.set_font("Regular", "B", 8)
-            pdf.cell(15, 5, f"  {score}/10", fill=True, new_x="XPos.RIGHT", new_y="YPos.TOP")
+            pdf.cell(15, 5, f"  {score}/10", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
             pdf.set_fill_color(*LGRAY)
             pdf.set_text_color(*BLACK)
-            pdf.cell(175, 5, clean(src) + (f" | {clean(country)}" if country else ""), fill=True, new_x="XPos.LMARGIN", new_y="YPos.NEXT")
+            pdf.cell(175, 5, clean(src) + (f" | {clean(country)}" if country else ""), fill=True, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.set_font("Regular", "", 8)
             pdf.multi_cell(0, 4, clean(summ)[:300])
             pdf.ln(2)
@@ -184,10 +185,10 @@ def generate_daily_report(target_date=None):
     pdf.set_font("Regular", "B", 7)
     pdf.set_fill_color(*NAVY)
     pdf.set_text_color(*WHITE)
-    pdf.cell(12, 5, "Score", fill=True, new_x="XPos.RIGHT", new_y="YPos.TOP", align="C")
-    pdf.cell(40, 5, "Pigi", fill=True, new_x="XPos.RIGHT", new_y="YPos.TOP")
-    pdf.cell(18, 5, "Xora", fill=True, new_x="XPos.RIGHT", new_y="YPos.TOP")
-    pdf.cell(120, 5, "Perilepsi", fill=True, new_x="XPos.LMARGIN", new_y="YPos.NEXT")
+    pdf.cell(12, 5, "Score", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP, align="C")
+    pdf.cell(40, 5, "Pigi", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
+    pdf.cell(18, 5, "Xora", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
+    pdf.cell(120, 5, "Perilepsi", fill=True, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.set_text_color(*BLACK)
 
     for i, (src, score, summ, link, country, cat) in enumerate(top10):
@@ -196,12 +197,12 @@ def generate_daily_report(target_date=None):
         pdf.set_font("Regular", "B" if score >= 8 else "", 7)
         color = RED if score >= 8 else (AMBER if score >= 5 else BLACK)
         pdf.set_text_color(*color)
-        pdf.cell(12, 5, str(score), fill=fill, new_x="XPos.RIGHT", new_y="YPos.TOP", align="C")
+        pdf.cell(12, 5, str(score), fill=fill, new_x=XPos.RIGHT, new_y=YPos.TOP, align="C")
         pdf.set_text_color(*BLACK)
         pdf.set_font("Regular", "", 7)
-        pdf.cell(40, 5, clean(src)[:25], fill=fill, new_x="XPos.RIGHT", new_y="YPos.TOP")
-        pdf.cell(18, 5, clean(country or "")[:12], fill=fill, new_x="XPos.RIGHT", new_y="YPos.TOP")
-        pdf.cell(120, 5, clean(summ)[:80], fill=fill, new_x="XPos.LMARGIN", new_y="YPos.NEXT")
+        pdf.cell(40, 5, clean(src)[:25], fill=fill, new_x=XPos.RIGHT, new_y=YPos.TOP)
+        pdf.cell(18, 5, clean(country or "")[:12], fill=fill, new_x=XPos.RIGHT, new_y=YPos.TOP)
+        pdf.cell(120, 5, clean(summ)[:80], fill=fill, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     pdf.ln(4)
 
@@ -210,9 +211,9 @@ def generate_daily_report(target_date=None):
     pdf.set_font("Regular", "", 8)
     for cat, cnt in cats.most_common():
         pct = cnt / total * 100
-        pdf.cell(60, 5, clean(cat), new_x="XPos.RIGHT", new_y="YPos.TOP")
-        pdf.cell(20, 5, f"{cnt} signals", new_x="XPos.RIGHT", new_y="YPos.TOP")
-        pdf.cell(110, 5, f"({pct:.0f}%)", new_x="XPos.LMARGIN", new_y="YPos.NEXT")
+        pdf.cell(60, 5, clean(cat), new_x=XPos.RIGHT, new_y=YPos.TOP)
+        pdf.cell(20, 5, f"{cnt} signals", new_x=XPos.RIGHT, new_y=YPos.TOP)
+        pdf.cell(110, 5, f"({pct:.0f}%)", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     pdf.output(output)
     print(f"✅ PDF: {output} ({total} signals)")
