@@ -18,7 +18,6 @@ import hashlib
 # Data processing
 import pandas as pd
 import feedparser
-feedparser.USER_AGENT = "Mozilla/5.0"
 from entity_extractor import extract_entities
 
 # Embeddings
@@ -191,15 +190,12 @@ def save_signal(date, source, title, summary, score, embedding=None, entities=No
 # ═══════════════════════════════════════════════════════════════════════════
 
 RSS_FEEDS = [
-    "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://www.france24.com/en/rss",
-    "https://rss.dw.com/rdf/rss-en-all",
-    "https://www.theguardian.com/world/migration/rss",
-    "https://www.theguardian.com/world/rss",
-    "https://cyprus-mail.com/feed/",
-    "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml",
-    "https://www.aljazeera.com/xml/rss/all.xml",
     "https://feeds.bloomberg.com/markets/news.rss",
+    "https://feeds.reuters.com/reuters/businessNews",
+    "https://feeds.bbc.co.uk/news/world/rss.xml",
+    "https://www.aljazeera.com/xml/rss/all.xml",
+    "https://feeds.france24.com/en/france24_en",
+    "https://www.dw.com/en/top-stories/s-7441",
 ]
 
 def scan_rss():

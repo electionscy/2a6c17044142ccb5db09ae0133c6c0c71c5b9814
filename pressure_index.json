@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-17 12:32",
-  "today_index": 14.2,
+  "generated_at": "2026-06-17 14:33",
+  "today_index": 17.8,
   "today_risk": "MINIMAL",
   "today_risk_color": "#0891b2",
   "forecast": [
     {
       "date": "2026-06-17",
       "day": "Τρι",
-      "index": 14.2,
+      "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 1.0,
@@ -16,7 +16,7 @@
     {
       "date": "2026-06-18",
       "day": "Τετ",
-      "index": 12.7,
+      "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.91,
@@ -25,7 +25,7 @@
     {
       "date": "2026-06-19",
       "day": "Πεμ",
-      "index": 12.7,
+      "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.82,
@@ -34,7 +34,7 @@
     {
       "date": "2026-06-20",
       "day": "Παρ",
-      "index": 14.2,
+      "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.73,
@@ -43,7 +43,7 @@
     {
       "date": "2026-06-21",
       "day": "Σαβ",
-      "index": 14.2,
+      "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.64,
@@ -52,7 +52,7 @@
     {
       "date": "2026-06-22",
       "day": "Κυρ",
-      "index": 14.2,
+      "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.55,
@@ -61,7 +61,7 @@
     {
       "date": "2026-06-23",
       "day": "Δευ",
-      "index": 14.2,
+      "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.46,
@@ -74,7 +74,7 @@
     "flow_mentions_14d": 0,
     "transit_bump": 0.0,
     "transit_mentions_14d": 0,
-    "conflict_modifier": 0.8,
+    "conflict_modifier": 8.0,
     "latest_monthly_rate": 200,
     "baseline_monthly": 565
   },

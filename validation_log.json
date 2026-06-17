@@ -96,38 +96,38 @@
     "notes": ""
   },
   {
-    "logged_at": "2026-06-17 12:32",
+    "logged_at": "2026-06-17 14:33",
     "date": "2026-06-17",
-    "predicted_index": 14.2,
+    "predicted_index": 17.8,
     "predicted_risk": "MINIMAL",
     "forecast_7d": [
       {
         "date": "2026-06-17",
-        "index": 14.2
+        "index": 17.8
       },
       {
         "date": "2026-06-18",
-        "index": 12.7
+        "index": 16.3
       },
       {
         "date": "2026-06-19",
-        "index": 12.7
+        "index": 16.3
       },
       {
         "date": "2026-06-20",
-        "index": 14.2
+        "index": 17.8
       },
       {
         "date": "2026-06-21",
-        "index": 14.2
+        "index": 17.8
       },
       {
         "date": "2026-06-22",
-        "index": 14.2
+        "index": 17.8
       },
       {
         "date": "2026-06-23",
-        "index": 14.2
+        "index": 17.8
       }
     ],
     "components": {
@@ -136,7 +136,7 @@
       "flow_mentions_14d": 0,
       "transit_bump": 0.0,
       "transit_mentions_14d": 0,
-      "conflict_modifier": 0.8,
+      "conflict_modifier": 8.0,
       "latest_monthly_rate": 200,
       "baseline_monthly": 565
     },

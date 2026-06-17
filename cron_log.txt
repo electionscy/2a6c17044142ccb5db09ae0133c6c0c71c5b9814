@@ -4049,3 +4049,505 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-17 09:32:54] ✅ Backup successful: backups/migration_data_2026-06-17_09-32-54.db
 [2026-06-17 09:32:54] ✅ Backup successful: backups/migration_data_2026-06-17_09-32-54.db
 [2026-06-17 09:32:54] Pushing to GitHub...
+[2026-06-17 09:32:57] ✅ ALL TASKS COMPLETED
+[2026-06-17 11:04:22] === OSINT ENGINE START ===
+[2026-06-17 11:04:22] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 17979.98it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bbci.co.uk/news/world/rss.xml...
+📡 Scanning https://www.france24.com/en/rss...
+  [CAT] Humanitarian | ['Haiti']
+  ✅ Saved: UN chief visits Haiti ahead of new gang suppression force de...
+  [CAT] Policy Change | ['Israel', 'Lebanon', 'US', 'Iran']
+  ✅ Saved: Israeli strikes on Lebanon likely to continue 'until we get ...
+  [CAT] Other | ['UK', 'Russia']
+  ✅ Saved: Starmer slams Russian warship's ‘reckless’ warning shots in ...
+📡 Scanning https://rss.dw.com/rdf/rss-en-all...
+  [CAT] Policy Change | ['South Korea', 'North Korea']
+  ✅ Saved: South Korea to shrink security buffer zone to North Korea...
+  [CAT] Policy Change | ['Germany', 'Poland']
+  ✅ Saved: Germany news: Ministers discuss refugee deportation rules...
+📡 Scanning https://www.theguardian.com/world/migration/rss...
+  [CAT] Border Crisis | ['France', 'Italy']
+  ✅ Saved: Nightwatchers review – desperate struggle of migrant crisis ...
+  [CAT] Refugee Flow | ['Australia', 'Turkey', 'Vietnam']
+  ✅ Saved: As One Nations surges in the polls, I’m so heartened by Aust...
+  [CAT] Policy Change | ['Sweden']
+  ✅ Saved: Sweden votes to back laws reinforcing its immigration crackd...
+  [CAT] Humanitarian | ['Spain']
+  ✅ Saved: All of us are migrants, says pope as he rounds off tour of S...
+  [CAT] Policy Change | ['Nigeria', 'Italy']
+  ✅ Saved: Nigerian man unable to claim Italian lottery win gains resid...
+  [CAT] Policy Change | ['Australia']
+  ✅ Saved: Luisana and Ana are new to Melbourne, but their journey ther...
+  [CAT] Humanitarian | ['Spain']
+  ✅ Saved: Pope Leo rails against migrant deaths on visit to Spain’s ‘d...
+  [CAT] Policy Change | ['Afghanistan']
+  ✅ Saved: The EU is inviting the Taliban to Brussels. Europe’s credibi...
+  [CAT] Policy Change | ['Australia']
+  ✅ Saved: Non-citizens held in indefinite detention in Australia could...
+  [CAT] Other | ['Sudan']
+  ✅ Saved: Anti-immigration protesters in Belfast set bins and vehicles...
+📡 Scanning https://www.theguardian.com/world/rss...
+📡 Scanning https://cyprus-mail.com/feed/...
+📡 Scanning https://news.un.org/feed/subscribe/en/news/region/...
+  [CAT] Humanitarian | ['Indonesia', 'Afghanistan']
+  ✅ Saved: Instability, war and closed borders: How aid workers get eme...
+  [CAT] Humanitarian | ['Yemen']
+  ✅ Saved: Women and girls caught up in Yemen’s ‘forgotten crisis’ bear...
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/migration_agent_full.py", line 303, in <module>
+    main()
+    ~~~~^^
+  File "/home/agent/migration_agent/migration_agent_full.py", line 293, in main
+    count = scan_rss()
+  File "/home/agent/migration_agent/migration_agent_full.py", line 236, in scan_rss
+    entities = extract_entities(title, summary)
+  File "/home/agent/migration_agent/entity_extractor.py", line 36, in extract_entities
+    response = model.generate_content(prompt)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/api_core/grpc_helpers.py", line 75, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/grpc/_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/grpc/_interceptor.py", line 328, in _with_call
+    call = self._interceptor.intercept_unary_unary(
+        continuation, client_call_details, request
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/grpc.py", line 79, in intercept_unary_unary
+    response = continuation(client_call_details, request)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/grpc/_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/grpc/_channel.py", line 1170, in with_call
+    state, call = self._blocking(
+                  ~~~~~~~~~~~~~~^
+        request, timeout, metadata, credentials, wait_for_ready, compression
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/grpc/_channel.py", line 1143, in _blocking
+    event = call.next_event()
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 388, in grpc._cython.cygrpc.SegregatedCall.next_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 211, in grpc._cython.cygrpc._next_call_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 205, in grpc._cython.cygrpc._next_call_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/completion_queue.pyx.pxi", line 97, in grpc._cython.cygrpc._latent_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/completion_queue.pyx.pxi", line 80, in grpc._cython.cygrpc._internal_latent_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/completion_queue.pyx.pxi", line 61, in grpc._cython.cygrpc._next
+KeyboardInterrupt
+[2026-06-17 11:07:24] === OSINT ENGINE START ===
+[2026-06-17 11:07:24] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 56699.04it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bbci.co.uk/news/world/rss.xml...
+📡 Scanning https://www.france24.com/en/rss...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://rss.dw.com/rdf/rss-en-all...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.theguardian.com/world/migration/rss...
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/migration_agent_full.py", line 303, in <module>
+    main()
+    ~~~~^^
+  File "/home/agent/migration_agent/migration_agent_full.py", line 293, in main
+    count = scan_rss()
+  File "/home/agent/migration_agent/migration_agent_full.py", line 226, in scan_rss
+    if is_duplicate(summary, today_str):
+       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/migration_agent_full.py", line 111, in is_duplicate
+    ex_emb = get_embedding(ex_summary)
+  File "/home/agent/migration_agent/migration_agent_full.py", line 59, in get_embedding
+    return embedding_model.encode(text, convert_to_tensor=False)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/sentence_transformers/sentence_transformer/model.py", line 657, in encode
+    out_features = self.forward(features, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/sentence_transformers/base/model.py", line 492, in forward
+    input = module(input, **module_kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/sentence_transformers/base/modules/transformer.py", line 1090, in forward
+    model_output = model_method(**filtered_kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/utils/generic.py", line 1036, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/utils/output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/models/bert/modeling_bert.py", line 673, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/models/bert/modeling_bert.py", line 440, in forward
+    hidden_states = layer_module(
+        hidden_states,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/models/bert/modeling_bert.py", line 412, in forward
+    layer_output = apply_chunking_to_forward(
+        self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+    )
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/pytorch_utils.py", line 201, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/models/bert/modeling_bert.py", line 418, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/transformers/models/bert/modeling_bert.py", line 339, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[2026-06-17 11:32:57] === OSINT ENGINE START ===
+[2026-06-17 11:32:57] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 28315.86it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bbci.co.uk/news/world/rss.xml...
+📡 Scanning https://www.france24.com/en/rss...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://rss.dw.com/rdf/rss-en-all...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.theguardian.com/world/migration/rss...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.theguardian.com/world/rss...
+📡 Scanning https://cyprus-mail.com/feed/...
+  [CAT] Other | []
+  ✅ Saved: Archbishop Makarios’ Harley-Davidson restored...
+📡 Scanning https://news.un.org/feed/subscribe/en/news/region/...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [CAT] Humanitarian | ['Lebanon', 'Israel']
+  ✅ Saved: More strikes impact Lebanon hospitals as humanitarian situat...
+  [CAT] Humanitarian | ['United States', 'Iran']
+  ✅ Saved: Middle East LIVE: Diplomacy in focus as escalation ‘reverber...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+
+✅ Added 3 new signals
+
+📊 Exporting to CSV...
+📊 Exported 1726 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 11:33:43] ✅ RSS scan complete
+[2026-06-17 11:33:43] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 11:33:44 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 1
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         5          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 11:33:55] Exporting CSV...
+Exported 1726 records
+[2026-06-17 11:33:55] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           17.8 | MINIMAL
+[2026-06-17 11:33:56] ✅ Pressure Index complete
+[2026-06-17 11:33:56] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 11:33:56] ✅ Validation log updated
+[2026-06-17 11:33:56] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-17.pdf (21 signals)
+[2026-06-17 11:33:57] ✅ Daily report complete
+[2026-06-17 11:33:57] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 17/06/2026 14:33
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 16 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 17.8 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-06-17 11:33:58] ✅ Email alerts complete
+[2026-06-17 11:33:58] === OSINT ENGINE END ===
+[2026-06-17 11:33:58] Backing up database to B2...
+[2026-06-17 11:33:58] Starting B2 backup...
+[2026-06-17 11:33:58] Starting B2 backup...
+[2026-06-17 11:33:59] Uploading to B2: backups/migration_data_2026-06-17_11-33-59.db
+[2026-06-17 11:33:59] Uploading to B2: backups/migration_data_2026-06-17_11-33-59.db
+[2026-06-17 11:34:00] ✅ Backup successful: backups/migration_data_2026-06-17_11-33-59.db
+[2026-06-17 11:34:00] ✅ Backup successful: backups/migration_data_2026-06-17_11-33-59.db
+[2026-06-17 11:34:00] Pushing to GitHub...
