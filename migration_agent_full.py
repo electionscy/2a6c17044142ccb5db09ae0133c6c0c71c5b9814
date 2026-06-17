@@ -114,7 +114,7 @@ def is_duplicate(new_summary, today_str):
             similarity = cosine_similarity(new_emb, ex_emb)
             
             # Threshold: 0.80 (80% similarity = duplicate)
-            if similarity >= 0.80:
+            if similarity >= 0.95:
                 print(f"  [DUP] Similarity {similarity:.1%} > 80%")
                 return True
         
