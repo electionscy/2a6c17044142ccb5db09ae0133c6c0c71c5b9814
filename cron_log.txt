@@ -2238,3 +2238,1131 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-16 08:47:16] ✅ Backup successful: backups/migration_data_2026-06-16_08-47-15.db
 [2026-06-16 08:47:16] Pushing to GitHub...
 [2026-06-16 08:47:19] ✅ ALL TASKS COMPLETED
+[2026-06-17 08:11:12] === OSINT ENGINE START ===
+[2026-06-17 08:11:12] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 22786.42it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [CAT] Border Crisis | ['Lebanon']
+  ✅ Saved: UN reports decline in cross-border fire in southern Lebanon...
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 1 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2332 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 08:11:31] ✅ RSS scan complete
+[2026-06-17 08:11:31] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 08:11:32 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 0
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         2          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 08:11:42] Exporting CSV...
+Exported 2332 records
+[2026-06-17 08:11:42] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           17.8 | MINIMAL
+[2026-06-17 08:11:44] ✅ Pressure Index complete
+[2026-06-17 08:11:44] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 08:11:44] ✅ Validation log updated
+[2026-06-17 08:11:44] Generating daily PDF report...
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/daily_report.py", line 222, in <module>
+    generate_daily_report()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 140, in generate_daily_report
+    pdf.add_page()
+    ~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 1214, in add_page
+    self.header()
+    ~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 51, in header
+    self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x="XPos.RIGHT", new_y="YPos.TOP")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 281, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/deprecation.py", line 36, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 3878, in cell
+    new_x = XPos.coerce(new_x)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/enums.py", line 78, in coerce
+    raise ValueError(f"{value} is not a valid {cls.__name__}")
+ValueError: XPos.RIGHT is not a valid XPos
+[2026-06-17 08:11:44] === OSINT ENGINE START ===
+[2026-06-17 08:11:44] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 21271.35it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2332 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 08:11:54] ✅ RSS scan complete
+[2026-06-17 08:11:54] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 08:11:54 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 0
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         2          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 08:12:03] Exporting CSV...
+Exported 2332 records
+[2026-06-17 08:12:03] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           17.8 | MINIMAL
+[2026-06-17 08:12:04] ✅ Pressure Index complete
+[2026-06-17 08:12:04] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 08:12:04] ✅ Validation log updated
+[2026-06-17 08:12:04] Generating daily PDF report...
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/daily_report.py", line 222, in <module>
+    generate_daily_report()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 140, in generate_daily_report
+    pdf.add_page()
+    ~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 1214, in add_page
+    self.header()
+    ~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 51, in header
+    self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x="XPos.RIGHT", new_y="YPos.TOP")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 281, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/deprecation.py", line 36, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 3878, in cell
+    new_x = XPos.coerce(new_x)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/enums.py", line 78, in coerce
+    raise ValueError(f"{value} is not a valid {cls.__name__}")
+ValueError: XPos.RIGHT is not a valid XPos
+[2026-06-17 08:12:05] === OSINT ENGINE START ===
+[2026-06-17 08:12:05] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 34915.98it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2332 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 08:12:16] ✅ RSS scan complete
+[2026-06-17 08:12:16] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 08:12:17 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 0
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         2          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 08:12:25] Exporting CSV...
+Exported 2332 records
+[2026-06-17 08:12:26] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           17.8 | MINIMAL
+[2026-06-17 08:12:26] ✅ Pressure Index complete
+[2026-06-17 08:12:26] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 08:12:26] ✅ Validation log updated
+[2026-06-17 08:12:26] Generating daily PDF report...
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/daily_report.py", line 222, in <module>
+    generate_daily_report()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 140, in generate_daily_report
+    pdf.add_page()
+    ~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 1214, in add_page
+    self.header()
+    ~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 51, in header
+    self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x="XPos.RIGHT", new_y="YPos.TOP")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 281, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/deprecation.py", line 36, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 3878, in cell
+    new_x = XPos.coerce(new_x)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/enums.py", line 78, in coerce
+    raise ValueError(f"{value} is not a valid {cls.__name__}")
+ValueError: XPos.RIGHT is not a valid XPos
+[2026-06-17 08:12:27] === OSINT ENGINE START ===
+[2026-06-17 08:12:27] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11118.51it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2332 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 08:12:36] ✅ RSS scan complete
+[2026-06-17 08:12:36] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 08:12:37 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 0
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         2          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 08:12:52] Exporting CSV...
+Exported 2332 records
+[2026-06-17 08:12:52] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           17.8 | MINIMAL
+[2026-06-17 08:12:53] ✅ Pressure Index complete
+[2026-06-17 08:12:53] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 08:12:53] ✅ Validation log updated
+[2026-06-17 08:12:53] Generating daily PDF report...
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/daily_report.py", line 222, in <module>
+    generate_daily_report()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 140, in generate_daily_report
+    pdf.add_page()
+    ~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 1214, in add_page
+    self.header()
+    ~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/daily_report.py", line 51, in header
+    self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x="XPos.RIGHT", new_y="YPos.TOP")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 281, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/deprecation.py", line 36, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/fpdf.py", line 3878, in cell
+    new_x = XPos.coerce(new_x)
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/fpdf/enums.py", line 78, in coerce
+    raise ValueError(f"{value} is not a valid {cls.__name__}")
+ValueError: XPos.RIGHT is not a valid XPos
+[2026-06-17 08:31:20] === OSINT ENGINE START ===
+[2026-06-17 08:31:20] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 22153.80it/s]
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://feeds.reuters.com/reuters/businessNews...
+📡 Scanning https://feeds.bbc.co.uk/news/world/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://feeds.france24.com/en/france24_en...
+📡 Scanning https://www.dw.com/en/top-stories/s-7441...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2332 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 08:31:30] ✅ RSS scan complete
+[2026-06-17 08:31:30] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 08:31:31 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @LebArmy (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @LebArmy: No user has "lebarmy" as username
+Ελέγχεται: @ISF_Lebanon (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @mhajernews (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Cyprus_Direct → Cross_Regional)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @north_lebanon_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @north_lebanon_news: No user has "north_lebanon_news" as username
+Ελέγχεται: @QalamonNews (Lebanon_Local → Lebanon)...
+   Σφάλμα για @QalamonNews: No user has "qalamonnews" as username
+Ελέγχεται: @akkar_news (Lebanon_Local → Lebanon)...
+   Σφάλμα για @akkar_news: No user has "akkar_news" as username
+Ελέγχεται: @LebaneseArmy (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @LebaneseArmy: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @ISF_Lebanon (Lebanon_Official → Lebanon_Official)...
+   Σφάλμα για @ISF_Lebanon: No user has "isf_lebanon" as username
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @tartous_now (Syria_Coast → Syria)...
+   Σφάλμα για @tartous_now: No user has "tartous_now" as username
+Ελέγχεται: @latakia_breaking (Syria_Coast → Syria)...
+   Σφάλμα για @latakia_breaking: No user has "latakia_breaking" as username
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Syrian_coast (Syria_Coast → Syria)...
+   Σφάλμα για @Syrian_coast: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @SyriaNewsAr (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @SyriaNewsAr: No user has "syrianewsar" as username
+Ελέγχεται: @ARIJ_Network (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @ARIJ_Network: No user has "arij_network" as username
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @LebanonWatch (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @LebanonWatch: No user has "lebanonwatch" as username
+Ελέγχεται: @syriahr_en (OSINT_Regional → Cross_Regional)...
+   Σφάλμα για @syriahr_en: No user has "syriahr_en" as username
+Ελέγχεται: @mhajernews (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @mhajernews: No user has "mhajernews" as username
+Ελέγχεται: @infomigrants_ar (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @infomigrants_ar: No user has "infomigrants_ar" as username
+Ελέγχεται: @refugeesdeeply (Migration_Specific → Migration_Specific)...
+   Σφάλμα για @refugeesdeeply: No user has "refugeesdeeply" as username
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 0
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         2          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 08:31:40] Exporting CSV...
+Exported 2332 records
+[2026-06-17 08:31:41] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | █           17.8 | MINIMAL
+   Τετ 2026-06-18 | █           16.3 | MINIMAL
+   Πεμ 2026-06-19 | █           16.3 | MINIMAL
+   Παρ 2026-06-20 | █           17.8 | MINIMAL
+   Σαβ 2026-06-21 | █           17.8 | MINIMAL
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           17.8 | MINIMAL
+[2026-06-17 08:31:41] ✅ Pressure Index complete
+[2026-06-17 08:31:41] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 08:31:41] ✅ Validation log updated
+[2026-06-17 08:31:41] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-17.pdf (1 signals)
+[2026-06-17 08:31:42] ✅ Daily report complete
+[2026-06-17 08:31:42] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 17/06/2026 11:31
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 1 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 17.8 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-06-17 08:31:43] ✅ Email alerts complete
+[2026-06-17 08:31:43] === OSINT ENGINE END ===
+[2026-06-17 08:31:43] Backing up database to B2...
+[2026-06-17 08:31:43] Starting B2 backup...
+[2026-06-17 08:31:43] Starting B2 backup...
+[2026-06-17 08:31:44] Uploading to B2: backups/migration_data_2026-06-17_08-31-44.db
+[2026-06-17 08:31:44] Uploading to B2: backups/migration_data_2026-06-17_08-31-44.db
+[2026-06-17 08:31:45] ✅ Backup successful: backups/migration_data_2026-06-17_08-31-44.db
+[2026-06-17 08:31:45] ✅ Backup successful: backups/migration_data_2026-06-17_08-31-44.db
+[2026-06-17 08:31:45] Pushing to GitHub...
