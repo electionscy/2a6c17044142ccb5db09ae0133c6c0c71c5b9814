@@ -1,82 +1,82 @@
 {
-  "generated_at": "2026-06-17 14:40",
-  "today_index": 17.8,
-  "today_risk": "MINIMAL",
-  "today_risk_color": "#0891b2",
+  "generated_at": "2026-06-17 14:47",
+  "today_index": 35.5,
+  "today_risk": "LOW",
+  "today_risk_color": "#16a34a",
   "forecast": [
     {
       "date": "2026-06-17",
       "day": "Τρι",
-      "index": 17.8,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 35.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 1.0,
       "wave_height": 0.36
     },
     {
       "date": "2026-06-18",
       "day": "Τετ",
-      "index": 16.3,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 32.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 0.91,
       "wave_height": 0.78
     },
     {
       "date": "2026-06-19",
       "day": "Πεμ",
-      "index": 16.3,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 32.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 0.82,
       "wave_height": 0.66
     },
     {
       "date": "2026-06-20",
       "day": "Παρ",
-      "index": 17.8,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 35.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 0.73,
       "wave_height": 0.36
     },
     {
       "date": "2026-06-21",
       "day": "Σαβ",
-      "index": 17.8,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 35.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 0.64,
       "wave_height": 0.2
     },
     {
       "date": "2026-06-22",
       "day": "Κυρ",
-      "index": 17.8,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 35.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 0.55,
       "wave_height": 0.2
     },
     {
       "date": "2026-06-23",
       "day": "Δευ",
-      "index": 17.8,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
+      "index": 35.5,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
       "confidence": 0.46,
       "wave_height": 0.4
     }
   ],
   "components": {
     "arrivals_anchor": 18.5,
-    "flow_gate": 0.5,
-    "flow_mentions_14d": 0,
+    "flow_gate": 1.0,
+    "flow_mentions_14d": 3,
     "transit_bump": 0.0,
     "transit_mentions_14d": 0,
     "conflict_modifier": 8.0,
     "latest_monthly_rate": 200,
     "baseline_monthly": 565
   },
-  "interpretation": "Ελάχιστη πίεση. Οι αφίξεις (~200/μήνα) παραμένουν δραματικά μειωμένες έναντι του baseline 2024. 0 αναφορές άμεσων ροών το 14ήμερο."
+  "interpretation": "Χαμηλή πίεση. Ρυθμός ~200/μήνα. Παρακολούθηση χωρίς ανησυχία."
 }

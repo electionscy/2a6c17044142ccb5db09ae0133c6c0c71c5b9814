@@ -4766,3 +4766,266 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-17 11:40:20] ✅ Backup successful: backups/migration_data_2026-06-17_11-40-19.db
 [2026-06-17 11:40:20] ✅ Backup successful: backups/migration_data_2026-06-17_11-40-19.db
 [2026-06-17 11:40:20] Pushing to GitHub...
+[2026-06-17 11:40:23] ✅ ALL TASKS COMPLETED
+[2026-06-17 11:44:44] === OSINT ENGINE START ===
+[2026-06-17 11:44:44] Starting RSS scan...
+/home/agent/migration_agent/entity_extractor.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 70987.11it/s]
+RSS feeds total: 30 | keywords: 30
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://feeds.bbci.co.uk/news/world/rss.xml...
+📡 Scanning https://www.france24.com/en/rss...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://rss.dw.com/rdf/rss-en-all...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [CAT] Other | ['Russia', 'UK']
+  ✅ Saved: Russian ship fires warning shots at British yacht in Channel...
+📡 Scanning https://www.theguardian.com/world/migration/rss...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.theguardian.com/world/rss...
+📡 Scanning https://cyprus-mail.com/feed/...
+  [CAT] Policy Change | ['Cyprus']
+  ✅ Saved: Ex-Akel chief claims Anastasiades pursued personal gain whil...
+  [DUP] Similarity 100.0% > 80%
+  [CAT] Other | ['Cyprus']
+  ✅ Saved: Kai Sushi Bar receives first Cyprus Estia Award in ‘Best Res...
+  [CAT] Policy Change | ['Cyprus', 'Greece']
+  ✅ Saved: Holguin meets Gerapetritis in Athens...
+  [CAT] Economic Migration | ['Cyprus']
+  ✅ Saved: Cyprus economy displays mixed performance in early 2026...
+  [CAT] Policy Change | ['Cyprus']
+  ✅ Saved: Air travellers set for clearer rights under Cyprus-led EU de...
+  [CAT] Economic Migration | ['Cyprus']
+  ✅ Saved: Cyprus inflation accelerates as cost of living rises in May...
+  [CAT] Economic Migration | ['Cyprus']
+  ✅ Saved: May arrivals point to tourism recovery, says Koumis...
+  [CAT] Economic Migration | ['Cyprus', 'UK']
+  ✅ Saved: Cyprus tourist numbers drop — UK remains top market...
+  [CAT] Humanitarian | ['Cyprus']
+  ✅ Saved: Peace concert in Platres places Cyprus at Europe’s heart...
+📡 Scanning https://news.un.org/feed/subscribe/en/news/region/...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://feeds.bloomberg.com/markets/news.rss...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [CAT] Border Crisis | ['Turkey', 'Syria']
+  ✅ Saved: Kurdish man tortured over border protest released after firs...
+📡 Scanning https://www.turkishminute.com/feed/...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+  [CAT] Humanitarian | ['Sudan']
+  ✅ Saved: Sudan Nashra: Seasonal rains threaten to deepen crisis in Bl...
+📡 Scanning https://egyptianstreets.com/feed/...
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.middleeasteye.net/rss...
+  [CAT] Other | ['United States']
+  ✅ Saved: World Cup 2026: For some fans, the tournament ends at the US...
+📡 Scanning https://www.al-monitor.com/rss...
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+
+✅ Added 13 new signals
+
+📊 Exporting to CSV...
+📊 Exported 1739 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-17 11:47:41] ✅ RSS scan complete
+[2026-06-17 11:47:41] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-17 11:47:42 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @ClashReport (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @Middle_East_Spectator (OSINT_Regional → Cross_Regional)...
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 1
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         5          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+Tabz - Alternative Media       @tabzlive            3          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-17 11:47:53] Exporting CSV...
+Exported 1739 records
+[2026-06-17 11:47:54] Generating Migration Pressure Index...
+✅ Pressure Index v2: 35.5 (LOW)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 1.0 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 3
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τρι 2026-06-17 | ███         35.5 | LOW
+   Τετ 2026-06-18 | ███         32.5 | LOW
+   Πεμ 2026-06-19 | ███         32.5 | LOW
+   Παρ 2026-06-20 | ███         35.5 | LOW
+   Σαβ 2026-06-21 | ███         35.5 | LOW
+   Κυρ 2026-06-22 | ███         35.5 | LOW
+   Δευ 2026-06-23 | ███         35.5 | LOW
+[2026-06-17 11:47:55] ✅ Pressure Index complete
+[2026-06-17 11:47:55] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-17: index=35.5 (LOW)
+   Συνολο καταγεγραμμενων προβλεψεων: 3
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-17 11:47:55] ✅ Validation log updated
+[2026-06-17 11:47:55] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-17.pdf (34 signals)
+[2026-06-17 11:47:55] ✅ Daily report complete
+[2026-06-17 11:47:55] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 17/06/2026 14:47
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 4 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 35.5 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-06-17 11:47:56] ✅ Email alerts complete
+[2026-06-17 11:47:56] === OSINT ENGINE END ===
+[2026-06-17 11:47:56] Backing up database to B2...
+[2026-06-17 11:47:56] Starting B2 backup...
+[2026-06-17 11:47:56] Starting B2 backup...
+[2026-06-17 11:47:57] Uploading to B2: backups/migration_data_2026-06-17_11-47-57.db
+[2026-06-17 11:47:57] Uploading to B2: backups/migration_data_2026-06-17_11-47-57.db
+[2026-06-17 11:47:58] ✅ Backup successful: backups/migration_data_2026-06-17_11-47-57.db
+[2026-06-17 11:47:58] ✅ Backup successful: backups/migration_data_2026-06-17_11-47-57.db
+[2026-06-17 11:47:58] Pushing to GitHub...

@@ -202,23 +202,6 @@ RSS_FEEDS = [
     "https://feeds.bloomberg.com/markets/news.rss",
 ]
 
-import json as _json, socket as _socket
-_socket.setdefaulttimeout(15)
-try:
-    _cfg = _json.load(open(PROJECT_DIR / "config.json", encoding="utf-8"))
-    for _region, _feeds in _cfg.get("rss_feeds", {}).items():
-        for _f in _feeds:
-            _u = _f.get("url")
-            if _u and _u not in RSS_FEEDS:
-                RSS_FEEDS.append(_u)
-    KEYWORDS = [str(k).lower() for k in _cfg.get("global_keywords", [])]
-except Exception as _e:
-    print("config.json load warning:", _e)
-    KEYWORDS = []
-KEYWORDS += ["migrat","border","refugee","asylum","displaced","humanitarian","evacuate","flee"]
-KEYWORDS = list(dict.fromkeys(KEYWORDS))
-print(f"RSS feeds total: {len(RSS_FEEDS)} | keywords: {len(KEYWORDS)}")
-
 def scan_rss():
     """Σάρωση RSS feeds για migration-related content"""
     today_str = datetime.now().strftime("%Y-%m-%d")
@@ -236,7 +219,7 @@ def scan_rss():
                 # Filter για migration-related keywords
                 keywords = ['migrat', 'border', 'refugee', 'asylum', 'displaced', 
                            'humanitarian', 'evacuate', 'flee', 'δημοσκό']
-                if not any(kw.lower() in (title + summary).lower() for kw in KEYWORDS):
+                if not any(kw.lower() in (title + summary).lower() for kw in keywords):
                     continue
                 
                 # Check for duplicates
