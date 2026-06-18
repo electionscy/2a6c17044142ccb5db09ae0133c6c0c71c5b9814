@@ -771,7 +771,8 @@ with tab3:
             total_alerts = last7['alerts'].sum()
             trend_dir = "📈 αυξητική" if avg_now > avg_prev else "📉 πτωτική"
             pct_change = abs((avg_now - avg_prev) / avg_prev * 100) if avg_prev > 0 else 0
-            top_country = df_f.groupby('Country')[sc].mean().idxmax() if 'Country' in df_f.columns and not df_f.empty else "—"
+            _country_groups = df_f.groupby('Country')[sc].mean() if 'Country' in df_f.columns and not df_f.empty else None
+            top_country = _country_groups.idxmax() if _country_groups is not None and not _country_groups.empty else "—"
             st.markdown(f"""
             <div style="background:#f0f9ff;border-left:3px solid #2563eb;padding:12px 16px;border-radius:6px;margin:8px 0 12px 0;font-size:13px;color:#1e3a5f;line-height:1.6">
             <b>Ανάλυση Περιόδου:</b> Τις τελευταίες 7 ημέρες το μέσο risk score ήταν <b>{avg_now:.1f}/10</b> —
