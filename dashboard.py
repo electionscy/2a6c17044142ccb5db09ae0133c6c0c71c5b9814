@@ -233,8 +233,15 @@ html, body, [data-testid="stAppViewContainer"] {
 @st.cache_data(ttl=300)
 def load_data():
     # 2.1: Direct DB read — πάντα fresh data, CSV ως fallback
-    db_path = "/home/agent/migration_agent/migration_data.db"
-    if os.path.exists(db_path):
+    import os as _os
+    HERE = _os.path.dirname(_os.path.abspath(__file__))
+    db_candidates = [
+        _os.path.join(HERE, "migration_data.db"),
+        "/home/agent/migration_agent/migration_data.db",
+        "migration_data.db",
+    ]
+    db_path = next((p for p in db_candidates if _os.path.exists(p)), None)
+    if db_path:
         try:
             conn = sqlite3.connect(db_path)
             df = pd.read_sql_query("""
