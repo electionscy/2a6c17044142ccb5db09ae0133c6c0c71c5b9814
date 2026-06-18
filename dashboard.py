@@ -241,7 +241,7 @@ def load_data():
         "migration_data.db",
     ]
     db_path = next((p for p in db_candidates if _os.path.exists(p)), None)
-    if db_path:
+    if db_path and not _os.getenv("STREAMLIT_SHARING_MODE") and _os.path.exists("/home/agent"):
         try:
             conn = sqlite3.connect(db_path)
             df = pd.read_sql_query("""
