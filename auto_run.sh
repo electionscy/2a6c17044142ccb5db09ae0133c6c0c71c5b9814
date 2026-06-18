@@ -34,7 +34,14 @@ python telegram_collector.py >> "$LOG_FILE" 2>&1 || log "⚠️  Telegram scan h
 
 # Export CSV
 log "Exporting CSV..."
-python -c "import pandas as pd; df = pd.read_csv('migration_data.csv'); print(f'Exported {len(df)} records')" >> "$LOG_FILE" 2>&1
+python -c "
+import sqlite3, pandas as pd
+conn = sqlite3.connect('migration_data.db')
+df = pd.read_sql_query(\"SELECT * FROM signals ORDER BY date DESC, score DESC\", conn)
+conn.close()
+df.to_csv('migration_data.csv', index=False)
+print(f'Exported {len(df)} records to CSV')
+" >> "$LOG_FILE" 2>&1
 
 # Weekly Report (Sundays)
 if [ "$(date +%w)" = "0" ]; then
