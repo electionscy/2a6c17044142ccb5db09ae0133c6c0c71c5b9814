@@ -190,17 +190,7 @@ def save_signal(date, source, title, summary, score, embedding=None, entities=No
 # RSS SCANNING
 # ═══════════════════════════════════════════════════════════════════════════
 
-RSS_FEEDS = [
-    "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://www.france24.com/en/rss",
-    "https://rss.dw.com/rdf/rss-en-all",
-    "https://www.theguardian.com/world/migration/rss",
-    "https://www.theguardian.com/world/rss",
-    "https://cyprus-mail.com/feed/",
-    "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml",
-    "https://www.aljazeera.com/xml/rss/all.xml",
-    "https://feeds.bloomberg.com/markets/news.rss",
-]
+RSS_FEEDS = []
 
 import json as _json, socket as _socket
 _socket.setdefaulttimeout(15)
@@ -215,7 +205,8 @@ try:
 except Exception as _e:
     print("config.json load warning:", _e)
     KEYWORDS = []
-KEYWORDS += ["migrat","border","refugee","asylum","displaced","humanitarian","evacuate","flee"]
+# Cyprus/Levant-specific fallback keywords μόνο
+KEYWORDS += ["migrant","smuggl","irregular","asylum seeker","coast guard","border crossing","deportat","detention"]
 KEYWORDS = list(dict.fromkeys(KEYWORDS))
 print(f"RSS feeds total: {len(RSS_FEEDS)} | keywords: {len(KEYWORDS)}")
 
@@ -233,10 +224,29 @@ def scan_rss():
                 title = entry.get('title', '')
                 summary = entry.get('summary', '')[:500]
                 
-                # Filter για migration-related keywords
-                keywords = ['migrat', 'border', 'refugee', 'asylum', 'displaced', 
-                           'humanitarian', 'evacuate', 'flee', 'δημοσκό']
-                if not any(kw.lower() in (title + summary).lower() for kw in KEYWORDS):
+                # Filter 1 — migration-related keywords
+                text_lower = (title + " " + summary).lower()
+                if not any(kw.lower() in text_lower for kw in KEYWORDS):
+                    continue
+
+                # Filter 2 — geographic proximity (Levant/Cyprus corridor)
+                GEO_TERMS = [
+                    "cyprus", "κύπρος", "κυπρ",
+                    "lebanon", "لبنان", "λίβανος",
+                    "syria", "سوريا", "συρία",
+                    "turkey", "türkiye", "τουρκία", "kıbrıs",
+                    "egypt", "مصر", "αίγυπτος",
+                    "mediterranean", "aegean", "eastern med",
+                    "frontex", "unhcr", "iom",
+                    "libya", "λιβύη",
+                    "beirut", "damascus", "aleppo", "latakia", "tartus",
+                    "iskenderun", "mersin", "bodrum", "izmir",
+                    "nicosia", "limassol", "larnaca", "famagusta",
+                    "lesbos", "dodecanese", "rhodes",
+                    "migrant boat", "irregular crossing", "sea crossing",
+                    "coast guard interception", "coastguard"
+                ]
+                if not any(gt in text_lower for gt in GEO_TERMS):
                     continue
                 
                 # Check for duplicates
