@@ -32,6 +32,57 @@ log "✅ RSS scan complete"
 log "Starting Telegram scan..."
 python telegram_collector.py >> "$LOG_FILE" 2>&1 || log "⚠️  Telegram scan had issues"
 
+# Entity extraction & Gemini enrichment
+log "Running entity extraction & Gemini enrichment..."
+python - >> "$LOG_FILE" 2>&1 << 'PYEOF'
+import sqlite3, json, sys, os
+sys.path.insert(0, "/home/agent/migration_agent")
+os.chdir("/home/agent/migration_agent")
+from entity_extractor import extract_entities
+
+conn = sqlite3.connect("migration_data.db")
+cur = conn.cursor()
+
+# Επεξεργασία signals χωρίς enrichment (country IS NULL)
+cur.execute("""
+    SELECT id, title, summary FROM signals
+    WHERE country IS NULL OR country = ''
+    ORDER BY id DESC LIMIT 50
+""")
+rows = cur.fetchall()
+print(f"Enriching {len(rows)} signals...")
+
+for sid, title, summary in rows:
+    result = extract_entities(title, summary)
+    cur.execute("""
+        UPDATE signals SET
+            country = ?,
+            countries = ?,
+            people = ?,
+            organizations = ?,
+            locations = ?,
+            category = ?,
+            confidence = ?,
+            summary = CASE WHEN ? != '' THEN ? ELSE summary END
+        WHERE id = ?
+    """, (
+        result["primary_country"],
+        json.dumps(result["countries"], ensure_ascii=False),
+        json.dumps(result["people"], ensure_ascii=False),
+        json.dumps(result["organizations"], ensure_ascii=False),
+        json.dumps(result["locations"], ensure_ascii=False),
+        result["category"],
+        result["confidence"],
+        result["summary_el"], result["summary_el"],
+        sid
+    ))
+
+conn.commit()
+conn.close()
+print(f"✅ Enriched {len(rows)} signals")
+'PYEOF'
+log "✅ Entity extraction complete"
+
 # Export CSV
 log "Exporting CSV..."
 python -c "
