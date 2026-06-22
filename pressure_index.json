@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 14:55",
+  "generated_at": "2026-06-22 16:07",
   "today_index": 17.8,
   "today_risk": "MINIMAL",
   "today_risk_color": "#0891b2",
@@ -11,7 +11,7 @@
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 1.0,
-      "wave_height": 0.42
+      "wave_height": 0.48
     },
     {
       "date": "2026-06-23",
@@ -20,7 +20,7 @@
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.91,
-      "wave_height": 0.7
+      "wave_height": 0.78
     },
     {
       "date": "2026-06-24",
@@ -29,7 +29,7 @@
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.82,
-      "wave_height": 0.76
+      "wave_height": 0.74
     },
     {
       "date": "2026-06-25",
@@ -38,7 +38,7 @@
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.73,
-      "wave_height": 0.72
+      "wave_height": 0.7
     },
     {
       "date": "2026-06-26",
@@ -52,11 +52,11 @@
     {
       "date": "2026-06-27",
       "day": "Παρ",
-      "index": 17.8,
+      "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.55,
-      "wave_height": 0.42
+      "wave_height": 0.52
     },
     {
       "date": "2026-06-28",
@@ -65,7 +65,7 @@
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.46,
-      "wave_height": 0.24
+      "wave_height": 0.36
     }
   ],
   "components": {

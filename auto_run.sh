@@ -30,7 +30,7 @@ log "✅ RSS scan complete"
 
 # Telegram Scan
 log "Starting Telegram scan..."
-python telegram_collector.py >> "$LOG_FILE" 2>&1 || log "⚠️  Telegram scan had issues"
+timeout 300 python telegram_collector.py >> "$LOG_FILE" 2>&1 || log "⚠️  Telegram scan had issues"
 
 # Entity extraction & Gemini enrichment
 log "Running entity extraction & Gemini enrichment..."
