@@ -1,0 +1,4 @@
+.env
+*.bak*
+*.session-journal
+migration_data.db.bak*
