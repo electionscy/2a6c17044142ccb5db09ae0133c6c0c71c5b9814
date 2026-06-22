@@ -233,15 +233,8 @@ html, body, [data-testid="stAppViewContainer"] {
 @st.cache_data(ttl=300)
 def load_data():
     # 2.1: Direct DB read — πάντα fresh data, CSV ως fallback
-    import os as _os
-    HERE = _os.path.dirname(_os.path.abspath(__file__))
-    db_candidates = [
-        _os.path.join(HERE, "migration_data.db"),
-        "/home/agent/migration_agent/migration_data.db",
-        "migration_data.db",
-    ]
-    db_path = next((p for p in db_candidates if _os.path.exists(p)), None)
-    if db_path and not _os.getenv("STREAMLIT_SHARING_MODE") and _os.path.exists("/home/agent"):
+    db_path = "/home/agent/migration_agent/migration_data.db"
+    if os.path.exists(db_path):
         try:
             conn = sqlite3.connect(db_path)
             df = pd.read_sql_query("""
@@ -544,7 +537,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ── Tabs ─────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab7, tab6 = st.tabs([
     "Cyprus Alerts",
     "Intelligence Feed",
     "Trend Analysis",
@@ -771,8 +764,7 @@ with tab3:
             total_alerts = last7['alerts'].sum()
             trend_dir = "📈 αυξητική" if avg_now > avg_prev else "📉 πτωτική"
             pct_change = abs((avg_now - avg_prev) / avg_prev * 100) if avg_prev > 0 else 0
-            _country_groups = df_f.groupby('Country')[sc].mean() if 'Country' in df_f.columns and not df_f.empty else None
-            top_country = _country_groups.idxmax() if _country_groups is not None and not _country_groups.empty else "—"
+            top_country = df_f.groupby('Country')[sc].mean().idxmax() if 'Country' in df_f.columns and not df_f.empty else "—"
             st.markdown(f"""
             <div style="background:#f0f9ff;border-left:3px solid #2563eb;padding:12px 16px;border-radius:6px;margin:8px 0 12px 0;font-size:13px;color:#1e3a5f;line-height:1.6">
             <b>Ανάλυση Περιόδου:</b> Τις τελευταίες 7 ημέρες το μέσο risk score ήταν <b>{avg_now:.1f}/10</b> —

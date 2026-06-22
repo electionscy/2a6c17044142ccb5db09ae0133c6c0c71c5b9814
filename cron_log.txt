@@ -5029,3 +5029,384 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-17 11:47:58] ✅ Backup successful: backups/migration_data_2026-06-17_11-47-57.db
 [2026-06-17 11:47:58] ✅ Backup successful: backups/migration_data_2026-06-17_11-47-57.db
 [2026-06-17 11:47:58] Pushing to GitHub...
+[2026-06-17 11:48:02] ✅ ALL TASKS COMPLETED
+[2026-06-22 11:00:42] === OSINT ENGINE START ===
+[2026-06-22 11:00:42] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 16613.25it/s]
+RSS feeds total: 22 | keywords: 30
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+  ❌ Error scanning https://syriadirect.org/feed/: The read operation timed out
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Syrian migrants face barriers in accessing basic rights unde...
+📡 Scanning https://www.turkishminute.com/feed/...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+📡 Scanning https://egyptianstreets.com/feed/...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: For the New Hijri Year, a Look Inside the Museum of Islamic ...
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://www.middleeasteye.net/rss...
+📡 Scanning https://www.al-monitor.com/rss...
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+
+✅ Added 2 new signals
+
+📊 Exporting to CSV...
+📊 Exported 1031 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-22 11:01:30] ✅ RSS scan complete
+[2026-06-22 11:01:30] Starting Telegram scan...
+[2026-06-22 11:14:40] === OSINT ENGINE START ===
+[2026-06-22 11:14:40] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 18606.44it/s]
+RSS feeds total: 22 | keywords: 30
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.turkishminute.com/feed/...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+📡 Scanning https://egyptianstreets.com/feed/...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://www.middleeasteye.net/rss...
+📡 Scanning https://www.al-monitor.com/rss...
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 1063 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-22 11:14:55] ✅ RSS scan complete
+[2026-06-22 11:14:55] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-06-22 11:14:56 ---
+Traceback (most recent call last):
+  File "/home/agent/migration_agent/telegram_collector.py", line 403, in <module>
+    asyncio.run(collect_telegram(gc))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/telegram_collector.py", line 256, in collect_telegram
+    async with TelegramClient(SESSION_PATH, API_ID, API_HASH) as client:
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/client/auth.py", line 669, in __aenter__
+    return await self.start()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/client/auth.py", line 135, in _start
+    await self.connect()
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/client/telegrambaseclient.py", line 571, in connect
+    self.session.auth_key = self._sender.auth_key
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/sessions/sqlite.py", line 191, in auth_key
+    self._update_session_table()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/agent/migration_agent/.venv/lib/python3.14/site-packages/telethon/sessions/sqlite.py", line 210, in _update_session_table
+    c.execute('delete from sessions')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+[2026-06-22 11:15:01] ⚠️  Telegram scan had issues
+[2026-06-22 11:15:01] Running entity extraction & Gemini enrichment...
+  File "<stdin>", line 51
+    python -c "
+              ^
+SyntaxError: unterminated string literal (detected at line 51)
+--- TELEGRAM COLLECTOR START: 2026-06-22 11:01:31 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+   Βρέθηκαν 12 signals
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+   Βρέθηκαν 12 signals
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+   Βρέθηκαν 1 signals
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+   Βρέθηκαν 11 signals
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+   Βρέθηκαν 10 signals
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+   Βρέθηκαν 6 signals
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+   Βρέθηκαν 6 signals
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+   Βρέθηκαν 4 signals
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @ClashReport (OSINT_Regional → Cross_Regional)...
+   Βρέθηκαν 3 signals
+Ελέγχεται: @Middle_East_Spectator (OSINT_Regional → Cross_Regional)...
+   Βρέθηκαν 8 signals
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 1
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         5          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Alsaa Plus EN                  @Alsaa_plus_EN       1          1
+Rerum Novarum // Intel, Brea   @rnintel             3          0
+DD Geopolitics                 @DDGeopolitics       1          0
+Tabz - Alternative Media       @tabzlive            3          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-06-22 11:39:55] Running entity extraction & Gemini enrichment...
+  File "<stdin>", line 51
+    python -c "
+              ^
+SyntaxError: unterminated string literal (detected at line 51)
+[2026-06-22 11:40:23] === OSINT ENGINE START ===
+[2026-06-22 11:40:23] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 32632.20it/s]
+RSS feeds total: 22 | keywords: 30
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.turkishminute.com/feed/...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+📡 Scanning https://egyptianstreets.com/feed/...
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://www.middleeasteye.net/rss...
+📡 Scanning https://www.al-monitor.com/rss...
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+
+✅ Added 0 new signals
+
+📊 Exporting to CSV...
+📊 Exported 1104 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-22 11:40:51] ✅ RSS scan complete
+[2026-06-22 11:40:51] Starting Telegram scan...
+[2026-06-22 11:54:15] ⚠️  Telegram scan had issues
+[2026-06-22 11:54:15] Running entity extraction & Gemini enrichment...
+Enriching 15 signals...
+✅ Enriched 15 signals
+[2026-06-22 11:55:44] ✅ Entity extraction complete
+[2026-06-22 11:55:44] Exporting CSV...
+Exported 1133 records to CSV
+[2026-06-22 11:55:44] Generating Migration Pressure Index...
+✅ Pressure Index v2: 17.8 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Κυρ 2026-06-22 | █           17.8 | MINIMAL
+   Δευ 2026-06-23 | █           16.3 | MINIMAL
+   Τρι 2026-06-24 | █           16.3 | MINIMAL
+   Τετ 2026-06-25 | █           16.3 | MINIMAL
+   Πεμ 2026-06-26 | █           16.3 | MINIMAL
+   Παρ 2026-06-27 | █           17.8 | MINIMAL
+   Σαβ 2026-06-28 | █           17.8 | MINIMAL
+[2026-06-22 11:55:45] ✅ Pressure Index complete
+[2026-06-22 11:55:45] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-22: index=17.8 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 4
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-22 11:55:45] ✅ Validation log updated
+[2026-06-22 11:55:45] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-22.pdf (104 signals)
+[2026-06-22 11:55:46] ✅ Daily report complete
+[2026-06-22 11:55:46] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 22/06/2026 14:55
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 4 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 17.8 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-06-22 11:55:47] ✅ Email alerts complete
+[2026-06-22 11:55:47] === OSINT ENGINE END ===
+[2026-06-22 11:55:47] Backing up database to B2...
+[2026-06-22 11:55:47] Starting B2 backup...
+[2026-06-22 11:55:47] Starting B2 backup...
+[2026-06-22 11:55:48] Uploading to B2: backups/migration_data_2026-06-22_11-55-48.db
+[2026-06-22 11:55:48] Uploading to B2: backups/migration_data_2026-06-22_11-55-48.db
+[2026-06-22 11:55:48] ✅ Backup successful: backups/migration_data_2026-06-22_11-55-48.db
+[2026-06-22 11:55:48] ✅ Backup successful: backups/migration_data_2026-06-22_11-55-48.db
+[2026-06-22 11:55:49] Pushing to GitHub...
