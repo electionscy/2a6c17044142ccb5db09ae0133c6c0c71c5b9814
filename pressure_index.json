@@ -1,26 +1,17 @@
 {
-  "generated_at": "2026-06-23 22:18",
+  "generated_at": "2026-06-24 22:20",
   "today_index": 16.3,
   "today_risk": "MINIMAL",
   "today_risk_color": "#0891b2",
   "forecast": [
-    {
-      "date": "2026-06-23",
-      "day": "Δευ",
-      "index": 16.3,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
-      "confidence": 1.0,
-      "wave_height": 0.74
-    },
     {
       "date": "2026-06-24",
       "day": "Τρι",
       "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.91,
-      "wave_height": 0.78
+      "confidence": 1.0,
+      "wave_height": 0.82
     },
     {
       "date": "2026-06-25",
@@ -28,8 +19,8 @@
       "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.82,
-      "wave_height": 0.66
+      "confidence": 0.91,
+      "wave_height": 0.76
     },
     {
       "date": "2026-06-26",
@@ -37,17 +28,17 @@
       "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.73,
-      "wave_height": 0.52
+      "confidence": 0.82,
+      "wave_height": 0.58
     },
     {
       "date": "2026-06-27",
       "day": "Παρ",
-      "index": 17.8,
+      "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.64,
-      "wave_height": 0.48
+      "confidence": 0.73,
+      "wave_height": 0.5
     },
     {
       "date": "2026-06-28",
@@ -55,8 +46,8 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.55,
-      "wave_height": 0.34
+      "confidence": 0.64,
+      "wave_height": 0.36
     },
     {
       "date": "2026-06-29",
@@ -64,8 +55,17 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
+      "confidence": 0.55,
+      "wave_height": 0.4
+    },
+    {
+      "date": "2026-06-30",
+      "day": "Δευ",
+      "index": 16.3,
+      "risk": "MINIMAL",
+      "risk_color": "#0891b2",
       "confidence": 0.46,
-      "wave_height": 0.22
+      "wave_height": 0.52
     }
   ],
   "components": {
