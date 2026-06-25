@@ -6603,3 +6603,304 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-06-24 19:20:22] ✅ Backup successful: backups/migration_data_2026-06-24_19-20-21.db
 [2026-06-24 19:20:22] Pushing to GitHub...
 [2026-06-24 19:20:22] Pushing to GitHub...
+[master 10822b7] Auto-sync 2026-06-24 19:20:22
+ 11 files changed, 551 insertions(+), 39 deletions(-)
+ create mode 100644 reports/OSINT_Report_2026-06-24.pdf
+To https://github.com/electionscy/2a6c17044142ccb5db09ae0133c6c0c71c5b9814.git
+   a6cac67..10822b7  master -> master
+To https://github.com/electionscy/migration-agent-dashboard.git
+   a6cac67..10822b7  master -> main
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     49      0                              0100      2 100      2   0      0     49      0                              0100      2 100      2   0      0     49      0                              0
+OK[2026-06-24 19:20:25] ✅ ALL TASKS COMPLETED
+[2026-06-24 19:20:25] ✅ ALL TASKS COMPLETED
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     27      0                              0100      2 100      2   0      0     27      0                              0100      2 100      2   0      0     27      0                              0
+OK[2026-06-25 19:00:01] === OSINT ENGINE START ===
+[2026-06-25 19:00:01] === OSINT ENGINE START ===
+[2026-06-25 19:00:01] Starting RSS scan...
+[2026-06-25 19:00:01] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12605.40it/s]
+RSS feeds total: 22 | keywords: 72
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+  ❌ Error scanning https://syriadirect.org/feed/: The read operation timed out
+📡 Scanning https://daraj.media/feed/...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: ملامح من “العنف الاقتصادي” على نساء في مصر...
+  [CAT] Economic Migration | ['Lebanon', 'Luxembourg']
+  ✅ Saved: هل راكمت عائلة الأزهري أرباحاً في لوكسمبورغ على وقع انهيار ب...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [CAT] Other | ['Turkey']
+  ✅ Saved: Back-to-back drone crashes in Turkey's Black Sea region...
+  [CAT] Policy Change | ['Turkey']
+  ✅ Saved: Turkey blocks access to LGBTI+ dating apps...
+  [CAT] Policy Change | ['Turkey']
+  ✅ Saved: Turkey bans access to LGBTI+ groups' social media accounts...
+  [CAT] Policy Change | ['Turkey']
+  ✅ Saved: Turkey blocks access to Change.org...
+📡 Scanning https://www.turkishminute.com/feed/...
+  [CAT] Humanitarian | ['Turkey', 'Venezuela']
+  ✅ Saved: Turkey offers aid after powerful earthquakes hit Venezuela...
+  [CAT] Other | ['Turkey']
+  ✅ Saved: 8 municipal officials detained over factory fire that killed...
+  [CAT] Other | ['Cyprus', 'Turkey']
+  ✅ Saved: Cyprus complains to UN of 520 alleged airspace violations by...
+  [CAT] Other | ['Turkey']
+  ✅ Saved: Circulatory diseases remain Turkey’s leading cause of death ...
+  [CAT] Other | ['Turkey']
+  ✅ Saved: Turkey detains 2 CHP mayors as defections to AKP deepen oppo...
+  [CAT] Policy Change | ['Turkey']
+  ✅ Saved: Turkey’s law on PKK peace limited to verifying giving up arm...
+  [CAT] Other | ['Turkey']
+  ✅ Saved: Environmental volunteers detained before NATO summit questio...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+  [CAT] Border Crisis | ['Egypt', 'Sudan']
+  ✅ Saved: What is behind the Egyptian military operations in the south...
+  [CAT] Humanitarian | ['Egypt']
+  ✅ Saved: Journalist forcibly disappeared amid reports of security cra...
+  [CAT] Border Crisis | ['Israel', 'Lebanon']
+  ✅ Saved: A ‘repositioning’ of Israel’s forces in south Lebanon: What’...
+  [CAT] Humanitarian | ['Israel', 'United States', 'Iran', 'Lebanon']
+  ✅ Saved: Shrugging off multiple ceasefires, Israel tries for high gro...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: The care that’s missing from Egypt’s maternity wards...
+  [CAT] Policy Change | ['Egypt', 'Germany']
+  ✅ Saved: After 14-year ban, Future of Egypt-led coalition pushes to l...
+📡 Scanning https://egyptianstreets.com/feed/...
+  [CAT] Other | ['Egypt', 'Britain']
+  ✅ Saved: Painting Egypt in Colour: Bridget Riley’s Egyptian Palette...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: How AI Is Fueling Fraud at an Unprecedented Pace...
+  [CAT] Other | ['Egypt', 'Japan']
+  ✅ Saved: SODIC and Nobu Launch New Cairo Location and Expand North Co...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Uber Egypt Ordered to Pay EGP 10 Million in Habiba El-Shamaa...
+  [CAT] Other | ['Egypt', 'Iran']
+  ✅ Saved: New Administrative Capital Temporarily Pauses Egyptian Fan Z...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: The Rise of Online Shopping: How E-Commerce Became One of Eg...
+  [CAT] Economic Migration | ['Egypt', 'Spain']
+  ✅ Saved: Barcelona Sign Egyptian Forward Hamza Abdelkarim on Permanen...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: When Obstetric Violence Becomes Public: What the El‑Shatby A...
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [CAT] Other | ['Israel', 'Lebanon', 'United States']
+  ✅ Saved: Israel kills three in Lebanon as Rubio praises progress in W...
+  [CAT] Refugee Flow | ['Lebanon', 'Israel']
+  ✅ Saved: Lebanon Latest: Peace talks between Lebanon and Israel, peop...
+📡 Scanning https://www.middleeasteye.net/rss...
+  [CAT] Policy Change | ['Israel', 'Lebanon']
+  ✅ Saved: Israel says it will remain in southern Lebanon until Hezboll...
+  [CAT] Humanitarian | ['Israel', 'Lebanon']
+  ✅ Saved: Three killed in Israeli strike on southern Lebanon...
+  [CAT] Policy Change | ['Israel', 'Lebanon']
+  ✅ Saved: Israel says will only withdraw from Lebanon after Hezbollah ...
+  [CAT] Humanitarian | ['Israel', 'Lebanon']
+  ✅ Saved: Two people killed in Israeli drone strike on car in South Le...
+📡 Scanning https://www.al-monitor.com/rss...
+  [CAT] Humanitarian | ['Turkey', 'Venezuela']
+  ✅ Saved: Turkey, Venezuela discuss aid after deadly earthquakes, sour...
+  [CAT] Humanitarian | ['Israel', 'Turkey', 'Iran', 'Venezuela']
+  ✅ Saved: Israel, Turkey, Iran offer aid as Venezuela’s 2 quakes kill ...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [CAT] Policy Change | ['Syria', 'United States']
+  ✅ Saved: Supreme Court backs Trump move to end Syrians’ deportation p...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [CAT] Policy Change | ['Lebanon', 'Israel']
+  ✅ Saved: Lebanon cancels national high school exams due to war: What ...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+  [CAT] Other | ['Israel', 'Lebanon', 'Palestine']
+  ✅ Saved: هذا الفيديو "قديم" من غزة ولا يوثق اشتباكاً بين جنود إسرائيل...
+  [CAT] Other | ['Israel', 'Lebanon']
+  ✅ Saved: فيديو مقتل جندي إسرائيلي في لبنان قديم ويعود إلى أحداث 7 أكت...
+
+✅ Added 39 new signals
+
+📊 Exporting to CSV...
+📊 Exported 1430 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-06-25 19:09:14] ✅ RSS scan complete
+[2026-06-25 19:09:14] ✅ RSS scan complete
+[2026-06-25 19:09:14] Starting Telegram scan...
+[2026-06-25 19:09:14] Starting Telegram scan...
+[2026-06-25 19:14:14] ⚠️  Telegram scan had issues
+[2026-06-25 19:14:14] ⚠️  Telegram scan had issues
+[2026-06-25 19:14:14] Running entity extraction & Gemini enrichment...
+[2026-06-25 19:14:14] Running entity extraction & Gemini enrichment...
+Enriching 42 signals...
+✅ Enriched 42 signals
+[2026-06-25 19:18:11] ✅ Entity extraction complete
+[2026-06-25 19:18:11] ✅ Entity extraction complete
+[2026-06-25 19:18:11] Exporting CSV...
+[2026-06-25 19:18:11] Exporting CSV...
+Exported 1445 records to CSV
+[2026-06-25 19:18:11] Generating Migration Pressure Index...
+[2026-06-25 19:18:11] Generating Migration Pressure Index...
+✅ Pressure Index v2: 16.3 (MINIMAL)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 0 → bump +0
+
+   7-day forecast:
+   Τετ 2026-06-25 | █           16.3 | MINIMAL
+   Πεμ 2026-06-26 | █           16.3 | MINIMAL
+   Παρ 2026-06-27 | █           17.8 | MINIMAL
+   Σαβ 2026-06-28 | █           17.8 | MINIMAL
+   Κυρ 2026-06-29 | █           17.8 | MINIMAL
+   Δευ 2026-06-30 | █           17.8 | MINIMAL
+   Τρι 2026-07-01 | █           18.8 | MINIMAL
+[2026-06-25 19:18:12] ✅ Pressure Index complete
+[2026-06-25 19:18:12] ✅ Pressure Index complete
+[2026-06-25 19:18:12] Logging prediction for validation...
+[2026-06-25 19:18:12] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-06-25: index=16.3 (MINIMAL)
+   Συνολο καταγεγραμμενων προβλεψεων: 7
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-06-25 19:18:12] ✅ Validation log updated
+[2026-06-25 19:18:12] ✅ Validation log updated
+[2026-06-25 19:18:12] Generating daily PDF report...
+[2026-06-25 19:18:12] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-06-25.pdf (54 signals)
+[2026-06-25 19:18:13] ✅ Daily report complete
+[2026-06-25 19:18:13] ✅ Daily report complete
+[2026-06-25 19:18:13] Checking email alerts...
+[2026-06-25 19:18:13] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 25/06/2026 22:18
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 15 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 16.3 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-06-25 19:18:14] ✅ Email alerts complete
+[2026-06-25 19:18:14] ✅ Email alerts complete
+[2026-06-25 19:18:14] === OSINT ENGINE END ===
+[2026-06-25 19:18:14] === OSINT ENGINE END ===
+[2026-06-25 19:18:14] Backing up database to B2...
+[2026-06-25 19:18:14] Backing up database to B2...
+[2026-06-25 19:18:14] Starting B2 backup...
+[2026-06-25 19:18:14] Starting B2 backup...
+[2026-06-25 19:18:15] Uploading to B2: backups/migration_data_2026-06-25_19-18-15.db
+[2026-06-25 19:18:15] Uploading to B2: backups/migration_data_2026-06-25_19-18-15.db
+[2026-06-25 19:18:16] ✅ Backup successful: backups/migration_data_2026-06-25_19-18-15.db
+[2026-06-25 19:18:16] ✅ Backup successful: backups/migration_data_2026-06-25_19-18-15.db
+[2026-06-25 19:18:17] Pushing to GitHub...
+[2026-06-25 19:18:17] Pushing to GitHub...
