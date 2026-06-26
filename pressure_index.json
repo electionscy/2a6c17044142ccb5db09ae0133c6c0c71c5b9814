@@ -1,26 +1,17 @@
 {
-  "generated_at": "2026-06-25 22:18",
+  "generated_at": "2026-06-26 22:23",
   "today_index": 16.3,
   "today_risk": "MINIMAL",
   "today_risk_color": "#0891b2",
   "forecast": [
-    {
-      "date": "2026-06-25",
-      "day": "Τετ",
-      "index": 16.3,
-      "risk": "MINIMAL",
-      "risk_color": "#0891b2",
-      "confidence": 1.0,
-      "wave_height": 0.84
-    },
     {
       "date": "2026-06-26",
       "day": "Πεμ",
       "index": 16.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.91,
-      "wave_height": 0.58
+      "confidence": 1.0,
+      "wave_height": 0.6
     },
     {
       "date": "2026-06-27",
@@ -28,7 +19,7 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.82,
+      "confidence": 0.91,
       "wave_height": 0.48
     },
     {
@@ -37,8 +28,8 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.73,
-      "wave_height": 0.3
+      "confidence": 0.82,
+      "wave_height": 0.34
     },
     {
       "date": "2026-06-29",
@@ -46,8 +37,8 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.64,
-      "wave_height": 0.36
+      "confidence": 0.73,
+      "wave_height": 0.22
     },
     {
       "date": "2026-06-30",
@@ -55,17 +46,26 @@
       "index": 17.8,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
-      "confidence": 0.55,
-      "wave_height": 0.46
+      "confidence": 0.64,
+      "wave_height": 0.38
     },
     {
       "date": "2026-07-01",
       "day": "Τρι",
-      "index": 18.8,
+      "index": 17.3,
+      "risk": "MINIMAL",
+      "risk_color": "#0891b2",
+      "confidence": 0.55,
+      "wave_height": 0.54
+    },
+    {
+      "date": "2026-07-02",
+      "day": "Τετ",
+      "index": 17.3,
       "risk": "MINIMAL",
       "risk_color": "#0891b2",
       "confidence": 0.46,
-      "wave_height": 0.46
+      "wave_height": 0.66
     }
   ],
   "components": {
