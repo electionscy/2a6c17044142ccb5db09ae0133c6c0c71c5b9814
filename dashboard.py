@@ -1466,7 +1466,7 @@ with tab5:
     """, unsafe_allow_html=True)
 
 # ── TAB 7: Predictive — Migration Pressure Index ─────────────
-with tab7:
+with tab6:
     import json as _json
 
     @st.cache_data(ttl=1800)
@@ -1627,7 +1627,7 @@ with tab7:
         st.caption(f"Generated: {pi['generated_at']} (ωρα Κυπρου)")
 
 # ── TAB 6: Archive ───────────────────────────────────────────
-with tab6:
+with tab7:
     st.markdown('<div class="section-label">Αρχείο Ημερήσιων Αναφορών</div>', unsafe_allow_html=True)
     reports_dir = "reports"
     if os.path.exists(reports_dir):

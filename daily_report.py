@@ -52,7 +52,7 @@ class DailyPDF(FPDF):
         self.cell(0, 10, "OSINT MIGRATION INTELLIGENCE — CYPRUS", new_x=XPos.RIGHT, new_y=YPos.TOP)
         self.set_font("Regular", "", 8)
         self.set_xy(0, 4)
-        self.cell(200, 10, f"Hmerisia Anafora: {self.report_date}", align="R")
+        self.cell(200, 10, f"Ημερήσια Αναφορά: {self.report_date}", align="R")
         self.set_text_color(*BLACK)
         self.ln(14)
 
@@ -60,7 +60,7 @@ class DailyPDF(FPDF):
         self.set_y(-12)
         self.set_font("Regular", "", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Cypronetwork Consultancy Group | Periorizomenis Kykloforias | Selida {self.page_no()}", align="C")
+        self.cell(0, 5, f"Cypronetwork Consultancy Group | Περιορισμένης Κυκλοφορίας | Σελίδα {self.page_no()}", align="C")
 
     def section_title(self, title, color=NAVY):
         self.set_font("Regular", "B", 10)
@@ -128,7 +128,7 @@ def generate_daily_report(target_date=None):
         try:
             pi = json.load(open(PI_PATH))
             pi_index = f"{pi['today_index']:.0f}/100"
-            risk_map = {"MINIMAL":"Elaxisti", "LOW":"Xamili", "MODERATE":"Metria", "HIGH":"Ipsili"}
+            risk_map = {"MINIMAL":"Ελάχιστη", "LOW":"Χαμηλή", "MODERATE":"Μέτρια", "HIGH":"Υψηλή"}
             pi_risk  = risk_map.get(pi['today_risk'], pi['today_risk'])
         except Exception:
             pass
@@ -143,26 +143,26 @@ def generate_daily_report(target_date=None):
     # ── Τίτλος ──
     pdf.set_font("Regular", "B", 13)
     pdf.set_text_color(*NAVY)
-    pdf.cell(0, 8, f"Hmerisia Anafora Metanasteutikis Epilirosis", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+    pdf.cell(0, 8, f"Ημερήσια Αναφορά Μεταναστευτικής Πίεσης", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
     pdf.set_font("Regular", "", 9)
     pdf.set_text_color(*GRAY)
-    pdf.cell(0, 5, f"Periodo: {date_str} | Paragogi: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M')}", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
+    pdf.cell(0, 5, f"Περίοδος: {date_str} | Παραγωγή: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M')}", new_x=XPos.LMARGIN, new_y=YPos.NEXT, align="C")
     pdf.ln(4)
 
     # ── KPIs ──
-    pdf.section_title("SINOPTIKA STOIXEIA")
+    pdf.section_title("ΣΥΝΟΠΤΙΚΑ ΣΤΟΙΧΕΙΑ")
     pdf.kpi_row([
-        ("Sinolo Signals", total, BLUE),
+        ("Σύνολο Signals", total, BLUE),
         ("Cyprus Alerts (≥8)", high, RED),
         ("Border Info (4-7)", border, AMBER),
         ("Macro (1-3)", macro, GREEN),
     ])
 
     # ── Pressure Index ──
-    pdf.section_title("DEIKTIS METANASTEUTIKIS PIESIS")
+    pdf.section_title("ΔΕΙΚΤΗΣ ΜΕΤΑΝΑΣΤΕΥΤΙΚΗΣ ΠΙΕΣΗΣ")
     pdf.set_font("Regular", "", 9)
     pdf.cell(95, 7, f"Deiktis simeras: {pi_index}", new_x=XPos.RIGHT, new_y=YPos.TOP)
-    pdf.cell(95, 7, f"Kategorias: {pi_risk}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.cell(95, 7, f"Κατηγορία: {pi_risk}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(3)
 
     # ── Cyprus Alerts ──
@@ -181,14 +181,14 @@ def generate_daily_report(target_date=None):
             pdf.ln(2)
 
     # ── Top 10 Signals ──
-    pdf.section_title("TOP 10 SIGNALS IMERINAS")
+    pdf.section_title("TOP 10 SIGNALS ΗΜΕΡΑΣ")
     pdf.set_font("Regular", "B", 7)
     pdf.set_fill_color(*NAVY)
     pdf.set_text_color(*WHITE)
     pdf.cell(12, 5, "Score", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP, align="C")
-    pdf.cell(40, 5, "Pigi", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
-    pdf.cell(18, 5, "Xora", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
-    pdf.cell(120, 5, "Perilepsi", fill=True, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.cell(40, 5, "Πηγή", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
+    pdf.cell(18, 5, "Χώρα", fill=True, new_x=XPos.RIGHT, new_y=YPos.TOP)
+    pdf.cell(120, 5, "Περίληψη", fill=True, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.set_text_color(*BLACK)
 
     for i, (src, score, summ, link, country, cat) in enumerate(top10):
@@ -207,7 +207,7 @@ def generate_daily_report(target_date=None):
     pdf.ln(4)
 
     # ── Κατανομή κατηγοριών ──
-    pdf.section_title("KATANOMI KATHGORION")
+    pdf.section_title("ΚΑΤΑΝΟΜΗ ΚΑΤΗΓΟΡΙΩΝ")
     pdf.set_font("Regular", "", 8)
     for cat, cnt in cats.most_common():
         pct = cnt / total * 100
