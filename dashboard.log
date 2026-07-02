@@ -29,3 +29,4 @@
 2026-07-01 09:11:36,805 | WARNING | DTM API failed: No secrets found. Valid paths for a secrets.toml file or secret directories are: /home/agent/.streamlit/secrets.toml, /home/agent/migration_agent/.streamlit/secrets.toml
 2026-07-01 11:31:04,457 | INFO | DB load OK: 1787 records
 2026-07-01 19:20:15,367 | INFO | Email sent: [Migration Alert] 27 High-Priority Signals — 2026-07-01
+2026-07-02 19:20:53,017 | INFO | Email sent: [Migration Alert] 30 High-Priority Signals — 2026-07-02
