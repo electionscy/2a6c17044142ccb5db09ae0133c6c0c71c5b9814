@@ -11281,3 +11281,488 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-07-08 19:22:13] ✅ Backup successful: backups/migration_data_2026-07-08_19-22-12.db
 [2026-07-08 19:22:13] Pushing to GitHub...
 [2026-07-08 19:22:13] Pushing to GitHub...
+[master 60e166a] Auto-sync 2026-07-08 19:22:13
+ 11 files changed, 599 insertions(+), 41 deletions(-)
+ create mode 100644 reports/OSINT_Report_2026-07-08.pdf
+To https://github.com/electionscy/2a6c17044142ccb5db09ae0133c6c0c71c5b9814.git
+   5b3eedd..60e166a  master -> master
+To https://github.com/electionscy/migration-agent-dashboard.git
+   5b3eedd..60e166a  master -> main
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     77      0                              0100      2 100      2   0      0     76      0                              0100      2 100      2   0      0     75      0                              0
+OK[2026-07-08 19:22:19] ✅ ALL TASKS COMPLETED
+[2026-07-08 19:22:19] ✅ ALL TASKS COMPLETED
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     29      0                              0100      2 100      2   0      0     29      0                              0100      2 100      2   0      0     29      0                              0
+OK[2026-07-09 19:00:01] === OSINT ENGINE START ===
+[2026-07-09 19:00:01] === OSINT ENGINE START ===
+[2026-07-09 19:00:01] Starting RSS scan...
+[2026-07-09 19:00:01] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19084.63it/s]
+RSS feeds total: 22 | keywords: 72
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Syrian Interior Ministry announces arrest of senior ISIS lea...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Government soldier killed, two injured clearing mines near T...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Israeli forces conduct new incursion into southern Quneitra...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Agricultural Bank to resume operations in Syria’s Hasakah...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: ISIS claims responsibility for killing man in Deir ez-Zor...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Syria, Turkey complete temporary bridge over Euphrates River...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: U.S. strikes Iran again, Tehran targets gulf states...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Trump announces move to delist Syria as terror sponsor...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Al-Sharaa meets Erdoğan on sidelines of NATO Summit in Ankar...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Trump meets al-Sharaa on sidelines of NATO Summit...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: ‘Waiting for chaos’: IS adapts under pressure, betting on th...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Outside the plan: Urban growth outpaces roads and services i...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: The living and the dead return home to Afrin...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: ‘A repellent environment’: How Israel is reshaping life in s...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Child recruitment persists despite SDF-Damascus integration ...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Nationality law reform: Who has the ‘right to have rights’ i...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Syria’s forgotten villages: Mount Hermon’s Druze between Dam...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: White earth: Soil salinization threatens farming in Raqqa’s ...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Al-Sharaa’s shakeup: A merit-based state, or a circle of tru...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: As Atef Najib’s trial proceeds, what legal basis exists for ...
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey's media regulator tells broadcasters how to cover NAT...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey shifts from coal rush to 'coal dilemma,' transferring...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey detains dozens, including journalists, in new wave of...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Thibaut Bruttin: 'Turkey was a matrix of policies to repress...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: What is in Turkey's proposed Kurdish peace process framework...
+📡 Scanning https://www.turkishminute.com/feed/...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Trump says Erdoğan freed US pastor after call, but Brunson c...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Trump says he is undecided on Turkey F-35 sale as Erdoğan av...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey urges end to US defense curbs after Trump vows to lif...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: EU urges Erdoğan to seize ‘renewed momentum’ on Cyprus talks...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: [OPINION] Erdoğan won the optics. Washington holds the cards...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey joins NATO members, Ukraine in backing plan for $134 ...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Greece warns F-35 sale to Turkey could affect Eastern Medite...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey orders access blocked to viral stand-up show by jaile...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Gone from the cup but not forgotten: Hossam Hassan, Egypt’s ...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Agriculture Ministry employees march for five years’ worth o...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Board of Peace meetings held in Cyprus as mediators push to ...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Sudan Nashra: Security incidents prompt review of military-a...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Over 70 South Sudanese stranded aboard ‘voluntary return’ fe...
+📡 Scanning https://egyptianstreets.com/feed/...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: How Egyptian Figures Lead International Institutions and Sha...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: The Alternative Suez Canal: How Egypt Powers Mass Global Com...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Local Brands Storm Egypt’s Retail Scene...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Egypt’s Culture Minister Resigns Following Court Ruling in C...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Palestinian Relief Official Killed in Israeli Strike on Gaza...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Egypt’s Football Association Slams Referee After World Cup E...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Egypt’s Historic World Cup Run Ends in Heartbreaking 3-2 Def...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Hossam Hassan Urges Global Action on Gaza Before Argentina M...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Egypt Uncovers Complete Byzantine-Era Residential City in Da...
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Gaza artists honour Egypt coach Hossam Hassan with sand port...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Chemical weapons watchdog restores Syria’s voting rights, ci...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Lebanon Latest: concerns about latest escalation in regional...
+📡 Scanning https://www.middleeasteye.net/rss...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Unifil says situation in Lebanon ‘fragile’ despite reduction...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Netanyahu: Israeli forces to stay in Lebanon ‘as long as nee...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: France eyes Syria as alternative oil route to Hormuz...
+📡 Scanning https://www.al-monitor.com/rss...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Cell behind Damascus bombings in custody, Syria says...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Turkey brokers intra-Somalia talks as federal rifts test Ank...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Gazans mourn aid worker killed by Israel who brought them th...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: Chemical weapons watchdog reinstates Syria...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: 'Obliterated entire families': Amnesty calls for investigati...
+  [DUP] Similarity 100.0% > 80%
+  [DUP] Similarity 100.0% > 80%
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: لا صحة لفيديو حملات دعوية على الشواطئ السورية.. والمقطع مصوّ...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: ادعاءات وسيم السيسي المتعلقة بجينات المصريين غير مثبتة علميا...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+  [CAT] Other | []
+  ✅ Saved: هذا الفيديو "قديم" من غزة ولا يوثق اشتباكاً بين جنود إسرائيل...
+
+✅ Added 61 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2401 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-07-09 19:02:29] ✅ RSS scan complete
+[2026-07-09 19:02:29] ✅ RSS scan complete
+[2026-07-09 19:02:29] Starting Telegram scan...
+[2026-07-09 19:02:29] Starting Telegram scan...
+--- TELEGRAM COLLECTOR START: 2026-07-09 19:02:30 ---
+Συνδέθηκε ως: Mixalis
+Ελέγχεται: @megaphone_hq (Lebanon_Local → Lebanon)...
+Ελέγχεται: @LebUpdate (Lebanon_Local → Lebanon)...
+Ελέγχεται: @lebanonnews2 (Lebanon_Local → Lebanon)...
+Ελέγχεται: @npasyria (Syria_Coast → Syria)...
+Ελέγχεται: @npa_syria (Syria_Coast → Syria)...
+Ελέγχεται: @SANANewsEnglish (Syria_Coast → Syria)...
+Ελέγχεται: @TelevisionSyria (Syria_Coast → Syria)...
+Ελέγχεται: @Turkeypedia (Turkiye → Turkiye)...
+Ελέγχεται: @stepnews (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @war_monitor (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @sitreports (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @ClashReport (OSINT_Regional → Cross_Regional)...
+Ελέγχεται: @Middle_East_Spectator (OSINT_Regional → Cross_Regional)...
+
+--- FORWARD CHAIN ANALYSIS ---
+Νέες πηγές που εντοπίστηκαν μέσω forwards: 3
+
+╔══════════════════════════════════════════════════════════╗
+║         ΠΡΟΤΕΙΝΟΜΕΝΑ ΝΕΑ ΚΑΝΑΛΙΑ (via Forward Chain)    ║
+╠══════════════════════════════════════════════════════════╣
+Τίτλος                         Username             Forwards   Max Score
+──────────────────────────────────────────────────────────────
+Clash Report                   @ClashReport         5          6
+Middle East Spectator — MES    @Middle_East_Spectator 2          2
+Alsaa Plus EN                  @Alsaa_plus_EN       1          1
+Rerum Novarum // Intel, Brea   @rnintel             4          0
+DD Geopolitics                 @DDGeopolitics       1          0
+Tabz - Alternative Media       @tabzlive            4          0
+МАДЯР🇺🇦                        @robert_magyar       1          0
+╚══════════════════════════════════════════════════════════╝
+
+Για να προσθέσεις κανάλι: πρόσθεσε το username στο config.json
+
+--- TELEGRAM COLLECTOR COMPLETE ---
+[2026-07-09 19:03:04] Running entity extraction & Gemini enrichment...
+[2026-07-09 19:03:04] Running entity extraction & Gemini enrichment...
+Enriching 50 signals...
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+❌ Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.', 'status': 'NOT_FOUND'}}
+✅ Enriched 50 signals
+[2026-07-09 19:03:15] ✅ Entity extraction complete
+[2026-07-09 19:03:15] ✅ Entity extraction complete
+[2026-07-09 19:03:15] Exporting CSV...
+[2026-07-09 19:03:15] Exporting CSV...
+Exported 2401 records to CSV
+[2026-07-09 19:03:16] Generating Migration Pressure Index...
+[2026-07-09 19:03:16] Generating Migration Pressure Index...
+✅ Pressure Index v2: 23.3 (LOW)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 1 → bump +6
+
+   7-day forecast:
+   Τετ 2026-07-09 | ██          23.3 | LOW
+   Πεμ 2026-07-10 | ██          23.0 | LOW
+   Παρ 2026-07-11 | ██          24.2 | LOW
+   Σαβ 2026-07-12 | ██          23.9 | LOW
+   Κυρ 2026-07-13 | ██          22.1 | LOW
+   Δευ 2026-07-14 | ██          21.8 | LOW
+   Τρι 2026-07-15 | ██          21.5 | LOW
+[2026-07-09 19:03:16] ✅ Pressure Index complete
+[2026-07-09 19:03:16] ✅ Pressure Index complete
+[2026-07-09 19:03:17] Logging prediction for validation...
+[2026-07-09 19:03:17] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-07-09: index=23.3 (LOW)
+   Συνολο καταγεγραμμενων προβλεψεων: 21
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-07-09 19:03:17] ✅ Validation log updated
+[2026-07-09 19:03:17] ✅ Validation log updated
+[2026-07-09 19:03:17] Generating daily PDF report...
+[2026-07-09 19:03:17] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-07-09.pdf (61 signals)
+[2026-07-09 19:03:17] ✅ Daily report complete
+[2026-07-09 19:03:17] ✅ Daily report complete
+[2026-07-09 19:03:17] Checking email alerts...
+[2026-07-09 19:03:17] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 09/07/2026 22:03
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Κανένα νέο high alert σήμερα (2026-07-09).
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 23.3 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-07-09 19:03:17] ✅ Email alerts complete
+[2026-07-09 19:03:17] ✅ Email alerts complete
+[2026-07-09 19:03:17] === OSINT ENGINE END ===
+[2026-07-09 19:03:17] === OSINT ENGINE END ===
+[2026-07-09 19:03:17] Backing up database to B2...
+[2026-07-09 19:03:17] Backing up database to B2...
+[2026-07-09 19:03:17] Starting B2 backup...
+[2026-07-09 19:03:17] Starting B2 backup...
+[2026-07-09 19:03:18] Uploading to B2: backups/migration_data_2026-07-09_19-03-18.db
+[2026-07-09 19:03:18] Uploading to B2: backups/migration_data_2026-07-09_19-03-18.db
+[2026-07-09 19:03:19] ✅ Backup successful: backups/migration_data_2026-07-09_19-03-18.db
+[2026-07-09 19:03:19] ✅ Backup successful: backups/migration_data_2026-07-09_19-03-18.db
+[2026-07-09 19:03:19] Pushing to GitHub...
+[2026-07-09 19:03:19] Pushing to GitHub...
