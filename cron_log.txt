@@ -12390,3 +12390,332 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-07-11 19:19:45] ✅ Backup successful: backups/migration_data_2026-07-11_19-19-44.db
 [2026-07-11 19:19:45] Pushing to GitHub...
 [2026-07-11 19:19:45] Pushing to GitHub...
+[master bc2805a] Auto-sync 2026-07-11 19:19:45
+ 10 files changed, 546 insertions(+), 56 deletions(-)
+ create mode 100644 reports/OSINT_Report_2026-07-11.pdf
+To https://github.com/electionscy/2a6c17044142ccb5db09ae0133c6c0c71c5b9814.git
+   bc2ded5..bc2805a  master -> master
+To https://github.com/electionscy/migration-agent-dashboard.git
+   bc2ded5..bc2805a  master -> main
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     47      0                              0100      2 100      2   0      0     47      0                              0100      2 100      2   0      0     46      0                              0
+OK[2026-07-11 19:19:50] ✅ ALL TASKS COMPLETED
+[2026-07-11 19:19:50] ✅ ALL TASKS COMPLETED
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     35      0                              0100      2 100      2   0      0     35      0                              0100      2 100      2   0      0     35      0                              0
+OK[2026-07-12 19:00:01] === OSINT ENGINE START ===
+[2026-07-12 19:00:01] === OSINT ENGINE START ===
+[2026-07-12 19:00:01] Starting RSS scan...
+[2026-07-12 19:00:01] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25918.90it/s]
+RSS feeds total: 22 | keywords: 72
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+  [CAT] Humanitarian | ['Syria']
+  ✅ Saved: ‘Waiting for chaos’: IS adapts under pressure, betting on th...
+  [CAT] Economic Migration | ['Syria']
+  ✅ Saved: Outside the plan: Urban growth outpaces roads and services i...
+  [CAT] Humanitarian | []
+  ✅ Saved: The living and the dead return home to Afrin...
+  [CAT] Border Crisis | ['Israel', 'Syria']
+  ✅ Saved: ‘A repellent environment’: How Israel is reshaping life in s...
+  [CAT] Humanitarian | ['Syria']
+  ✅ Saved: Child recruitment persists despite SDF-Damascus integration ...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Nationality law reform: Who has the ‘right to have rights’ i...
+  [CAT] Humanitarian | ['Syria', 'Israel']
+  ✅ Saved: Syria’s forgotten villages: Mount Hermon’s Druze between Dam...
+  [CAT] Humanitarian | ['Syria']
+  ✅ Saved: White earth: Soil salinization threatens farming in Raqqa’s ...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Al-Sharaa’s shakeup: A merit-based state, or a circle of tru...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: As Atef Najib’s trial proceeds, what legal basis exists for ...
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [CAT] Economic Migration | ['Turkey']
+  ✅ Saved: AFP journalists in İstanbul go on strike after collective ag...
+  [CAT] Other | ['Turkey']
+  ✅ Saved: Turkey's media regulator tells broadcasters how to cover NAT...
+  [CAT] Policy Change | ['Turkey']
+  ✅ Saved: Turkey shifts from coal rush to 'coal dilemma,' transferring...
+  [CAT] Humanitarian | ['Turkey']
+  ✅ Saved: Turkey detains dozens, including journalists, in new wave of...
+  [CAT] Humanitarian | ['Turkey']
+  ✅ Saved: Thibaut Bruttin: 'Turkey was a matrix of policies to repress...
+📡 Scanning https://www.turkishminute.com/feed/...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+  [CAT] Humanitarian | ['Sudan', 'Egypt', 'Ethiopia']
+  ✅ Saved: Sudan Nashra: Military retakes Blue Nile’s Kurmuk | RSF amas...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Gone from the cup but not forgotten: Hossam Hassan, Egypt’s ...
+  [CAT] Economic Migration | ['Egypt']
+  ✅ Saved: Agriculture Ministry employees march for five years’ worth o...
+  [CAT] Policy Change | ['Cyprus', 'Gaza']
+  ✅ Saved: Board of Peace meetings held in Cyprus as mediators push to ...
+  [CAT] Border Crisis | ['Sudan', 'South Sudan', 'Egypt']
+  ✅ Saved: Sudan Nashra: Security incidents prompt review of military-a...
+  [CAT] Border Crisis | ['South Sudan', 'Sudan', 'Egypt']
+  ✅ Saved: Over 70 South Sudanese stranded aboard ‘voluntary return’ fe...
+📡 Scanning https://egyptianstreets.com/feed/...
+  [CAT] Policy Change | ['Egypt']
+  ✅ Saved: Egypt, TikTok Discuss Stronger Online Child Protection Measu...
+  [CAT] Other | ['Egypt', 'Palestine']
+  ✅ Saved: Hossam Hassan Raises Palestinian Flag as Egyptian Team Retur...
+  [CAT] Other | ['Egypt', 'United States']
+  ✅ Saved: Egyptian-American Creator Kareem Rahma Earns First Emmy Nomi...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Mohamed Salah Says Egyptian Football is Entering “A New Begi...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: How Egyptian Figures Lead International Institutions and Sha...
+  [CAT] Other | ['Egypt', 'Asia', 'Europe']
+  ✅ Saved: The Alternative Suez Canal: How Egypt Powers Mass Global Com...
+  [CAT] Other | ['Egypt', 'South Korea', 'France', 'United Arab Emirates']
+  ✅ Saved: Local Brands Storm Egypt’s Retail Scene...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Egypt’s Culture Minister Resigns Following Court Ruling in C...
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Syrian parliament convenes for first time following al-Assad...
+📡 Scanning https://www.middleeasteye.net/rss...
+📡 Scanning https://www.al-monitor.com/rss...
+  [CAT] Policy Change | ['Israel', 'Lebanon', 'Iran']
+  ✅ Saved: Israel's election will be held on October 27, coalition head...
+  [CAT] Other | ['Syria']
+  ✅ Saved: New Syrian parliament meets for first time in Damascus...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Syrian transitional parliament holds first session...
+  [CAT] Humanitarian | ['Israel', 'Palestine', 'Egypt']
+  ✅ Saved: 'Our land, our sky:' West Bank Palestinians fly kites in def...
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+  [CAT] Other | ['Syria', 'Palestine']
+  ✅ Saved: لا صحة لفيديو حملات دعوية على الشواطئ السورية.. والمقطع مصوّ...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: ادعاءات وسيم السيسي المتعلقة بجينات المصريين غير مثبتة علميا...
+  [CAT] Other | ['Israel', 'Lebanon', 'Palestine']
+  ✅ Saved: هذا الفيديو "قديم" من غزة ولا يوثق اشتباكاً بين جنود إسرائيل...
+
+✅ Added 37 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2560 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-07-12 19:07:41] ✅ RSS scan complete
+[2026-07-12 19:07:41] ✅ RSS scan complete
+[2026-07-12 19:07:41] Starting Telegram scan...
+[2026-07-12 19:07:41] Starting Telegram scan...
+[2026-07-12 19:12:41] ⚠️  Telegram scan had issues
+[2026-07-12 19:12:41] ⚠️  Telegram scan had issues
+[2026-07-12 19:12:41] Running entity extraction & Gemini enrichment...
+[2026-07-12 19:12:41] Running entity extraction & Gemini enrichment...
+Enriching 50 signals...
+✅ Enriched 50 signals
+[2026-07-12 19:17:11] ✅ Entity extraction complete
+[2026-07-12 19:17:11] ✅ Entity extraction complete
+[2026-07-12 19:17:11] Exporting CSV...
+[2026-07-12 19:17:11] Exporting CSV...
+Exported 2579 records to CSV
+[2026-07-12 19:17:11] Running weekly report...
+[2026-07-12 19:17:11] Running weekly report...
+/home/agent/migration_agent/weekly_report.py:14: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+/home/agent/migration_agent/weekly_report.py:106: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 6, "OSINT MIGRATION INTELLIGENCE", ln=True)
+/home/agent/migration_agent/weekly_report.py:109: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 5, clean_for_pdf("Εβδομαδιαια Αναφορα Μεταναστευτικων Ροων"), ln=True)
+/home/agent/migration_agent/weekly_report.py:114: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  self.cell(0, 5, clean_for_pdf(period), ln=True)
+/home/agent/migration_agent/weekly_report.py:277: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 7, clean_for_pdf(label), fill=True, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:293: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 6, val, fill=fill, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:304: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 7, clean_for_pdf(label), fill=True, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:317: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=0 use new_x=XPos.RIGHT, new_y=YPos.TOP.
+  pdf.cell(w, 6, val, fill=fill, border=0, align="C", ln=0)
+/home/agent/migration_agent/weekly_report.py:319: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=1 use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(40, 6, risk, fill=fill, border=0, align="C", ln=1)
+/home/agent/migration_agent/weekly_report.py:213: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(176, 6, meta, ln=True)
+/home/agent/migration_agent/weekly_report.py:224: DeprecationWarning: The parameter "ln" is deprecated since v2.5.2. Instead of ln=True use new_x=XPos.LMARGIN, new_y=YPos.NEXT.
+  pdf.cell(190, 4, clean_for_pdf(link[:100]), ln=True)
+Φορτωση δεδομενων: 2026-06-29 - 2026-07-05
+Δημιουργια Executive Summary...
+Δημιουργια PDF...
+
+Dhmiourgithike: /home/agent/migration_agent/reports/Weekly_OSINT_Report_2026-W27.pdf
+  Synolo signals: 469
+  Cyprus Alerts:  215
+  Border Info:    98
+  Macro Signals:  156
+[2026-07-12 19:17:12] ✅ Weekly report complete
+[2026-07-12 19:17:12] ✅ Weekly report complete
+[2026-07-12 19:17:12] Generating Migration Pressure Index...
+[2026-07-12 19:17:12] Generating Migration Pressure Index...
+✅ Pressure Index v2: 24.8 (LOW)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 1 → bump +6
+
+   7-day forecast:
+   Σαβ 2026-07-12 | ██          24.8 | LOW
+   Κυρ 2026-07-13 | ██          23.0 | LOW
+   Δευ 2026-07-14 | ██          22.7 | LOW
+   Τρι 2026-07-15 | ██          23.9 | LOW
+   Τετ 2026-07-16 | ██          22.1 | LOW
+   Πεμ 2026-07-17 | ██          21.8 | LOW
+   Παρ 2026-07-18 | ██          21.5 | LOW
+[2026-07-12 19:17:13] ✅ Pressure Index complete
+[2026-07-12 19:17:13] ✅ Pressure Index complete
+[2026-07-12 19:17:13] Logging prediction for validation...
+[2026-07-12 19:17:13] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-07-12: index=24.8 (LOW)
+   Συνολο καταγεγραμμενων προβλεψεων: 24
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-07-12 19:17:13] ✅ Validation log updated
+[2026-07-12 19:17:13] ✅ Validation log updated
+[2026-07-12 19:17:13] Generating daily PDF report...
+[2026-07-12 19:17:13] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-07-12.pdf (56 signals)
+[2026-07-12 19:17:13] ✅ Daily report complete
+[2026-07-12 19:17:13] ✅ Daily report complete
+[2026-07-12 19:17:13] Checking email alerts...
+[2026-07-12 19:17:13] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 12/07/2026 22:17
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 18 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 24.8 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-07-12 19:17:15] ✅ Email alerts complete
+[2026-07-12 19:17:15] ✅ Email alerts complete
+[2026-07-12 19:17:15] === OSINT ENGINE END ===
+[2026-07-12 19:17:15] === OSINT ENGINE END ===
+[2026-07-12 19:17:15] Backing up database to B2...
+[2026-07-12 19:17:15] Backing up database to B2...
+[2026-07-12 19:17:16] Starting B2 backup...
+[2026-07-12 19:17:16] Starting B2 backup...
+[2026-07-12 19:17:17] Uploading to B2: backups/migration_data_2026-07-12_19-17-17.db
+[2026-07-12 19:17:17] Uploading to B2: backups/migration_data_2026-07-12_19-17-17.db
+[2026-07-12 19:17:17] ✅ Backup successful: backups/migration_data_2026-07-12_19-17-17.db
+[2026-07-12 19:17:17] ✅ Backup successful: backups/migration_data_2026-07-12_19-17-17.db
+[2026-07-12 19:17:17] Pushing to GitHub...
+[2026-07-12 19:17:17] Pushing to GitHub...
