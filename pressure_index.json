@@ -1,57 +1,57 @@
 {
-  "generated_at": "2026-07-12 22:17",
-  "today_index": 24.8,
+  "generated_at": "2026-07-13 22:17",
+  "today_index": 23.3,
   "today_risk": "LOW",
   "today_risk_color": "#16a34a",
   "forecast": [
     {
-      "date": "2026-07-12",
-      "day": "Σαβ",
-      "index": 24.8,
+      "date": "2026-07-13",
+      "day": "Κυρ",
+      "index": 23.3,
       "risk": "LOW",
       "risk_color": "#16a34a",
       "confidence": 1.0,
-      "wave_height": 0.48
-    },
-    {
-      "date": "2026-07-13",
-      "day": "Κυρ",
-      "index": 23.0,
-      "risk": "LOW",
-      "risk_color": "#16a34a",
-      "confidence": 0.91,
-      "wave_height": 0.68
+      "wave_height": 0.66
     },
     {
       "date": "2026-07-14",
       "day": "Δευ",
-      "index": 22.7,
+      "index": 23.0,
       "risk": "LOW",
       "risk_color": "#16a34a",
-      "confidence": 0.82,
-      "wave_height": 0.58
+      "confidence": 0.91,
+      "wave_height": 0.66
     },
     {
       "date": "2026-07-15",
       "day": "Τρι",
-      "index": 23.9,
+      "index": 24.2,
       "risk": "LOW",
       "risk_color": "#16a34a",
-      "confidence": 0.73,
-      "wave_height": 0.42
+      "confidence": 0.82,
+      "wave_height": 0.46
     },
     {
       "date": "2026-07-16",
       "day": "Τετ",
-      "index": 22.1,
+      "index": 22.4,
       "risk": "LOW",
       "risk_color": "#16a34a",
-      "confidence": 0.64,
-      "wave_height": 0.54
+      "confidence": 0.73,
+      "wave_height": 0.58
     },
     {
       "date": "2026-07-17",
       "day": "Πεμ",
+      "index": 22.1,
+      "risk": "LOW",
+      "risk_color": "#16a34a",
+      "confidence": 0.64,
+      "wave_height": 0.58
+    },
+    {
+      "date": "2026-07-18",
+      "day": "Παρ",
       "index": 21.8,
       "risk": "LOW",
       "risk_color": "#16a34a",
@@ -59,13 +59,13 @@
       "wave_height": 0.7
     },
     {
-      "date": "2026-07-18",
-      "day": "Παρ",
-      "index": 21.5,
+      "date": "2026-07-19",
+      "day": "Σαβ",
+      "index": 23.0,
       "risk": "LOW",
       "risk_color": "#16a34a",
       "confidence": 0.46,
-      "wave_height": 0.58
+      "wave_height": 0.42
     }
   ],
   "components": {
