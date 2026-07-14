@@ -1198,5 +1198,53 @@
     },
     "actual_arrivals": null,
     "notes": ""
+  },
+  {
+    "logged_at": "2026-07-14 22:16",
+    "date": "2026-07-14",
+    "predicted_index": 23.3,
+    "predicted_risk": "LOW",
+    "forecast_7d": [
+      {
+        "date": "2026-07-14",
+        "index": 23.3
+      },
+      {
+        "date": "2026-07-15",
+        "index": 24.5
+      },
+      {
+        "date": "2026-07-16",
+        "index": 22.7
+      },
+      {
+        "date": "2026-07-17",
+        "index": 22.4
+      },
+      {
+        "date": "2026-07-18",
+        "index": 22.1
+      },
+      {
+        "date": "2026-07-19",
+        "index": 21.8
+      },
+      {
+        "date": "2026-07-20",
+        "index": 23.0
+      }
+    ],
+    "components": {
+      "arrivals_anchor": 18.5,
+      "flow_gate": 0.5,
+      "flow_mentions_14d": 0,
+      "transit_bump": 6.0,
+      "transit_mentions_14d": 1,
+      "conflict_modifier": 8.0,
+      "latest_monthly_rate": 200,
+      "baseline_monthly": 565
+    },
+    "actual_arrivals": null,
+    "notes": ""
   }
 ]

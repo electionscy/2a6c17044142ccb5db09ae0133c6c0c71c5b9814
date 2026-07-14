@@ -13007,3 +13007,284 @@ baseline 2024) δινει αποτελεσματα συμβατα με την α
 [2026-07-13 19:17:39] ✅ Backup successful: backups/migration_data_2026-07-13_19-17-39.db
 [2026-07-13 19:17:40] Pushing to GitHub...
 [2026-07-13 19:17:40] Pushing to GitHub...
+[master d467eb0] Auto-sync 2026-07-13 19:17:40
+ 10 files changed, 528 insertions(+), 66 deletions(-)
+ create mode 100644 reports/OSINT_Report_2026-07-13.pdf
+To https://github.com/electionscy/2a6c17044142ccb5db09ae0133c6c0c71c5b9814.git
+   da196b1..d467eb0  master -> master
+To https://github.com/electionscy/migration-agent-dashboard.git
+   da196b1..d467eb0  master -> main
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     54      0                              0100      2 100      2   0      0     53      0                              0100      2 100      2   0      0     53      0                              0
+OK[2026-07-13 19:17:45] ✅ ALL TASKS COMPLETED
+[2026-07-13 19:17:45] ✅ ALL TASKS COMPLETED
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100      2 100      2   0      0     25      0                              0100      2 100      2   0      0     25      0                              0100      2 100      2   0      0     24      0                              0
+OK[2026-07-14 19:00:01] === OSINT ENGINE START ===
+[2026-07-14 19:00:01] === OSINT ENGINE START ===
+[2026-07-14 19:00:01] Starting RSS scan...
+[2026-07-14 19:00:01] Starting RSS scan...
+/home/agent/migration_agent/migration_agent_full.py:29: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading embedding model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 57922.73it/s]
+RSS feeds total: 22 | keywords: 72
+╔════════════════════════════════════════════╗
+║  OSINT Migration Intelligence Agent (Β.1) ║
+║  Semantic Deduplication                   ║
+╚════════════════════════════════════════════╝
+
+🔍 Scanning RSS feeds...
+📡 Scanning https://npasyria.com/en/feed/...
+📡 Scanning https://english.enabbaladi.net/feed/...
+📡 Scanning https://syriadirect.org/feed/...
+  [CAT] Humanitarian | ['Syria']
+  ✅ Saved: ‘Waiting for chaos’: IS adapts under pressure, betting on th...
+  [CAT] Other | ['Syria']
+  ✅ Saved: Outside the plan: Urban growth outpaces roads and services i...
+  [CAT] Refugee Flow | ['Syria']
+  ✅ Saved: The living and the dead return home to Afrin...
+  [CAT] Humanitarian | ['Israel', 'Syria']
+  ✅ Saved: ‘A repellent environment’: How Israel is reshaping life in s...
+  [CAT] Humanitarian | ['Syria']
+  ✅ Saved: Child recruitment persists despite SDF-Damascus integration ...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Nationality law reform: Who has the ‘right to have rights’ i...
+  [CAT] Humanitarian | ['Syria', 'Israel']
+  ✅ Saved: Syria’s forgotten villages: Mount Hermon’s Druze between Dam...
+  [CAT] Economic Migration | ['Syria']
+  ✅ Saved: White earth: Soil salinization threatens farming in Raqqa’s ...
+  [CAT] Policy Change | ['Syria']
+  ✅ Saved: Al-Sharaa’s shakeup: A merit-based state, or a circle of tru...
+  [CAT] Other | ['Syria']
+  ✅ Saved: As Atef Najib’s trial proceeds, what legal basis exists for ...
+📡 Scanning https://daraj.media/feed/...
+📡 Scanning https://al-akhbar.com/rss...
+📡 Scanning https://megaphone.com.lb/feed/...
+📡 Scanning https://www.lebanon24.com/rss...
+📡 Scanning https://www.evrensel.net/rss/haber.xml...
+📡 Scanning https://bianet.org/rss/english...
+  [CAT] Border Crisis | ['Syria', 'Turkey']
+  ✅ Saved: Syrian singer Omar Souleyman denied entry to Turkey for conc...
+  [CAT] Humanitarian | ['Turkey']
+  ✅ Saved: Turkey detains rock singer running charity over alleged misu...
+  [CAT] Economic Migration | ['Turkey']
+  ✅ Saved: AFP journalists in İstanbul go on strike after collective ag...
+📡 Scanning https://www.turkishminute.com/feed/...
+📡 Scanning https://www.gazeteduvar.com.tr/rss...
+📡 Scanning https://www.dailysabah.com/rss...
+📡 Scanning https://www.hurriyetdailynews.com/rss...
+📡 Scanning https://www.madamasr.com/en/feed/...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Future of Egypt enters domestic fertilizer retail market...
+  [CAT] Policy Change | ['Egypt']
+  ✅ Saved: Egypt tables new St. Catherine’s deal that would cement stat...
+  [CAT] Policy Change | ['Egypt']
+  ✅ Saved: A law to formalize the ‘special nature’ of the Future of Egy...
+  [CAT] Humanitarian | ['Sudan', 'Egypt', 'Ethiopia', 'Uganda']
+  ✅ Saved: Sudan Nashra: Military retakes Blue Nile’s Kurmuk | RSF amas...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Gone from the cup but not forgotten: Hossam Hassan, Egypt’s ...
+  [CAT] Economic Migration | ['Egypt']
+  ✅ Saved: Agriculture Ministry employees march for five years’ worth o...
+  [CAT] Policy Change | ['Cyprus', 'Gaza']
+  ✅ Saved: Board of Peace meetings held in Cyprus as mediators push to ...
+📡 Scanning https://egyptianstreets.com/feed/...
+  [CAT] Other | ['Egypt', 'Argentina']
+  ✅ Saved: Egypt Celebrates the Pharaohs After World Cup Breakthrough a...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Who Is Zico? The Story Behind Egypt’s World Cup Breakout Sta...
+  [CAT] Policy Change | ['Egypt']
+  ✅ Saved: Egypt, TikTok Discuss Stronger Online Child Protection Measu...
+  [CAT] Other | ['Egypt', 'Palestine']
+  ✅ Saved: Hossam Hassan Raises Palestinian Flag as Egyptian Team Retur...
+  [CAT] Other | ['Egypt', 'USA']
+  ✅ Saved: Egyptian-American Creator Kareem Rahma Earns First Emmy Nomi...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: Mohamed Salah Says Egyptian Football is Entering “A New Begi...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: How Egyptian Figures Lead International Institutions and Sha...
+📡 Scanning https://www.thenewhumanitarian.org/rss...
+📡 Scanning https://feeds.bbci.co.uk/arabic/rss.xml...
+  [CAT] Policy Change | ['Lebanon', 'Israel', 'Italy', 'USA']
+  ✅ Saved: محادثات لبنان وإسرائيل في روما: لماذا انتقلت من واشنطن؟ وما ...
+📡 Scanning https://www.aljazeera.com/xml/rss/all.xml...
+📡 Scanning https://www.middleeasteye.net/rss...
+  [CAT] Other | ['United States', 'Israel', 'Lebanon']
+  ✅ Saved: US official: Israel-Lebanon talks ‘productive’, will continu...
+  [CAT] Policy Change | ['Israel', 'Syria', 'Lebanon', 'US']
+  ✅ Saved: Trump told Netanyahu to move Israeli forces out of Syria, Le...
+📡 Scanning https://www.al-monitor.com/rss...
+  [CAT] Other | ['US', 'Turkey', 'Iran']
+  ✅ Saved: Key witness in US probe of Turkey's Halkbank avoids prison t...
+📡 Scanning https://www.infomigrants.net/en/rss...
+📡 Scanning https://arij.net/feed/...
+  [CAT] Other | ['Syria', 'Palestine']
+  ✅ Saved: لا صحة لفيديو حملات دعوية على الشواطئ السورية.. والمقطع مصوّ...
+  [CAT] Other | ['Egypt']
+  ✅ Saved: ادعاءات وسيم السيسي المتعلقة بجينات المصريين غير مثبتة علميا...
+  [CAT] Other | ['Israel', 'Lebanon']
+  ✅ Saved: هذا الفيديو "قديم" من غزة ولا يوثق اشتباكاً بين جنود إسرائيل...
+
+✅ Added 34 new signals
+
+📊 Exporting to CSV...
+📊 Exported 2671 signals to /home/agent/migration_agent/migration_data.csv
+
+✅ Done!
+[2026-07-14 19:07:12] ✅ RSS scan complete
+[2026-07-14 19:07:12] ✅ RSS scan complete
+[2026-07-14 19:07:12] Starting Telegram scan...
+[2026-07-14 19:07:12] Starting Telegram scan...
+[2026-07-14 19:12:12] ⚠️  Telegram scan had issues
+[2026-07-14 19:12:12] ⚠️  Telegram scan had issues
+[2026-07-14 19:12:12] Running entity extraction & Gemini enrichment...
+[2026-07-14 19:12:12] Running entity extraction & Gemini enrichment...
+Enriching 50 signals...
+✅ Enriched 50 signals
+[2026-07-14 19:16:48] ✅ Entity extraction complete
+[2026-07-14 19:16:48] ✅ Entity extraction complete
+[2026-07-14 19:16:48] Exporting CSV...
+[2026-07-14 19:16:48] Exporting CSV...
+Exported 2693 records to CSV
+[2026-07-14 19:16:49] Generating Migration Pressure Index...
+[2026-07-14 19:16:49] Generating Migration Pressure Index...
+✅ Pressure Index v2: 23.3 (LOW)
+   Anchor (αφίξεις): 18.5 | Gate (ροές): 0.5 | Conflict: +8.0
+   Ρυθμός: ~200/μήνα vs baseline 565/μήνα
+   Αναφορές άμεσων ροών (14δ): 0
+   Transit/staging signals (14δ): 1 → bump +6
+
+   7-day forecast:
+   Δευ 2026-07-14 | ██          23.3 | LOW
+   Τρι 2026-07-15 | ██          24.5 | LOW
+   Τετ 2026-07-16 | ██          22.7 | LOW
+   Πεμ 2026-07-17 | ██          22.4 | LOW
+   Παρ 2026-07-18 | ██          22.1 | LOW
+   Σαβ 2026-07-19 | ██          21.8 | LOW
+   Κυρ 2026-07-20 | ██          23.0 | LOW
+[2026-07-14 19:16:50] ✅ Pressure Index complete
+[2026-07-14 19:16:50] ✅ Pressure Index complete
+[2026-07-14 19:16:50] Logging prediction for validation...
+[2026-07-14 19:16:50] Logging prediction for validation...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ΕΠΙΚΥΡΩΣΗ ΜΟΝΤΕΛΟΥ — Δεικτης Μεταναστευτικης Πιεσης          ║
+╚══════════════════════════════════════════════════════════════╝
+
+================================================================
+1. ANCHOR CALIBRATION — εναντι πραγματικων ιστορικων αφιξεων
+================================================================
+Περιοδος                 Ρυθμος/μ  Anchor   Κατηγορια  Match
+----------------------------------------------------------------
+2022 (peak κρισης)           1792    85.0        HIGH     OK
+2023                          889    63.7    MODERATE     OK
+2024 (baseline)               567    50.1    MODERATE     OK
+2025 (Ιαν-Ιουλ ann.)          202    18.8     MINIMAL     OK
+----------------------------------------------------------------
+Συμφωνια κατηγοριων: 4/4 (100%)
+
+Ερμηνεια: Το anchor αναπαραγει σωστα τη σειρα και τις κατηγοριες
+κινδυνου των γνωστων ιστορικων περιοδων. Η βαθμονομηση (50 στο
+baseline 2024) δινει αποτελεσματα συμβατα με την αναδρομικη γνωση.
+
+================================================================
+2. SENSITIVITY ANALYSIS — ευρωστια στις παραμετρους
+================================================================
+Ερωτημα: αλλαζει το ΣΥΜΠΕΡΑΣΜΑ αν πειραξουμε τις 'αυθαιρετες'
+παραμετρους; Εξεταζουμε τον τρεχοντα ρυθμο (~200/μηνα).
+
+Σεναριο                            Anchor    Κατηγορια
+----------------------------------------------------------------
+Κεντρικο (baseline=565, coef=21)     18.5      MINIMAL
+
+Μεταβολη baseline ±20%:
+  baseline=452                          25.3          LOW
+  baseline=508                          21.8          LOW
+  baseline=565                          18.5      MINIMAL
+  baseline=621                          15.7      MINIMAL
+  baseline=678                          13.0      MINIMAL
+
+Μεταβολη coef ±30%:
+  coef=14.7                            28.0          LOW
+  coef=17.8                            23.3          LOW
+  coef=21                              18.5      MINIMAL
+  coef=24.1                            13.9      MINIMAL
+  coef=27.3                             9.1      MINIMAL
+
+Ευρος κατηγοριων σε ολο το grid (±20% baseline, ±30% coef): ['LOW', 'MINIMAL']
+
+✅ ΕΥΡΩΣΤΟ: Το συμπερασμα 'χαμηλη/ελαχιστη πιεση' παραμενει σταθερο
+   ακομα κι οταν πειραξουμε σημαντικα τις παραμετρους. Οι ακριβεις
+   τιμες (21, 565) ΔΕΝ ειναι κρισιμες — το μοντελο δεν ειναι ευθραυστο.
+
+================================================================
+3. PROSPECTIVE VALIDATION — καταγραφη προβλεψης
+================================================================
+✅ Καταγραφηκε η προβλεψη της 2026-07-14: index=23.3 (LOW)
+   Συνολο καταγεγραμμενων προβλεψεων: 26
+
+Πως δουλευει η prospective επικυρωση:
+  • Καθε μερα καταγραφεται η προβλεψη (μαζι με την auto_run).
+  • Οταν γινονται γνωστες οι πραγματικες αφιξεις (μηνιαια, απο
+    UNHCR/CyStat), συμπληρωνεται το πεδιο 'actual_arrivals'.
+  • Μετα απο ~2-3 μηνες, συγκρινουμε προβλεψεις vs πραγματικοτητα
+    και υπολογιζουμε σφαλμα (MAE) — τοτε εχουμε ΠΡΑΓΜΑΤΙΚΗ επικυρωση.
+
+================================================================
+ΣΥΝΟΛΙΚΗ ΕΤΥΜΗΓΟΡΙΑ
+================================================================
+  Anchor calibration:  4/4 κατηγοριες σωστες
+  Ευρωστια:            ΝΑΙ (κατηγοριες: ['LOW', 'MINIMAL'])
+  Prospective log:     Ενεργο
+
+  Τι ΕΧΕΙ επικυρωθει: η βαθμονομηση του anchor (κυριαρχος παραγοντας)
+  ειναι συμβατη με ιστορικα δεδομενα ΚΑΙ ευρωστη στις παραμετρους.
+
+  Τι ΔΕΝ εχει επικυρωθει ακομα: η προγνωστικη ακριβεια του πληρους
+  μοντελου (gates) — απαιτει prospective δεδομενα 2-3 μηνων.
+
+[2026-07-14 19:16:50] ✅ Validation log updated
+[2026-07-14 19:16:50] ✅ Validation log updated
+[2026-07-14 19:16:50] Generating daily PDF report...
+[2026-07-14 19:16:50] Generating daily PDF report...
+✅ PDF: /home/agent/migration_agent/reports/OSINT_Report_2026-07-14.pdf (56 signals)
+[2026-07-14 19:16:50] ✅ Daily report complete
+[2026-07-14 19:16:50] ✅ Daily report complete
+[2026-07-14 19:16:50] Checking email alerts...
+[2026-07-14 19:16:50] Checking email alerts...
+
+── Φάση Δ: Email Alert System ──
+  Ώρα Κύπρου: 14/07/2026 22:16
+
+1. Ελεγχος high alerts (score ≥ 8)...
+  Βρέθηκαν 15 νέα high alerts — αποστολή email...
+
+2. Ελεγχος pressure index (≥ 50)...
+  Δεικτης 23.3 < 50 — δεν απαιτείται ειδοποίηση.
+
+✅ Email alerts complete.
+[2026-07-14 19:16:52] ✅ Email alerts complete
+[2026-07-14 19:16:52] ✅ Email alerts complete
+[2026-07-14 19:16:52] === OSINT ENGINE END ===
+[2026-07-14 19:16:52] === OSINT ENGINE END ===
+[2026-07-14 19:16:52] Backing up database to B2...
+[2026-07-14 19:16:52] Backing up database to B2...
+[2026-07-14 19:16:53] Starting B2 backup...
+[2026-07-14 19:16:53] Starting B2 backup...
+[2026-07-14 19:16:53] Uploading to B2: backups/migration_data_2026-07-14_19-16-53.db
+[2026-07-14 19:16:53] Uploading to B2: backups/migration_data_2026-07-14_19-16-53.db
+[2026-07-14 19:16:56] ✅ Backup successful: backups/migration_data_2026-07-14_19-16-53.db
+[2026-07-14 19:16:56] ✅ Backup successful: backups/migration_data_2026-07-14_19-16-53.db
+[2026-07-14 19:16:56] Pushing to GitHub...
+[2026-07-14 19:16:56] Pushing to GitHub...
